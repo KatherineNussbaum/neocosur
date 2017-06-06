@@ -1,0 +1,53 @@
+@charset "utf-8";
+/* CSS Document */
+
+html {
+    position: relative;
+    min-height: 100%;
+}
+body {
+    margin-bottom: 60px; /* Altrura para el footer */
+}
+.container {
+}
+.footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 60px /*Altura del footer */
+}
+/*Header*/
+#logo {
+	display: block;
+	margin-top: 25px;
+	margin-bottom: 25px;
+}
+
+/*Contenido Administración*/
+h1 {
+	margin-top:0px;
+	margin-bottom: 50px;
+}
+
+/*body {
+	background-color: #e3e3e3;
+}
+.container {
+	background-color: #FFF;
+	display:block;
+	min-height:865px !important;
+}
+
+
+.ficha {
+	border-top-style: none !important;
+	border-radius: 4px;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 4px;
+    border-bottom-left-radius: 4px;
+}
+
+.control-label{ font-size:12px; font-style:normal;}
+*/
+
