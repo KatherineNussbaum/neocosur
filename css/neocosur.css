@@ -16,6 +16,7 @@ body {
     width: 100%;
     height: 60px /*Altura del footer */
 }
+
 /*Header*/
 #logo {
 	display: block;
@@ -34,28 +35,19 @@ h4 {
 
 
 /*Estilo para fichas */
-.ui-tabs-vertical { }
-.ui-tabs-vertical .ui-tabs-nav { padding: .2em .1em .2em .2em; float: left; width: 14em; }
-.ui-tabs-vertical .ui-tabs-nav li { clear: left; width: 100%; border-bottom-width: 1px !important; border-right-width: 0 !important; margin: 0 -1px .2em 0; }
-.ui-tabs-vertical .ui-tabs-nav li a { display:block; }
-.ui-tabs-vertical .ui-tabs-nav li.ui-tabs-active { padding-bottom: 0; padding-right: .1em; border-right-width: 1px; }
-.ui-tabs-vertical .ui-tabs-panel { padding: 1em; float: left;}
-.ui-tabs .ui-tabs-panel { padding:  0em !important; }
-
-.ui-tabs .ui-tabs-nav {
-    margin: -4px !important;
+.ficha {
+    border-top-style: none !important;
+	border-radius: 4px;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 4px;
+    border-bottom-left-radius: 4px;
+    border-width: 1px;
 }
 
-
-li[role="tab"] {
-	border: 1px solid transparent;
-    border-radius: 4px 0px 0px 4px;
-	border-color: #ddd;
-	border-right: none;
-	margin-bottom: -2px !important;
+.tap-content {
+	    margin-left: 2px;
 }
-
-li a:focus, li a:active { border: none !important; }
 
 /*Formulario */
 
@@ -75,14 +67,7 @@ button[type="submit"] { margin-top: 10px; margin-bottom: 10px; }
 }
 
 
-.ficha {
-	border-top-style: none !important;
-	border-radius: 4px;
-    border-top-left-radius: 0px;
-    border-top-right-radius: 0px;
-    border-bottom-right-radius: 4px;
-    border-bottom-left-radius: 4px;
-}
+
 
 .control-label{ font-size:12px; font-style:normal;}
 */
