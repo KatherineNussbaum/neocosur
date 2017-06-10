@@ -30,15 +30,15 @@
       <div class="col-lg-12">
         <ul class="nav nav-tabs" role="tablist">
           <li role="presentation" class="active"><a href="#ingreso" aria-controls="profile" role="tab" data-toggle="tab">Datos del Ingreso</a></li>
-              <li role="presentation"><a href="#prenatales" aria-controls="profile" role="tab" data-toggle="tab">Antecedentes Prenatales</a></li>
-              <li role="presentation"><a href="#parto" aria-controls="messages" role="tab" data-toggle="tab">Antecedentes del Parto</a></li>
-              <li role="presentation"><a href="#neonatales" aria-controls="settings" role="tab" data-toggle="tab">Patologías Neonatales</a></li>
-              <li role="presentation"><a href="#antroprometria" aria-controls="settings" role="tab" data-toggle="tab">Antropometría</a></li>
-              <li role="presentation"><a href="#alta" aria-controls="settings" role="tab" data-toggle="tab">Información del Alta</a></li>
-              <li role="presentation"><a href="#estado" aria-controls="settings" role="tab" data-toggle="tab">Estado de Ficha</a></li>
+          <li role="presentation"><a href="#prenatales" aria-controls="profile" role="tab" data-toggle="tab">Antecedentes Prenatales</a></li>
+          <li role="presentation"><a href="#parto" aria-controls="messages" role="tab" data-toggle="tab">Antecedentes del Parto</a></li>
+          <li role="presentation"><a href="#neonatales" aria-controls="settings" role="tab" data-toggle="tab">Patologías Neonatales</a></li>
+          <li role="presentation"><a href="#antroprometria" aria-controls="settings" role="tab" data-toggle="tab">Antropometría</a></li>
+          <li role="presentation"><a href="#alta" aria-controls="settings" role="tab" data-toggle="tab">Información del Alta</a></li>
+          <li role="presentation"><a href="#estado" aria-controls="settings" role="tab" data-toggle="tab">Estado de Ficha</a></li>
         </ul>
       </div>
-      <div class="">
+      <div class="col-lg-12">
         <div class="tab-content">
           <div role="tabpanel" class="tab-pane active" id="ingreso">
             <?php include 'ficha_ingreso/datos_ingreso.php'; ?>

@@ -7,6 +7,10 @@ html {
 }
 body {
     margin-bottom: 60px; /* Altrura para el footer */
+    font-size: 12px;
+}
+h1 {
+    font-size: 34px;
 }
 .container {
 }
@@ -38,8 +42,35 @@ fieldset legend {
 }
 
 /*Estilo para fichas */
+
+.ui-tabs .ui-tabs-panel{
+    padding: 0px !important;
+    margin-top: -26PX;
+    margin-left: 4px;
+}
+
+.nav-tabs > li> a, .nav-tabs > li > a:hover, .nav-tabs > li > a:focus {
+    color: #666;
+    background-color: #f7f7f7;
+    border: 1px solid #ddd;
+    border-bottom-color: transparent;
+}
+
+.nav-tabs > li.active > a, .nav-tabs > li.active > a:hover, .nav-tabs > li.active > a:focus {
+    background-color: #FFF;
+    color: #115b8d;
+   /* cursor: default;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-bottom-color: transparent;*/
+}
+
+.nav-tabs > li > a {
+    margin-right: 0px;
+}
+
 .ficha {
-    border-top-style: none !important;
+
 	border-radius: 4px;
     border-top-left-radius: 0px;
     border-top-right-radius: 0px;
