@@ -9,21 +9,6 @@
       <div class="col-lg-10">
         <h1>Control de Seguimiento</h1>
       </div>
-                
-      <!--<div class="col-lg-2">
-       	<div class="btn-group" role="group" aria-label="...">
-          <button type="button" class="btn btn-info btn-sm">Buscador</button>
-          <div class="btn-group" role="group">
-            <button type="button" class="btn btn-success btn-sm dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown
-              <span class="caret"></span>
-            </button>
-            <ul class="dropdown-menu">
-              <li><a href="#">Dropdown link</a></li>
-              <li><a href="#">Dropdown link</a></li>
-            </ul>
-          </div>
-        </div>
-      </div>-->
 
     </div>
 
@@ -100,10 +85,9 @@
               Datos de Ficha
             </a>
           </li>
-
         </ul>
       </div>
-      <div class="">
+      <div class="col-lg-12">
         <div class="tab-content">
           <div role="tabpanel" class="tab-pane active" id="ingreso">
             <?php include 'seguimiento/datos_ingreso.php'; ?>
