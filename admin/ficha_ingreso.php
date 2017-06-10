@@ -38,7 +38,7 @@
               <li role="presentation"><a href="#estado" aria-controls="settings" role="tab" data-toggle="tab">Estado de Ficha</a></li>
         </ul>
       </div>
-      <div class="col-lg-12">
+      <div class="">
         <div class="tab-content">
           <div role="tabpanel" class="tab-pane active" id="ingreso">
             <?php include 'ficha_ingreso/datos_ingreso.php'; ?>

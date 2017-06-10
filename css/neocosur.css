@@ -27,12 +27,15 @@ body {
 /*Contenido Administración*/
 h1 {
 	margin-top:0px;
-	margin-bottom: 50px;
+	margin-bottom: 20px;
 }
 h4 {
 	margin-bottom: 25px;
 }
-
+fieldset legend {
+    font-size: 14px;
+    color: #666;
+}
 
 /*Estilo para fichas */
 .ficha {
@@ -43,6 +46,8 @@ h4 {
     border-bottom-right-radius: 4px;
     border-bottom-left-radius: 4px;
     border-width: 1px;
+    margin-left: -1px;
+    margin-top: 26px;
 }
 
 .tap-content {
@@ -54,6 +59,32 @@ h4 {
 .input-sm {
     margin-bottom: 12px;
 }
+
+.sub-form{
+    /*font-size: 11px;*/
+    text-decoration: none;
+    font-weight: normal;
+
+}
+
+.radio input[type='radio'], .radio-inline input[type='radio'] {
+    /*margin-left: 20px !important;*/
+}
+
+.checkbox {
+	float: left;
+
+}
+
+.txt_izq {
+	text-align: left !important;
+}
+.linea {
+    float: left !important;
+    margin-left: 15px;
+    margin-bottom: 10px;
+}
+
 
 button[type="submit"] { margin-top: 10px; margin-bottom: 10px; }
 
