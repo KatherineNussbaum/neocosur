@@ -1,5 +1,6 @@
 <div class="ficha panel panel-default">
   <div class="panel-body">
+  <form>
     <h4><span class="glyphicon glyphicon-chevron-down" aria-hidden="true"></span> Datos del Ingreso</h4>
 
     <div class="col-lg-6">
@@ -65,6 +66,7 @@
 
     <div class=" col-lg-offset-10 col-lg-2">
       <button type="submit" class="btn btn-success">Guardar</button>
-    </div>         
+    </div>
+    </form>       
   </div>
 </div>

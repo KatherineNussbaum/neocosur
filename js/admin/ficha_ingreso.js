@@ -123,6 +123,7 @@ jQuery(document).ready(function(){
     		$("input[name*='compromete']").removeProp("checked");
     		$(".detalle_compromete").hide();
     		$("input[name*='detalle_compromete']").removeProp("checked");
+            $("textarea[name*='obs_malformaciones']").val("");
     	}});
 
 	$("#compromete_si").change(function(){
@@ -139,6 +140,7 @@ jQuery(document).ready(function(){
     	{
     		$(".detalle_compromete").hide();
     		$("input[name*='detalle_compromete']").removeProp("checked");
+            $("textarea[name*='obs_malformaciones']").val("");
     	}
 	});
 
