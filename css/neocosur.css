@@ -104,9 +104,11 @@ fieldset legend {
 
 .checkbox {
 	float: left;
-
 }
 
+.margin-left {
+    padding-left: 35px !important;
+}
 .txt_izq {
 	text-align: left !important;
 }

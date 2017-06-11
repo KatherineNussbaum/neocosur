@@ -77,7 +77,7 @@
 <script src="../js/jquery-ui.js"></script>
 <script src="../js/bootstrap.js"></script>
 <script src="../js/npm.js"></script>
-
+<script src="../js/admin/ficha_ingreso.js"></script>
 <script>
   $( "#tabs" ).tabs();
 </script>
