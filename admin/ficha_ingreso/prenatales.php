@@ -376,8 +376,8 @@
                 </label>
 
                 <div id="cual_defecto" class="sub-form">
-                  <label for="cual_defecto" class="col-lg-2 txt_izq control-label">¿Cuál?</label>
-                  <div class="col-lg-10">
+                  <label for="cual_defecto" class="col-lg-3 txt_izq control-label">Si es otro, cuál?</label>
+                  <div class="col-lg-9">
                     <input type="text" name="cual_defecto" class="form-control input-sm">
                   </div>
                 </div>  

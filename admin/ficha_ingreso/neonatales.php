@@ -1,19 +1,81 @@
 <div class="ficha panel panel-default">
   <div class="panel-body">
   <form>
-    <h4><span class="glyphicon glyphicon-chevron-down" aria-hidden="true"></span> Antecedentes del Parto</h4>
-
-    <div class="col-lg-6">
+    <h4><span class="glyphicon glyphicon-chevron-down" aria-hidden="true"></span> Patologías Neonatales</h4>
+    <div id="principal_neonatales"> 
     
-      <div class="form-group">
-        <label for="genero" class="col-lg-5 control-label">Género</label>
-        <div class="col-lg-7">
-          <select name="genero" class="form-control input-sm">
-            <option value="0">Selecciones</option>
-            <option value="1">Femenino</option>
-          </select> 
+      <div class="col-lg-12">    
+
+        <div class="form-group col-lg-6">
+          <label for="sdr" class="col-lg-5 control-label">Clínica SDR</label>
+          <label for="sdr" class="control-label radio-inline col-lg-2">
+            <input type="radio" name="sdr" value="si"> Sí
+          </label>
+          <label for="sdr" class="control-label radio-inline col-lg-2" >
+            <input type="radio" name="sdr" value="no"> No
+          </label>
         </div>
+
+        <div class="clearfix visible-lg-block"></div>
+
+        <div class="form-group col-lg-6">
+          <label for="hic" class="col-lg-5 control-label">HIC (Grado)</label>
+          <label for="hic" class="control-label radio-inline col-lg-2">
+            <input type="radio" name="hic" value="si"> Sí
+          </label>
+          <label for="hic" class="control-label radio-inline col-lg-2" >
+            <input type="radio" name="hic" value="no"> No
+          </label>
+        </div>
+
+        <div class="form-group col-lg-6">
+          <label for="grado" class="col-lg-5 control-label">Grado</label>
+          <div class="col-lg-7">
+            <select name="grado" class="form-control input-sm">
+              <option value="0">Seleccione</option>
+              <option value="1">I</option>
+            </select> 
+          </div>
+        </div>
+
+        <div class="clearfix visible-lg-block"></div>
+
+        <div class="form-group col-lg-6">
+          <label for="radio_torax" class="col-lg-5 control-label">Radiografía Oxígeno</label>
+          <label for="radio_torax" class="control-label radio-inline col-lg-2">
+            <input type="radio" name="radio_torax" value="si"> Sí
+          </label>
+          <label for="radio_torax" class="control-label radio-inline col-lg-2" >
+            <input type="radio" name="radio_torax" value="no"> No
+          </label>
+        </div>
+
+        <div class="form-group col-lg-6">
+          <label for="oxigeno_28" class="col-lg-5 control-label"></label>
+          <label for="oxigeno_28" class="control-label radio-inline col-lg-2">
+            <input type="radio" name="oxigeno_28" value="si"> Sí
+          </label>
+          <label for="oxigeno_28" class="control-label radio-inline col-lg-2" >
+            <input type="radio" name="oxigeno_28" value="no"> No
+          </label>
+        </div>
+
+        <div class="form-group col-lg-6">
+          <label for="oxigeno_36" class="col-lg-5 control-label"></label>
+          <label for="oxigeno_36" class="control-label radio-inline col-lg-2">
+            <input type="radio" name="oxigeno_36" value="si"> Sí
+          </label>
+          <label for="oxigeno_36" class="control-label radio-inline col-lg-2" >
+            <input type="radio" name="oxigeno_36" value="no"> No
+          </label>
+        </div>
+
+
       </div>
+
+    </div>
+
+      
       
       <div class="form-group">
         <label for="presentacion" class="col-lg-5 control-label">Presentación</label>
