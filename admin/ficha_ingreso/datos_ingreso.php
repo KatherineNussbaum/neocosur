@@ -38,14 +38,20 @@
       <div class="form-group">
         <label for="id" class="col-lg-7 control-label">Identificador Neocosur</label>
         <div class="col-lg-5">
-          <input type="text" name="id" class="form-control input-sm" value="104" contenteditable="false" disabled>
+        <select name="identificador" class="form-control input-sm">
+          <option value="0">Seleccione</option>
+          <option value="1">1</option>
+        </select>
         </div>
       </div>
                     
       <div class="form-group">
         <label for="num_ficha" class="col-lg-7 control-label">N° de ficha médica:</label>
         <div class="col-lg-5">
-          <input type="number" min="0" name="num_ficha" class="form-control input-sm" >
+        <select name="num_ficha" class="form-control input-sm">
+          <option value="0">Seleccione</option>
+          <option value="1">1</option>
+        </select>
         </div>
       </div>
 
