@@ -1,7 +1,7 @@
 <div class="ficha panel panel-default">
   <div class="panel-body">
   <form>
-    <h4><span class="glyphicon glyphicon-chevron-down" aria-hidden="true"></span> Datos del Ingreso</h4>
+    <h4> <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span> Datos del Ingreso</h4>
 
     <div class="col-lg-6">
     
