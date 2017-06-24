@@ -2,8 +2,8 @@
   <div class="panel-body">
     <form>
       <h4>
-        <span class="glyphicon glyphicon-chevron-down" aria-hidden="true"></span>
-        <a id="sec_principal">Antecedentes Prentatales</a> | <small><a id="sec_malformacion">Malformación cognitiva mayor</a></small>
+        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+        <a id="sec_principal">Antecedentes Prentatales</a> <small> <a id="sec_malformacion"> <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span> Malformación cognitiva mayor</a></small>
       </h4>
       <div id="principal">
         <div class="col-lg-6">
