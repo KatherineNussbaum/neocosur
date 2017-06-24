@@ -12,6 +12,9 @@ body {
 h1 {
     font-size: 34px;
 }
+h4 a {color: #000;}
+h4 a:hover{ text-decoration: none; color: #003b7e; cursor: pointer; }
+
 .container {
 }
 .footer {

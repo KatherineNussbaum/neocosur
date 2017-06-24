@@ -49,9 +49,11 @@
           </div>
 
           <div role="tabpanel" class="tab-pane" id="parto">
+            <?php include 'ficha_ingreso/parto.php'; ?>
           </div>
 
           <div role="tabpanel" class="tab-pane" id="neonatales">
+            <?php include 'ficha_ingreso/neonatales.php'; ?>
           </div>
 
           <div role="tabpanel" class="tab-pane" id="antroprometria">

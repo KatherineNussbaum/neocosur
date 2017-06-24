@@ -9,6 +9,7 @@ jQuery(document).ready(function(){
 // Ocultar subformularios
 // -------------------------------------------
 	$(".sub-form").hide();
+    $("#malformacion_cognitiva").hide();
 
 
 // Diabetes
@@ -87,7 +88,7 @@ jQuery(document).ready(function(){
     		$(".completo").hide();
     	}});
 
-	$( "#completo_si" ).change(function() {
+	$( "#completo_no" ).change(function() {
     	var $input = $( this );
     	if( $input.prop("checked") )
     	{
@@ -95,7 +96,7 @@ jQuery(document).ready(function(){
     		$("input[name*='curso']").removeProp("checked");
 
     	}});
-	$( "#completo_no" ).change(function() {
+	$( "#completo_si" ).change(function() {
     	var $input = $( this );
     	if( $input.prop("checked") )
     	{
@@ -108,7 +109,6 @@ jQuery(document).ready(function(){
 // -------------------------------------------
 	$("#malformacion_si").change(function(){
 		var $input = $( this );
-		var $input = $( this );
     	if( $input.prop("checked") )
     	{
     		$(".compromete").show();
@@ -119,11 +119,15 @@ jQuery(document).ready(function(){
     	var $input = $( this );
     	if( $input.prop("checked") )
     	{
+
+            $("input[name*='cual_defecto']").val("");
+            $("#cual_defecto").hide();
     		$(".compromete").hide();
     		$("input[name*='compromete']").removeProp("checked");
     		$(".detalle_compromete").hide();
-    		$("input[name*='detalle_compromete']").removeProp("checked");
+    		$("input[class*='detalle_compromete']").removeProp("checked");
             $("textarea[name*='obs_malformaciones']").val("");
+
     	}});
 
 	$("#compromete_si").change(function(){
@@ -138,11 +142,43 @@ jQuery(document).ready(function(){
 		var $input = $( this );
     	if( $input.prop("checked") )
     	{
+
+            $("input[name*='cual_defecto']").val("");
+            $("#cual_defecto").hide();
     		$(".detalle_compromete").hide();
-    		$("input[name*='detalle_compromete']").removeProp("checked");
+    		$("input[class*='detalle_compromete']").removeProp("checked");
             $("textarea[name*='obs_malformaciones']").val("");
+            
     	}
 	});
+
+    $("#otro_defecto").change(function(){
+        var $input = $( this );
+        if( $input.prop("checked") )
+        {
+            $("#cual_defecto").show();
+        }
+        else
+        {
+            $("#cual_defecto").hide();
+            $("input[name*='cual_defecto']").val("");
+        }
+    });
+
+
+// Mostrar/Cambiar de Sub-Secciones
+// ===========================================
+    $("#sec_malformacion").click(function(){
+        $("#principal").fadeOut('fast');
+        $("#malformacion_cognitiva").fadeIn('slow');
+    });
+
+    $("#sec_principal").click(function(){
+        $("#malformacion_cognitiva").fadeOut('fast');
+        $("#principal").fadeIn('slow');
+    });
+    
+
 
 // cierre de archivo
 });
