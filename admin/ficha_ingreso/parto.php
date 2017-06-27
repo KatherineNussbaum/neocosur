@@ -150,14 +150,14 @@
       <div class="form-group">
         <label for="fallece" class="col-lg-5 control-label">Fallece en Sala de Parto</label>
         <label for="fallece" class="control-label radio-inline col-lg-2">
-          <input type="radio" name="fallece" value="si"> Sí
+          <input type="radio" name="fallece" value="si" id="fallece_sala_si"> Sí
         </label>
         <label for="fallece" class="control-label radio-inline col-lg-2" >
-          <input type="radio" name="fallece" value="no"> No
+          <input type="radio" name="fallece" value="no" id="fallece_sala_no"> No
         </label>
       </div>
 
-    </div>                  
+    </div>
       
 
     <div class=" col-lg-offset-10 col-lg-2">

@@ -135,18 +135,8 @@ fieldset legend {
 
 button[type="submit"] { margin-top: 10px; margin-bottom: 10px; }
 
-/*body {
-	background-color: #e3e3e3;
+.fila_oculta{
+    display: none;;
 }
-.container {
-	background-color: #FFF;
-	display:block;
-	min-height:865px !important;
-}
-
-
-
-
-.control-label{ font-size:12px; font-style:normal;}
 */
 

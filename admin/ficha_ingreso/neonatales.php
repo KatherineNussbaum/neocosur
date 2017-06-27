@@ -1,4 +1,4 @@
-<div class="ficha panel panel-default">
+<div class="ficha panel panel-default" id="patologias_neonatales">
   <div class="panel-body">
   <form>
     <h4>
@@ -471,7 +471,7 @@
               <input type="checkbox" value="" class="detalle_sepsis_precoz">
               LCR positivo
             </label>
-          </div>  
+          </div>
         </div>
 
         <div class="clearfix visible-lg-block"></div>
@@ -500,43 +500,17 @@
         <div class="clearfix visible-lg-block"></div>
 
         <div class="form-group sub-form" id="detalle_sepsis_tardia">
-          <table class="table table-bordered">
+          <table class="table table-bordered" id="tabla_sepsis">
             <thead>
               <tr>
                 <td class="col-lg-1"></td>
                 <td class="col-lg-2">Edad</td>
-                <td class="col-lg-5">Germen</td>
+                <td class="col-lg-4">Germen</td>
                 <td class="col-lg-4"></td>
+                <td class="col-lg-1"></td>
               </tr>
             </thead>
             <tbody>
-              <tr>
-                <td>Sepsis 1</td>
-                <td>
-                  <div class="input-group linea">
-                    <input type="number" min="1" max="999" step="1" name="detalle_sepsis_tardia_dias" class="form-control input-sm detalle_sepsis_tardia" aria-describedby="basic-addon2">
-                    <span class="input-group-addon" id="basic-addon2">días</span>
-                  </div>
-                </td>
-                  
-                <td>
-                  <select name="detalle_sepsis_tardia_germen" class="form-control input-sm detalle_sepsis_tardia" id="detalle_sepsis_tardia_germen">
-                    <option value="0">Seleccione</option>
-                    <option value="1">Listeria</option>
-                    <option value="otro">Otro</option>
-                  </select> 
-                </td>
-
-                <td>
-                  <div class="col-lg-5 sub-form detalle_sepsis_tardia_otro">
-                    <label for="detalle_sepsis_tardia_otro" class="txt_izq control-label">Si es otro, cuál?</label>
-                  </div>
-                  <div class="col-lg-7 detalle_sepsis_tardia_otro">
-                    <input type="text" name="detalle_sepsis_tardia_otro" class="form-control input-sm detalle_sepsis_tardia_otro">
-                  </div>
-                </td>
-
-              </tr>
 
               <tr>
                 <td>LRC positivo</td>
@@ -559,17 +533,47 @@
                   <div class="col-lg-5 sub-form detalle_lrc_otro">
                     <label for="detalle_lrc_otro" class="txt_izq control-label">Si es otro, cuál?</label>
                   </div>
-                  <div class="col-lg-7">
+                  <div class="col-lg-7 sub-form detalle_lrc_otro">
                     <input type="text" name="detalle_lrc_otro" class="form-control input-sm detalle_sepsis_tardia detalle_lrc_otro">
                   </div>
                 </td>
-
+                <td></td>
               </tr>
+
+              <tr class="fila_oculta">
+                <td>Sepsis 1</td>
+                <td>
+                  <div class="input-group linea">
+                    <input type="number" min="1" max="999" step="1" name="detalle_sepsis_tardia_dias" class="form-control input-sm detalle_sepsis_tardia" aria-describedby="basic-addon2">
+                    <span class="input-group-addon" id="basic-addon2">días</span>
+                  </div>
+                </td>
+                  
+                <td>
+                  <select name="detalle_sepsis_tardia_germen" class="form-control input-sm detalle_sepsis_tardia detalle_sepsis_tardia_germen" id="">
+                    <option value="0">Seleccione</option>
+                    <option value="1">Listeria</option>
+                    <option value="otro">Otro</option>
+                  </select> 
+                </td>
+
+                <td>
+                  <div class="col-lg-5 sub-form detalle_sepsis_tardia_otro">
+                    <label for="detalle_sepsis_tardia_otro" class="txt_izq control-label">Si es otro, cuál?</label>
+                  </div>
+                  <div class="col-lg-7 sub-form detalle_sepsis_tardia_otro">
+                    <input type="text" name="detalle_sepsis_tardia_otro" class="form-control input-sm detalle_sepsis_tardia_otro">
+                  </div>
+                </td>
+                <td><button type="button" class="btn btn-danger btn-xs eliminar"><span class="glyphicon glyphicon-remove" aria-hidden="true"></span></button></td>
+              </tr>
+
+              
             </tbody>
           </table>
 
           <div class="col-lg-2">
-            <button type="button" class="btn btn-info">Agregar Sepsis</button>
+            <button type="button" class="btn btn-info" id="agregar_tabla_sepsis">Agregar Sepsis</button>
           </div>
         </div>
 

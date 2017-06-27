@@ -9,10 +9,17 @@ jQuery(document).ready(function(){
 // Ocultar subformularios
 // -------------------------------------------
 	$(".sub-form").hide();
+
     $("#malformacion_cognitiva").hide();
     $("#oftalmologica").hide();
     $("#sepsis").hide();
-
+    $("#medicamentos").hide();
+    $("#cateteres").hide();
+    $("#cirugia").hide();
+    $("#alimentacion").hide();
+    $("#observaciones").hide();
+    $("#fallecimiento").hide();
+    $("#sec_fallece").hide();
 
 // Diabetes
 // -------------------------------------------
@@ -168,6 +175,43 @@ jQuery(document).ready(function(){
     });
 
 
+// Fallece en sala de parto
+// -------------------------------------------
+    $("#fallece_sala_si").change(function(){
+        var $input = $( this );
+        if( $input.prop("checked") )
+        {
+            $(".dinamico_fallece").hide();
+
+            $("#patologias_neonatales input").val("");
+            $("#patologias_neonatales textarea").val("");
+            $("#patologias_neonatales input").removeProp("checked");
+            $("#patologias_neonatales select").val("0");
+            $('#patologias_neonatales .sub-form').hide();
+
+            $("#evolucion_tratamiento input").val("");
+            $("#evolucion_tratamiento textarea").val("");
+            $("#evolucion_tratamiento input").removeProp("checked");
+            $("#evolucion_tratamiento select").val("0");
+            $('#evolucion_tratamiento .sub-form').hide();
+
+            $("#antropometria input").val("");
+            $("#antropometria textarea").val("");
+            $("#antropometria input").removeProp("checked");
+            $("#antropometria select").val("0");
+            $('#antropometria .sub-form').hide();
+        }
+    })
+    $("#fallece_sala_no").change(function(){
+        var $input = $( this );
+        if( $input.prop("checked") )
+        {
+            $(".dinamico_fallece").show();
+        }
+    })
+
+
+
 // HIC (Grado)
 // -------------------------------------------
     $( "#hic_si" ).change(function() {
@@ -307,17 +351,18 @@ jQuery(document).ready(function(){
             $("select[class*='detalle_sepsis_tardia']").val('0');
         }});
 
-    $( "#detalle_sepsis_tardia_germen" ).change(function() {
-        var $input = $( this );
-        if( $input.val() == "otro" )
-        {
-            $(".detalle_sepsis_tardia_otro").show();
+    $(document).on("click",".detalle_sepsis_tardia_germen",function(){
+        var $input = $(this);
+        var parent = $(this).parents().get(1);
+        if($input.val()== "otro")
+        {            
+            $(parent).find(".detalle_sepsis_tardia_otro").show();
         }
         else
         {
-            $(".detalle_sepsis_tardia_otro").hide();
-            $("input[class*='detalle_sepsis_tardia_otro']").val('');
-        }
+            $(parent).find(".detalle_sepsis_tardia_otro").hide();
+            $(parent).find("input[class*='detalle_sepsis_tardia_otro']").val('');
+        }       
     });
 
     $( "#detalle_lrc_germen" ).change(function() {
@@ -333,6 +378,364 @@ jQuery(document).ready(function(){
         }
     });
 
+
+
+// VM Convencional
+// -------------------------------------------
+    $( "#vm_convencional_si" ).change(function() {
+        var $input = $( this );
+        if( $input.prop("checked") )
+        {
+            $(".duracion_vm").show();
+        }});
+    $( "#vm_convencional_no" ).change(function() {
+        var $input = $( this );
+        if( $input.prop("checked") )
+        {
+            $(".duracion_vm").hide();
+            $("input[class*='detalle_vm_convencional']").removeProp("checked");
+            $("input[class*='detalle_vm_convencional']").val("");
+        }});
+
+// VM Alta Frecuencia
+// -------------------------------------------
+    $( "#vm_alta_frecuencia_si" ).change(function() {
+        var $input = $( this );
+        if( $input.prop("checked") )
+        {
+            $(".duracion_vm_alta").show();
+        }});
+    $( "#vm_alta_frecuencia_no" ).change(function() {
+        var $input = $( this );
+        if( $input.prop("checked") )
+        {
+            $(".duracion_vm_alta").hide();
+            $("input[class*='detalle_vm_alta_frecuencia']").val("");
+        }});
+
+
+// Uso de Oxígeno
+// -------------------------------------------
+    $( "#uso_oxigeno_si" ).change(function() {
+        var $input = $( this );
+        if( $input.prop("checked") )
+        {
+            $(".duracion_oxigeno").show();
+        }});
+    $( "#uso_oxigeno_no" ).change(function() {
+        var $input = $( this );
+        if( $input.prop("checked") )
+        {
+            $(".duracion_oxigeno").hide();
+            $("input[class*='detalle_duracion_oxigeno']").val("");
+        }});
+
+
+// CPAP
+// -------------------------------------------
+    $( "#cpap_si" ).change(function() {
+        var $input = $( this );
+        if( $input.prop("checked") )
+        {
+            $(".duracion_cpap").show();
+        }});
+    $( "#cpap_no" ).change(function() {
+        var $input = $( this );
+        if( $input.prop("checked") )
+        {
+            $(".duracion_cpap").hide();
+            $("input[class*='detalle_cpap']").removeProp("checked");
+            $("input[class*='detalle_cpap']").val("");
+
+            $(".detalle_inicio_sdr").hide();
+            $("input[name*='detalle_inicio_sdr']").removeProp("checked");
+        }});
+
+    $( "#inicio_sdr" ).change(function() {
+        var $input = $( this );
+        if( $input.prop("checked") )
+        {
+            $(".detalle_inicio_sdr").show();
+        }
+        else
+        {
+            $(".detalle_inicio_sdr").hide();
+            $("input[name*='detalle_inicio_sdr']").removeProp("checked");
+        }
+    });
+   
+
+
+// VNNI
+// -------------------------------------------
+    $( "#vnni_si" ).change(function() {
+        var $input = $( this );
+        if( $input.prop("checked") )
+        {
+            $(".duracion_vnni").show();
+        }});
+    $( "#vnni_no" ).change(function() {
+        var $input = $( this );
+        if( $input.prop("checked") )
+        {
+            $(".duracion_vnni").hide();
+            $("input[class*='detalle_duracion_vnni']").val("");
+        }});
+
+
+// Recibe Surfactante
+// -------------------------------------------
+    $( "#surfactante_si" ).change(function() {
+        var $input = $( this );
+        if( $input.prop("checked") )
+        {
+            $(".detalle_surfactante").show();
+        }});
+    $( "#surfactante_no" ).change(function() {
+        var $input = $( this );
+        if( $input.prop("checked") )
+        {
+            $(".detalle_surfactante").hide();
+            $("input[class*='detalle_surfactante']").val("");
+            $("input[class*='detalle_surfactante']").removeProp("checked");
+            $("select[class*='detalle_surfactante']").val("0");
+        }});
+
+
+// Indometacina
+// -------------------------------------------
+    $( "#indometacina_si" ).change(function() {
+        var $input = $( this );
+        if( $input.prop("checked") )
+        {
+            $(".detalle_indometacina").show();
+        }});
+    $( "#indometacina_no, #indometacina_s_i" ).change(function() {
+        var $input = $( this );
+        if( $input.prop("checked") )
+        {
+            $(".detalle_indometacina").hide();
+            $("input[class*='detalle_indometacina']").removeProp("checked");
+        }});
+
+
+// Tratamiento Apnea
+// -------------------------------------------
+    $( "#tratamiento_apnea_si" ).change(function() {
+        var $input = $( this );
+        if( $input.prop("checked") )
+        {
+            $(".detalle_tratamiento_apnea").show();
+        }});
+    $( "#tratamiento_apnea_no" ).change(function() {
+        var $input = $( this );
+        if( $input.prop("checked") )
+        {
+            $(".detalle_tratamiento_apnea").hide();
+            $("input[class*='detalle_tratamiento_apnea']").removeProp("checked");
+        }});
+
+
+// Arteria umbilical
+// -------------------------------------------
+    $( "#arteria_si" ).change(function() {
+        var $input = $( this );
+        if( $input.prop("checked") )
+        {
+            $(".detalle_arteria").show();
+        }});
+    $( "#arteria_no" ).change(function() {
+        var $input = $( this );
+        if( $input.prop("checked") )
+        {
+            $(".detalle_arteria").hide();
+            $("input[class*='detalle_arteria']").val("");
+        }});
+
+
+// Vena umbilical
+// -------------------------------------------
+    $( "#vena_si" ).change(function() {
+        var $input = $( this );
+        if( $input.prop("checked") )
+        {
+            $(".detalle_vena").show();
+        }});
+    $( "#vena_no" ).change(function() {
+        var $input = $( this );
+        if( $input.prop("checked") )
+        {
+            $(".detalle_vena").hide();
+            $("input[class*='detalle_vena']").val("");
+        }});
+
+
+// Venoso central
+// -------------------------------------------
+    $( "#venoso_central_si" ).change(function() {
+        var $input = $( this );
+        if( $input.prop("checked") )
+        {
+            $(".detalle_venoso_central").show();
+        }});
+    $( "#venoso_central_no" ).change(function() {
+        var $input = $( this );
+        if( $input.prop("checked") )
+        {
+            $(".detalle_venoso_central").hide();
+            $("input[class*='detalle_venoso_central']").val("");
+        }});
+
+
+// Percutáneo
+// -------------------------------------------
+    $( "#percutaneo_si" ).change(function() {
+        var $input = $( this );
+        if( $input.prop("checked") )
+        {
+            $(".detalle_percutaneo").show();
+        }});
+    $( "#percutaneo_no" ).change(function() {
+        var $input = $( this );
+        if( $input.prop("checked") )
+        {
+            $(".detalle_percutaneo").hide();
+            $("input[class*='detalle_percutaneo']").val("");
+        }});
+
+// Cirugía
+// -------------------------------------------
+
+    $(document).on("click",".detalle_cirugia",function(){
+        var $input = $(this);
+        var parent = $(this).parents().get(1);
+        if($input.val()== "otro")
+        {            
+            $(parent).find(".detalle_cirugia_otro").show();
+        }
+        else
+        {
+            $(parent).find(".detalle_cirugia_otro").hide();
+            $(parent).find("input[name*='detalle_cirugia_otro']").val('');
+        }
+    });
+
+// Leche
+// -------------------------------------------
+    $( "#leche_si" ).change(function() {
+        var $input = $( this );
+        if( $input.prop("checked") )
+        {
+            $(".detalle_leche").show();
+        }
+    });
+    $( "#leche_no" ).change(function() {
+        var $input = $( this );
+        if( $input.prop("checked") )
+        {
+            $(".detalle_leche").hide();
+            $("input[class*='detalle_leche']").val('');
+        }
+    });
+
+// Destino
+// -------------------------------------------
+    $( "#destino" ).change(function() {
+        var $input = $( this );
+        if( $input.val() == "domicilio" )
+        {
+            $(".detalle_destino_domicilio").show();
+            $("#sec_fallece").hide();
+
+            $("#fallecimiento input").val("");
+            $("#fallecimiento textarea").val("");
+            $("#fallecimiento input").removeProp("checked");
+            $("#fallecimiento select").val("0");
+        }
+        else if ($input.val() == 'fallece')
+        {
+            $("#sec_fallece").show();
+            $(".detalle_destino_domicilio").hide();
+            $("input[name*='oxigen_domicilio']").removeProp("checked");
+        }
+        else
+        {
+            $(".detalle_destino_domicilio").hide();
+            $("#sec_fallece").hide();
+            $("input[name*='oxigen_domicilio']").removeProp("checked");
+
+            $("#fallecimiento input").val("");
+            $("#fallecimiento textarea").val("");
+            $("#fallecimiento input").removeProp("checked");
+            $("#fallecimiento select").val("0");
+        }
+    });
+
+// Resultado Autopsia
+// -------------------------------------------
+    $( "#autopsia_si" ).change(function() {
+        var $input = $( this );
+        if( $input.prop("checked") )
+        {
+            $(".resultado_autopsia").show();
+        }
+    });
+    $( "#autopsia_no" ).change(function() {
+        var $input = $( this );
+        if( $input.prop("checked") )
+        {
+            $(".resultado_autopsia").hide();
+            $("textarea[name*='resultado_autopsia']").val("");
+        }
+    });
+
+
+// Paro cardiorespiratorio no traumático
+// -------------------------------------------
+    $( "#paro_cardiorespiratorio" ).change(function() {
+        var $input = $( this );
+        if( $input.prop("checked") )
+        {
+            $(".causa_paro").show();
+        }
+        else
+        {
+            $(".causa_paro").hide();
+            $("input[class*='causa_paro']").removeProp("checked");
+        }
+    });
+
+// Otra Causa de muerte
+// -------------------------------------------
+    $( "#otra_causa_muerte" ).change(function() {
+        var $input = $( this );
+        if( $input.prop("checked") )
+        {
+            $(".detalle_otra_causa_muerte").show();
+        }
+        else
+        {
+            $(".detalle_otra_causa_muerte").hide();
+            $("input[name*='detalle_otra_causa_muerte']").val("");
+        }
+    });
+
+
+// Responsable
+// -------------------------------------------
+    $( "#seleccion_responsable" ).change(function() {
+        var $input = $( this );
+        if( $input.val() == "otro" )
+        {
+            $("#responsable").val("");
+            $("#responsable").removeProp("readonly");
+        }
+        else
+        {
+            $("#responsable").val($input.val());
+            $("#responsable").attr("readonly", true);
+        }
+    });
 
 
 
@@ -378,7 +781,107 @@ jQuery(document).ready(function(){
         $("#sepsis").fadeIn('slow');
     });
 
+    $("#sec_respiratorio").click(function(){
+        $( this ).css( {"color" : "#000" });
+        $("#sec_medicamentos, #sec_cateteres, #sec_cirugia, #sec_alimentacion, #sec_observaciones").css( {"color" : "#999" });
 
+        $("#medicamentos, #cateteres, #cirugia, #alimentacion, #observaciones").fadeOut('fast');
+        $("#respiratorio").fadeIn('slow');
+    });
+
+    $("#sec_medicamentos").click(function(){
+        $( this ).css( {"color" : "#000" });
+        $("#sec_respiratorio, #sec_cateteres, #sec_cirugia, #sec_alimentacion, #sec_observaciones").css( {"color" : "#999" });
+
+        $("#respiratorio, #cateteres, #cirugia, #alimentacion, #observaciones").fadeOut('fast');
+        $("#medicamentos").fadeIn('slow');
+    });
+
+    $("#sec_cateteres").click(function(){
+        $( this ).css( {"color" : "#000" });
+        $("#sec_medicamentos, #sec_respiratorio, #sec_cirugia, #sec_alimentacion, #sec_observaciones").css( {"color" : "#999" });
+
+        $("#medicamentos, #respiratorio, #cirugia, #alimentacion, #observaciones").fadeOut('fast');
+        $("#cateteres").fadeIn('slow');
+    });
+
+    $("#sec_cirugia").click(function(){
+        $( this ).css( {"color" : "#000" });
+        $("#sec_medicamentos, #sec_respiratorio, #sec_cateteres, #sec_alimentacion, #sec_observaciones").css( {"color" : "#999" });
+
+        $("#medicamentos, #respiratorio, #respiratorio, #alimentacion, #observaciones, #cateteres").fadeOut('fast');
+        $("#cirugia").fadeIn('slow');
+    });
+
+    $("#sec_alimentacion").click(function(){
+        $( this ).css( {"color" : "#000" });
+        $("#sec_medicamentos, #sec_respiratorio, #sec_cateteres, #sec_cirugia, #sec_observaciones").css( {"color" : "#999" });
+
+        $("#medicamentos, #respiratorio, #respiratorio, #cirugia, #observaciones, #cateteres").fadeOut('fast');
+        $("#alimentacion").fadeIn('slow');
+    });
+
+    $("#sec_observaciones").click(function(){
+        $( this ).css( {"color" : "#000" });
+        $("#sec_medicamentos, #sec_respiratorio, #sec_cateteres, #sec_cirugia, #sec_alimentacion").css( {"color" : "#999" });
+
+        $("#medicamentos, #respiratorio, #respiratorio, #cirugia, #alimentacion, #cateteres").fadeOut('fast');
+        $("#observaciones").fadeIn('slow');
+    });
+
+    $("#sec_fallece").click(function(){
+        $( this ).css( {"color" : "#000" });
+        $("#sec_informacion_alta").css( {"color" : "#999" });
+
+        $("#informacion_alta").fadeOut('fast');
+        $("#fallecimiento").fadeIn('slow');
+    });
+
+    $("#sec_informacion_alta").click(function(){
+        $( this ).css( {"color" : "#000" });
+        $("#sec_fallece").css( {"color" : "#999" });
+
+        $("#fallecimiento").fadeOut('fast');
+        $("#informacion_alta").fadeIn('slow');
+    });
+
+
+
+// Métodos Varios
+// ===========================================
+
+    $("#agregar_tabla_sepsis").on('click', function(){
+        var ultimaFila = $("#tabla_sepsis tbody tr:eq(-1)");
+
+        $( ultimaFila ).clone().removeClass('fila_oculta').appendTo("#tabla_sepsis tbody");
+
+        var numFila = $("#tabla_sepsis tbody tr").length;
+        var num = numFila-2;
+        $("#tabla_sepsis tbody tr:eq(-1) td:eq(0)").html("Sepsis " + num);
+        $("#tabla_sepsis tbody tr:eq(-1)").find(".sub-form").hide();
+    });
+
+    $(document).on("click",".eliminar",function(){
+        var parent = $(this).parents().get(1);
+        $(parent).remove();
+    });
+
+
+    $("#agregar_tabla_cirugia").on('click', function(){
+        var ultimaFila = $("#tabla_cirugia tbody tr:eq(-1)");
+
+        $( ultimaFila ).clone().removeClass('fila_oculta').appendTo("#tabla_cirugia tbody");
+
+        var numFila = $("#tabla_cirugia tbody tr").length;
+        var num = numFila-1;
+        $("#tabla_cirugia tbody tr:eq(-1) td:eq(0)").html("Cirugía " + num);
+        $("#tabla_cirugia tbody tr:eq(-1)").find(".sub-form").hide();
+    });
+
+    $(document).on("click",".eliminar",function(){
+        var parent = $(this).parents().get(1);
+        $(parent).remove();
+    });
 
 // cierre de archivo
 });
