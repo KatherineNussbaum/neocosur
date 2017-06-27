@@ -32,8 +32,9 @@
           <li role="presentation" class="active"><a href="#ingreso" aria-controls="profile" role="tab" data-toggle="tab">Datos del Ingreso</a></li>
           <li role="presentation"><a href="#prenatales" aria-controls="profile" role="tab" data-toggle="tab">Antecedentes Prenatales</a></li>
           <li role="presentation"><a href="#parto" aria-controls="messages" role="tab" data-toggle="tab">Antecedentes del Parto</a></li>
-          <li role="presentation"><a href="#neonatales" aria-controls="settings" role="tab" data-toggle="tab">Patologías Neonatales</a></li>
-          <li role="presentation"><a href="#antroprometria" aria-controls="settings" role="tab" data-toggle="tab">Antropometría</a></li>
+          <li role="presentation" class="dinamico_fallece"><a href="#neonatales" aria-controls="settings" role="tab" data-toggle="tab">Patologías Neonatales</a></li>
+          <li role="presentation" class="dinamico_fallece"><a href="#evolucion" aria-controls="settings" role="tab" data-toggle="tab">Evolución y Tratamiento</a></li>
+          <li role="presentation" class="dinamico_fallece"><a href="#antropometria" aria-controls="settings" role="tab" data-toggle="tab">Antropometría</a></li>
           <li role="presentation"><a href="#alta" aria-controls="settings" role="tab" data-toggle="tab">Información del Alta</a></li>
           <li role="presentation"><a href="#estado" aria-controls="settings" role="tab" data-toggle="tab">Estado de Ficha</a></li>
         </ul>
@@ -56,13 +57,20 @@
             <?php include 'ficha_ingreso/neonatales.php'; ?>
           </div>
 
-          <div role="tabpanel" class="tab-pane" id="antroprometria">
+          <div role="tabpanel" class="tab-pane" id="evolucion">
+            <?php include 'ficha_ingreso/evolucion.php'; ?>
+          </div>
+
+          <div role="tabpanel" class="tab-pane" id="antropometria">
+            <?php include 'ficha_ingreso/antropometria.php'; ?>
           </div>
 
           <div role="tabpanel" class="tab-pane" id="alta">
+            <?php include 'ficha_ingreso/alta.php'; ?>
           </div>
 
           <div role="tabpanel" class="tab-pane" id="estado">
+            <?php include 'ficha_ingreso/estado.php'; ?>
           </div>
 
         </div>
