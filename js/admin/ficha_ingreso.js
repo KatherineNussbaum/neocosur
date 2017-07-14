@@ -742,7 +742,7 @@ jQuery(document).ready(function(){
 // Mostrar/Cambiar de Sub-Secciones
 // ===========================================
     $("#sec_malformacion").click(function(){
-        $( this ).css( {"color" : "#000" });
+        $( this ).css( {"color" : "#000", "background": "#eee" , "padding":"10px", "border-radius":"5px" });
         $("#sec_principal").css( {"color" : "#999" });
 
         $("#principal").fadeOut('fast');
@@ -751,7 +751,7 @@ jQuery(document).ready(function(){
 
     $("#sec_principal").click(function(){
         $( this ).css( {"color" : "#000" });
-        $("#sec_malformacion").css( {"color" : "#999" });
+        $("#sec_malformacion").css( {"color" : "#999", "background": "none" });
 
         $("#malformacion_cognitiva").fadeOut('fast');
         $("#principal").fadeIn('slow');
@@ -759,87 +759,87 @@ jQuery(document).ready(function(){
     
     $("#sec_principal_neonatales").click(function(){
         $( this ).css( {"color" : "#000" });
-        $("#sec_oftalmologica, #sec_sepsis").css( {"color" : "#999" });
+        $("#sec_oftalmologica, #sec_sepsis").css( {"color" : "#999", "background": "none" });
 
         $("#oftalmologica, #sepsis").fadeOut('fast');
         $("#principal_neonatales").fadeIn('slow');
     });
 
     $("#sec_oftalmologica").click(function(){
-        $( this ).css( {"color" : "#000" });
-        $("#sec_sepsis, #sec_principal_neonatales").css( {"color" : "#999" });
+        $( this ).css( {"color" : "#000", "background": "#eee" , "padding":"10px", "border-radius":"5px" });
+        $("#sec_sepsis, #sec_principal_neonatales").css( {"color" : "#999", "background": "none" });
 
         $("#principal_neonatales, #sepsis").fadeOut('fast');
         $("#oftalmologica").fadeIn('slow');
     });
 
     $("#sec_sepsis").click(function(){
-        $( this ).css( {"color" : "#000" });
-        $("#sec_oftalmologica, #sec_principal_neonatales").css( {"color" : "#999" });
+        $( this ).css( {"color" : "#000", "background": "#eee" , "padding":"10px", "border-radius":"5px" });
+        $("#sec_oftalmologica, #sec_principal_neonatales").css( {"color" : "#999", "background": "none" });
 
         $("#principal_neonatales, #oftalmologica").fadeOut('fast');
         $("#sepsis").fadeIn('slow');
     });
 
     $("#sec_respiratorio").click(function(){
-        $( this ).css( {"color" : "#000" });
-        $("#sec_medicamentos, #sec_cateteres, #sec_cirugia, #sec_alimentacion, #sec_observaciones").css( {"color" : "#999" });
+        $( this ).css( {"color" : "#000"});
+        $("#sec_medicamentos, #sec_cateteres, #sec_cirugia, #sec_alimentacion, #sec_observaciones").css( {"color" : "#999", "background": "none" });
 
         $("#medicamentos, #cateteres, #cirugia, #alimentacion, #observaciones").fadeOut('fast');
         $("#respiratorio").fadeIn('slow');
     });
 
     $("#sec_medicamentos").click(function(){
-        $( this ).css( {"color" : "#000" });
-        $("#sec_respiratorio, #sec_cateteres, #sec_cirugia, #sec_alimentacion, #sec_observaciones").css( {"color" : "#999" });
+        $( this ).css( {"color" : "#000", "background": "#eee" , "padding":"10px", "border-radius":"5px" });
+        $("#sec_respiratorio, #sec_cateteres, #sec_cirugia, #sec_alimentacion, #sec_observaciones").css( {"color" : "#999", "background": "none" });
 
         $("#respiratorio, #cateteres, #cirugia, #alimentacion, #observaciones").fadeOut('fast');
         $("#medicamentos").fadeIn('slow');
     });
 
     $("#sec_cateteres").click(function(){
-        $( this ).css( {"color" : "#000" });
-        $("#sec_medicamentos, #sec_respiratorio, #sec_cirugia, #sec_alimentacion, #sec_observaciones").css( {"color" : "#999" });
+        $( this ).css( {"color" : "#000", "background": "#eee" , "padding":"10px", "border-radius":"5px" });
+        $("#sec_medicamentos, #sec_respiratorio, #sec_cirugia, #sec_alimentacion, #sec_observaciones").css( {"color" : "#999", "background": "none" });
 
         $("#medicamentos, #respiratorio, #cirugia, #alimentacion, #observaciones").fadeOut('fast');
         $("#cateteres").fadeIn('slow');
     });
 
     $("#sec_cirugia").click(function(){
-        $( this ).css( {"color" : "#000" });
-        $("#sec_medicamentos, #sec_respiratorio, #sec_cateteres, #sec_alimentacion, #sec_observaciones").css( {"color" : "#999" });
+        $( this ).css( {"color" : "#000", "background": "#eee" , "padding":"10px", "border-radius":"5px" });
+        $("#sec_medicamentos, #sec_respiratorio, #sec_cateteres, #sec_alimentacion, #sec_observaciones").css( {"color" : "#999", "background": "none" });
 
         $("#medicamentos, #respiratorio, #respiratorio, #alimentacion, #observaciones, #cateteres").fadeOut('fast');
         $("#cirugia").fadeIn('slow');
     });
 
     $("#sec_alimentacion").click(function(){
-        $( this ).css( {"color" : "#000" });
-        $("#sec_medicamentos, #sec_respiratorio, #sec_cateteres, #sec_cirugia, #sec_observaciones").css( {"color" : "#999" });
+        $( this ).css( {"color" : "#000", "background": "#eee" , "padding":"10px", "border-radius":"5px" });
+        $("#sec_medicamentos, #sec_respiratorio, #sec_cateteres, #sec_cirugia, #sec_observaciones").css( {"color" : "#999", "background": "none" });
 
         $("#medicamentos, #respiratorio, #respiratorio, #cirugia, #observaciones, #cateteres").fadeOut('fast');
         $("#alimentacion").fadeIn('slow');
     });
 
     $("#sec_observaciones").click(function(){
-        $( this ).css( {"color" : "#000" });
-        $("#sec_medicamentos, #sec_respiratorio, #sec_cateteres, #sec_cirugia, #sec_alimentacion").css( {"color" : "#999" });
+        $( this ).css( {"color" : "#000", "background": "#eee" , "padding":"10px", "border-radius":"5px" });
+        $("#sec_medicamentos, #sec_respiratorio, #sec_cateteres, #sec_cirugia, #sec_alimentacion").css( {"color" : "#999", "background": "none" });
 
         $("#medicamentos, #respiratorio, #respiratorio, #cirugia, #alimentacion, #cateteres").fadeOut('fast');
         $("#observaciones").fadeIn('slow');
     });
 
     $("#sec_fallece").click(function(){
-        $( this ).css( {"color" : "#000" });
-        $("#sec_informacion_alta").css( {"color" : "#999" });
+        $( this ).css( {"color" : "#000", "background": "#eee" , "padding":"10px", "border-radius":"5px" });
+        $("#sec_informacion_alta").css( {"color" : "#999", "background": "none" });
 
         $("#informacion_alta").fadeOut('fast');
         $("#fallecimiento").fadeIn('slow');
     });
 
     $("#sec_informacion_alta").click(function(){
-        $( this ).css( {"color" : "#000" });
-        $("#sec_fallece").css( {"color" : "#999" });
+        $( this ).css( {"color" : "#000", "background": "#eee" , "padding":"10px", "border-radius":"5px" });
+        $("#sec_fallece").css( {"color" : "#999", "background": "none" });
 
         $("#fallecimiento").fadeOut('fast');
         $("#informacion_alta").fadeIn('slow');

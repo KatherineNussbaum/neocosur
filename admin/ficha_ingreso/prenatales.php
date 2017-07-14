@@ -3,26 +3,32 @@
     <form>
       <h4>
         <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-        <a id="sec_principal">Antecedentes Prentatales</a> <small> <a id="sec_malformacion"> <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span> Malformación cognitiva mayor</a></small>
+        <a id="sec_principal">Antecedentes Prentatales</a> <small> <a id="sec_malformacion"> <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span> Malformación Congénita mayor</a></small>
       </h4>
-      <div id="principal">
-        <div class="col-lg-6">
 
-          <div class="form-group">
+
+      <div id="principal">
+        <div class="col-lg-12">
+
+          <div class="form-group col-lg-6">
             <label for="edad_maternal" class="col-lg-5 control-label">Edad maternal</label>
             <div class="col-lg-6">
               <input type="number" min="0" step="1" name="edad_maternal" class="form-control input-sm">
             </div>
           </div> 
 
-          <div class="form-group ">
+          <div class="clearfix visible-lg-block"></div>
+
+          <div class="form-group col-lg-6">
             <label for="escolaridad" class="col-lg-5 control-label">Años de escolaridad</label>
             <div class="col-lg-6">
                 <input type="number" min="0" step="1" name="escolaridad" class="form-control input-sm">
               </div>
           </div>
 
-          <div class="form-group ">
+          <div class="clearfix visible-lg-block"></div>
+
+          <div class="form-group col-lg-6">
             <label for="escolaridad" class="col-lg-5 control-label">Nivel educacional</label>
             <div class="col-lg-6">
               <select name="nivel_educacional" class="form-control input-sm">
@@ -32,11 +38,9 @@
             </div>
           </div>
 
-        </div>
+          <div class="clearfix visible-lg-block"></div>
 
-        <div class="col-lg-6">
-
-          <div class="form-group ">
+          <div class="form-group col-lg-6">
             <label for="Paridad" class="col-lg-5 control-label">Paridad</label>
             <div class="col-lg-6">
               <select name="paridad" class="form-control input-sm">
@@ -46,7 +50,9 @@
             </div>
           </div>
 
-          <div class="form-group">
+          <div class="clearfix visible-lg-block"></div>
+
+          <div class="form-group col-lg-6">
             <label for="tabaquismo" class="col-lg-5 control-label">Tabaquísmo</label>
             <label for="tabaquismo" class="control-label radio-inline col-lg-2">
               <input type="radio" name="tabaquismo" value="si" id="tabaquismo_si"> Sí
@@ -58,8 +64,10 @@
               <input type="radio" name="tabaquismo" value="s/i" id="tabaquismo_s/i"> S/I
             </label>
           </div>
+
           <div class="clearfix visible-lg-block"></div>
-          <div class="form-group">
+          
+          <div class="form-group col-lg-6">
             <label for="edad_maternal" class="col-lg-5 control-label">Control de embarazo</label>
             <label for="control_embarazo" class="control-label radio-inline col-lg-2">
               <input type="radio" name="control_embarazo" value="si"> Sí
@@ -68,12 +76,10 @@
               <input type="radio" name="control_embarazo"  value="no"> No
             </label>
           </div>
-        </div>
 
-        <div class="clearfix visible-lg-block"></div>
+          <div class="clearfix visible-lg-block"></div>
 
-        <div class="col-lg-6">
-          <div class="form-group">
+          <div class="form-group col-lg-6">
             <label for="diabetes" class="col-lg-5 control-label">Diabetes</label>
             <label for="diabetes" class="control-label radio-inline col-lg-2">
               <input type="radio" name="diabetes" value="si" id="diabetes_si"> Sí
@@ -85,10 +91,8 @@
               <input type="radio" name="diabetes" value="no" id="diabetes_s_i"> S/I
             </label>
           </div>
-        </div>
 
-        <div class="col-lg-6">
-          <div class="form-group sub-form diabetes">
+          <div class="form-group col-lg-6 sub-form diabetes">
             <label for="diabetes_gestacional" class="col-lg-5 control-label">Diabetes gestacional</label>
             <label for="diabetes_gestacional" class="control-label radio-inline col-lg-2">
               <input type="radio" name="diabetes_gestacional" value="si"> Sí
@@ -99,6 +103,7 @@
           </div>
 
           <div class="clearfix visible-lg-block"></div>
+
           <div class="form-group sub-form">
             <label for="medicamentos" class="col-lg-6 control-label">Diabetes Medicamentos</label>
             <label for="medicamentos" class="control-label radio-inline col-lg-2">
@@ -108,11 +113,10 @@
               <input type="radio" name="medicamentos" value="no"> No
             </label>
           </div>
-        </div>
-        <div class="clearfix visible-lg-block"></div>
 
-        <div class="col-lg-6">
-          <div class="form-group">
+          <div class="clearfix visible-lg-block"></div>
+
+          <div class="form-group col-lg-6">
             <label for="ht_art" class="col-lg-5 control-label">HT Art</label>
             <label for="ht_art" class="control-label radio-inline col-lg-2">
               <input type="radio" name="ht_art" value="si" id="ht_art_si"> Sí
@@ -121,10 +125,8 @@
               <input type="radio" name="ht_art"  value="no" id="ht_art_no"> No
             </label>
           </div>
-        </div>
         
-        <div class="col-lg-6">
-          <div class="form-group sub-form ht_art">
+          <div class="form-group col-lg-6 sub-form ht_art">
             <label for="ht_embarazo" class="col-lg-5 control-label">Hipertensión en el embarazo</label>
             <label for="ht_embarazo" class="control-label radio-inline col-lg-2">
               <input type="radio" name="ht_embarazo" value="si"> Sí
@@ -133,8 +135,10 @@
               <input type="radio" name="ht_embarazo"  value="no"> No
             </label>
           </div>
+
           <div class="clearfix visible-lg-block"></div>
-          <div class="form-group sub-form ht_art">
+
+          <div class="form-group col-lg-6 sub-form ht_art">
             <label for="medicamentos" class="col-lg-5 control-label">Medicamentos</label>
             <label for="medicamentos" class="control-label radio-inline col-lg-2">
               <input type="radio" name="medicamentos" value="si"> Sí
@@ -143,12 +147,10 @@
               <input type="radio" name="medicamentos"  value="no"> No
             </label>
           </div> 
-        </div>
 
-        <div class="clearfix visible-lg-block"></div>
+          <div class="clearfix visible-lg-block"></div>
 
-        <div class="col-lg-6">
-          <div class="form-group">
+          <div class="form-group col-lg-6">
             <label for="multiple" class="col-lg-5 control-label">Múltiple</label>
             <label for="multiple" class="control-label radio-inline col-lg-2">
               <input type="radio" name="multiple" value="si" id="multiple_si"> Sí
@@ -157,10 +159,8 @@
               <input type="radio" name="multiple" value="no" id="multiple_no"> No
             </label>
           </div>
-        </div>
 
-        <div class="col-lg-6">
-          <div class="form-group sub-form multiple">
+          <div class="form-group col-lg-6 sub-form multiple">
             <label for="Paridad" class="col-lg-5 control-label">Lugar</label>
             <div class="col-lg-4">
               <select name="paridad" class="form-control input-sm">
@@ -170,12 +170,10 @@
               </select> 
             </div>
           </div>
-        </div>
 
-        <div class="clearfix visible-lg-block"></div>
+          <div class="clearfix visible-lg-block"></div>
 
-        <div class="col-lg-6">
-          <div class="form-group">
+          <div class="form-group col-lg-6">
             <label for="rciu" class="col-lg-5 control-label">RCIU</label>
             <label for="rciu" class="control-label radio-inline col-lg-2">
               <input type="radio" name="rciu" value="si"> Sí
@@ -184,8 +182,10 @@
               <input type="radio" name="rciu"  value="no"> No
             </label>
           </div>
+
           <div class="clearfix visible-lg-block"></div>
-          <div class="form-group">
+
+          <div class="form-group col-lg-6">
             <label for="rpm" class="col-lg-5 control-label">RPM</label>            
             <div class="col-lg-3 input-group linea">
               <input type="number" min="1" max="99" step="1" name="rpm_dias" class="form-control input-sm" aria-describedby="basic-addon2">
@@ -197,7 +197,9 @@
             </div>
           </div>
 
-          <div class="form-group">
+          <div class="clearfix visible-lg-block"></div>
+
+          <div class="form-group col-lg-6">
             <label for="antibiotico" class="col-lg-5 control-label">Antibiótico prentala</label>
             <label for="antibiotico" class="control-label radio-inline col-lg-2">
               <input type="radio" name="antibiotico" value="si"> Sí
@@ -206,13 +208,10 @@
               <input type="radio" name="antibiotico"  value="no"> No
             </label>
           </div>
+
           <div class="clearfix visible-lg-block"></div>
-        </div>
 
-        <div class="clearfix visible-lg-block"></div>
-        <div class="col-lg-6">
-
-          <div class="form-group">
+          <div class="form-group col-lg-6">
             <label for="cort_prenatal" class="col-lg-5 control-label">Cort. prenatal</label>
             <label for="cort_prenatal" class="control-label radio-inline col-lg-2">
               <input type="radio" name="cort_prenatal" value="si" id="cort_prenatal_si"> Sí
@@ -225,10 +224,7 @@
             </label>
           </div>
 
-        </div>
-
-        <div class="col-lg-6">
-          <div class="form-group sub-form cort_prenatal">
+          <div class="form-group col-lg-6 sub-form cort_prenatal">
             <label for="completo" class="control-label radio-inline col-lg-3">
               <input type="radio" name="completo" value="si" id="completo_si"> Incompleto
             </label>
@@ -236,10 +232,8 @@
               <input type="radio" name="completo" value="no" id="completo_no"> Completo
             </label>
           </div>
-        </div>
 
-        <div class="col-lg-6 col-lg-offset-6">
-          <div class="form-group sub-form completo">
+          <div class="form-group col-lg-6 sub-form completo">
             <label for="curso" class="control-label radio-inline col-lg-3">
               <input type="radio" name="curso" value="si"> 1 curso
             </label>
@@ -247,10 +241,10 @@
               <input type="radio" name="curso" value="no"> más de 1 curso
             </label>
           </div>
-        </div>
 
-        <div class="col-lg-6">
-          <div class="form-group">
+          <div class="clearfix visible-lg-block"></div>
+
+          <div class="form-group col-lg-6">
             <label for="corioamnionitis" class="col-lg-5 control-label">Corioamnionitis</label>
             <label for="corioamnionitis" class="control-label radio-inline col-lg-2">
               <input type="radio" name="corioamnionitis" value="si"> Sí
@@ -262,17 +256,19 @@
 
           <div class="clearfix visible-lg-block"></div>
 
-          <div class="form-group">
+          <div class="form-group col-lg-6">
             <label for="sulfato" class="col-lg-5 control-label">Sulfato de Mg</label>
             <label for="sulfato" class="control-label radio-inline col-lg-2">
               <input type="radio" name="sulfato" value="si"> Sí
             </label>
             <label for="sulfato" class="control-label radio-inline col-lg-2" >
-              <input type="radio" name="sulfato"  value="no"> No
+              <input type="radio" name="sulfato" value="no"> No
             </label>
           </div>
+
           <div class="clearfix visible-lg-block"></div>
-          <div class="form-group">
+
+          <div class="form-group col-lg-6">
             <label for="doppler" class="col-lg-5 control-label">Alteración del doppler fetal</label>
             <label for="doppler" class="control-label radio-inline col-lg-2">
               <input type="radio" name="doppler" value="si"> Sí
@@ -281,12 +277,8 @@
               <input type="radio" name="doppler"  value="no" > No
             </label>
           </div>
-        </div>
 
-        <div class="clearfix visible-lg-block"></div>
-
-        <div class="col-lg-6">
-          <div class="form-group">
+          <div class="form-group col-lg-6 sub-form ">
             <div class="checkbox">
               <label for="" class="control-label txt_izq col-lg-12 margin-left">
                 <input type="checkbox" value="">
@@ -305,14 +297,16 @@
             </div>            
           </div>
 
-          <div class="form-group">
-            <label for="obs_doppler" class="col-lg-12 control-label">
+          <div class="form-group col-lg-12">
+            <label for="obs_doppler" class="control-label">
               Observaciones prenatales
             </label>
             <div>
-              <textarea class="form-control" name="obs_doppler" rows="3" class="col-lg-12"></textarea>
+              <textarea class="form-control" name="obs_doppler" rows="5" class="col-lg-12"></textarea>
             </div>
           </div>
+
+
         </div>
 
         <div class="clearfix visible-lg-block"></div>
@@ -320,7 +314,7 @@
       <div id="malformacion_cognitiva">
           <div class="col-lg-6">
             <div class="form-group">
-              <label for="malformacion" class="col-lg-5 control-label">Malformación cognitiva mayor</label>
+              <label for="malformacion" class="col-lg-5 control-label">Malformación congénita mayor</label>
               <label for="malformacion" class="control-label radio-inline col-lg-2">
                 <input type="radio" name="malformacion" value="si" id="malformacion_si"> Sí
               </label>
