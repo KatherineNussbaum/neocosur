@@ -26,29 +26,7 @@
         <div class="clearfix visible-lg-block"></div>
 
         <div class="form-group col-lg-6">
-          <label for="hic" class="col-lg-5 control-label">HIC (Grado)</label>
-          <label for="hic" class="control-label radio-inline col-lg-2">
-            <input type="radio" name="hic" value="si" id="hic_si"> Sí
-          </label>
-          <label for="hic" class="control-label radio-inline col-lg-2" >
-            <input type="radio" name="hic" value="no" id="hic_no"> No
-          </label>
-        </div>
-
-        <div class="form-group col-lg-6 sub-form hic_grado">
-          <label for="grado" class="col-lg-5 control-label">Grado</label>
-          <div class="col-lg-7">
-            <select name="grado" class="form-control input-sm">
-              <option value="0">Seleccione</option>
-              <option value="1">I</option>
-            </select> 
-          </div>
-        </div>
-
-        <div class="clearfix visible-lg-block"></div>
-
-        <div class="form-group col-lg-6">
-          <label for="radio_torax" class="col-lg-5 control-label">Radiografía Oxígeno</label>
+          <label for="radio_torax" class="col-lg-5 control-label">Radiografía tórax alterada</label>
           <label for="radio_torax" class="control-label radio-inline col-lg-2">
             <input type="radio" name="radio_torax" value="si"> Sí
           </label>
@@ -78,78 +56,6 @@
           </label>
           <label for="oxigeno_36" class="control-label radio-inline col-lg-2" >
             <input type="radio" name="oxigeno_36" value="no"> No
-          </label>
-        </div>
-
-        <div class="clearfix visible-lg-block"></div>
-
-        <div class="form-group col-lg-6">
-          <label for="leucomalacia" class="col-lg-5 control-label">Leucomalacia</label>
-          <label for="leucomalacia" class="control-label radio-inline col-lg-2">
-            <input type="radio" name="leucomalacia" value="si"> Sí
-          </label>
-          <label for="leucomalacia" class="control-label radio-inline col-lg-2" >
-            <input type="radio" name="leucomalacia" value="no"> No
-          </label>
-        </div>
-
-        <div class="clearfix visible-lg-block"></div>
-
-        <div class="form-group col-lg-6">
-          <label for="hidrocefalia" class="col-lg-5 control-label">Hidrocefalia</label>
-          <label for="hidrocefalia" class="control-label radio-inline col-lg-2">
-            <input type="radio" name="hidrocefalia" value="si"> Sí
-          </label>
-          <label for="hidrocefalia" class="control-label radio-inline col-lg-2" >
-            <input type="radio" name="hidrocefalia" value="no"> No
-          </label>
-        </div>
-
-        <div class="clearfix visible-lg-block"></div>
-
-        <div class="form-group col-lg-6">
-          <label for="convulsiones" class="col-lg-5 control-label">Convulsiones</label>
-          <label for="convulsiones" class="control-label radio-inline col-lg-2">
-            <input type="radio" name="convulsiones" value="si"> Sí
-          </label>
-          <label for="convulsiones" class="control-label radio-inline col-lg-2" >
-            <input type="radio" name="convulsiones" value="no"> No
-          </label>
-        </div>
-
-        <div class="clearfix visible-lg-block"></div>
-
-        <div class="form-group col-lg-6">
-          <label for="eco_cerebral_1" class="col-lg-5 control-label">Eco cerebral < 7 días</label>
-          <label for="eco_cerebral_1" class="control-label radio-inline col-lg-2">
-            <input type="radio" name="eco_cerebral_1" value="si"> Sí
-          </label>
-          <label for="eco_cerebral_1" class="control-label radio-inline col-lg-2" >
-            <input type="radio" name="eco_cerebral_1" value="no"> No
-          </label>
-        </div>
-
-        <div class="clearfix visible-lg-block"></div>
-
-        <div class="form-group col-lg-6">
-          <label for="eco_cerebral_2" class="col-lg-5 control-label">Eco cerebral 7-21 días</label>
-          <label for="eco_cerebral_2" class="control-label radio-inline col-lg-2">
-            <input type="radio" name="eco_cerebral_2" value="si"> Sí
-          </label>
-          <label for="eco_cerebral_2" class="control-label radio-inline col-lg-2" >
-            <input type="radio" name="eco_cerebral_2" value="no"> No
-          </label>
-        </div>
-
-        <div class="clearfix visible-lg-block"></div>
-
-        <div class="form-group col-lg-6">
-          <label for="eco_cerebral_3" class="col-lg-5 control-label">Eco cerebral > 21 días</label>
-          <label for="eco_cerebral_3" class="control-label radio-inline col-lg-2">
-            <input type="radio" name="eco_cerebral_3" value="si"> Sí
-          </label>
-          <label for="eco_cerebral_3" class="control-label radio-inline col-lg-2" >
-            <input type="radio" name="eco_cerebral_3" value="no"> No
           </label>
         </div>
 
@@ -202,35 +108,96 @@
         <div class="clearfix visible-lg-block"></div>
 
         <div class="form-group col-lg-6">
-          <label for="ecn" class="col-lg-5 control-label">ECN</label>
-          <label for="ecn" class="control-label radio-inline col-lg-2">
-            <input type="radio" name="ecn" value="si"> Sí
+          <label for="eco_cerebral_1" class="col-lg-5 control-label">Eco cerebral < 7 días</label>
+          <label for="eco_cerebral_1" class="control-label radio-inline col-lg-2">
+            <input type="radio" name="eco_cerebral_1" value="si"> Sí
           </label>
-          <label for="ecn" class="control-label radio-inline col-lg-2" >
-            <input type="radio" name="ecn" value="no"> No
-          </label>
-        </div>
-
-        <div class="clearfix visible-lg-block"></div>
-
-        <div class="form-group col-lg-6">
-          <label for="intestin" class="col-lg-5 control-label">Perf. intestin</label>
-          <label for="intestin" class="control-label radio-inline col-lg-2">
-            <input type="radio" name="intestin" value="si"> Sí
-          </label>
-          <label for="intestin" class="control-label radio-inline col-lg-2" >
-            <input type="radio" name="intestin" value="no"> No
+          <label for="eco_cerebral_1" class="control-label radio-inline col-lg-2" >
+            <input type="radio" name="eco_cerebral_1" value="no"> No
           </label>
         </div>
 
         <div class="clearfix visible-lg-block"></div>
 
         <div class="form-group col-lg-6">
-          <label for="enterocolitis" class="col-lg-3 txt_izq control-label">Dg. Enterocolitis</label>
-          <div class="col-lg-9">
-            <input type="number" min="1" max="100" step="1" name="enterocolitis" class="form-control input-sm">
+          <label for="eco_cerebral_2" class="col-lg-5 control-label">Eco cerebral 7-21 días</label>
+          <label for="eco_cerebral_2" class="control-label radio-inline col-lg-2">
+            <input type="radio" name="eco_cerebral_2" value="si"> Sí
+          </label>
+          <label for="eco_cerebral_2" class="control-label radio-inline col-lg-2" >
+            <input type="radio" name="eco_cerebral_2" value="no"> No
+          </label>
+        </div>
+
+        <div class="clearfix visible-lg-block"></div>
+
+        <div class="form-group col-lg-6">
+          <label for="eco_cerebral_3" class="col-lg-5 control-label">Eco cerebral > 21 días</label>
+          <label for="eco_cerebral_3" class="control-label radio-inline col-lg-2">
+            <input type="radio" name="eco_cerebral_3" value="si"> Sí
+          </label>
+          <label for="eco_cerebral_3" class="control-label radio-inline col-lg-2" >
+            <input type="radio" name="eco_cerebral_3" value="no"> No
+          </label>
+        </div>
+
+        <div class="clearfix visible-lg-block"></div>
+
+        <div class="form-group col-lg-6">
+          <label for="hic" class="col-lg-5 control-label">HIC (Grado)</label>
+          <label for="hic" class="control-label radio-inline col-lg-2">
+            <input type="radio" name="hic" value="si" id="hic_si"> Sí
+          </label>
+          <label for="hic" class="control-label radio-inline col-lg-2" >
+            <input type="radio" name="hic" value="no" id="hic_no"> No
+          </label>
+        </div>
+
+        <div class="form-group col-lg-6 sub-form hic_grado">
+          <label for="grado" class="col-lg-5 control-label">Grado</label>
+          <div class="col-lg-7">
+            <select name="grado" class="form-control input-sm">
+              <option value="0">Seleccione</option>
+              <option value="1">I</option>
+            </select> 
           </div>
-        </div>  
+        </div>
+
+        <div class="clearfix visible-lg-block"></div>
+
+        <div class="form-group col-lg-6">
+          <label for="leucomalacia" class="col-lg-5 control-label">Leucomalacia</label>
+          <label for="leucomalacia" class="control-label radio-inline col-lg-2">
+            <input type="radio" name="leucomalacia" value="si"> Sí
+          </label>
+          <label for="leucomalacia" class="control-label radio-inline col-lg-2" >
+            <input type="radio" name="leucomalacia" value="no"> No
+          </label>
+        </div>
+
+        <div class="clearfix visible-lg-block"></div>
+
+        <div class="form-group col-lg-6">
+          <label for="hidrocefalia" class="col-lg-5 control-label">Hidrocefalia</label>
+          <label for="hidrocefalia" class="control-label radio-inline col-lg-2">
+            <input type="radio" name="hidrocefalia" value="si"> Sí
+          </label>
+          <label for="hidrocefalia" class="control-label radio-inline col-lg-2" >
+            <input type="radio" name="hidrocefalia" value="no"> No
+          </label>
+        </div>
+
+        <div class="clearfix visible-lg-block"></div>
+
+        <div class="form-group col-lg-6">
+          <label for="convulsiones" class="col-lg-5 control-label">Convulsiones</label>
+          <label for="convulsiones" class="control-label radio-inline col-lg-2">
+            <input type="radio" name="convulsiones" value="si"> Sí
+          </label>
+          <label for="convulsiones" class="control-label radio-inline col-lg-2" >
+            <input type="radio" name="convulsiones" value="no"> No
+          </label>
+        </div>
 
         <div class="clearfix visible-lg-block"></div>
 
@@ -259,6 +226,41 @@
               Ecográfico
             </label>
           </div>            
+        </div>
+
+        <div class="clearfix visible-lg-block"></div>
+
+        <div class="form-group col-lg-6">
+          <label for="enterocolitis" class="col-lg-5 txt_izq control-label">Dg. Enterocolitis</label>
+          <div class="col-lg-6 input-group linea">
+            <input type="number" min="1" max="100" step="1" name="enterocolitis" class="form-control input-sm">
+            <span class="input-group-addon" id="basic-addon2">días</span>
+          </div>
+        </div>  
+
+        <div class="clearfix visible-lg-block"></div>
+
+
+        <div class="form-group col-lg-6">
+          <label for="ecn" class="col-lg-5 control-label">ECN</label>
+          <label for="ecn" class="control-label radio-inline col-lg-2">
+            <input type="radio" name="ecn" value="si"> Sí
+          </label>
+          <label for="ecn" class="control-label radio-inline col-lg-2" >
+            <input type="radio" name="ecn" value="no"> No
+          </label>
+        </div>
+
+        <div class="clearfix visible-lg-block"></div>
+
+        <div class="form-group col-lg-6">
+          <label for="intestin" class="col-lg-5 control-label">Perf. intestin</label>
+          <label for="intestin" class="control-label radio-inline col-lg-2">
+            <input type="radio" name="intestin" value="si"> Sí
+          </label>
+          <label for="intestin" class="control-label radio-inline col-lg-2" >
+            <input type="radio" name="intestin" value="no"> No
+          </label>
         </div>
 
       </div>

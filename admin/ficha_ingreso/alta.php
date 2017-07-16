@@ -20,7 +20,7 @@
 			    	<div class="form-group col-lg-6">
 						<label for="fecha_alta" class="col-lg-6 control-label">Fecha alta o fallece</label>
 						<div class="col-lg-6">
-							<input type="date" name="fecha_alta" class="form-control input-sm">
+							<input type="date" name="fecha_alta" id="fecha_alta" class="form-control input-sm">
 						</div>
 					</div>
 
