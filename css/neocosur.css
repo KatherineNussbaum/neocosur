@@ -141,5 +141,11 @@ button[type="submit"] { margin-top: 10px; margin-bottom: 10px; }
 .fila_oculta{
     display: none;;
 }
-*/
 
+.tooltip-inner{
+    background-color: rgba(68, 157, 68, 1);
+}
+
+.tooltip-arrow {
+    border-top-color: rgba(68, 157, 68, 1) !important;
+}

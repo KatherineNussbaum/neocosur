@@ -321,7 +321,7 @@ jQuery(document).ready(function(){
         {
             $(".hic_grado").show();
         }});
-    $( "#hic_no" ).change(function() {
+    $( "#hic_no, #hic_s_i" ).change(function() {
         var $input = $( this );
         if( $input.prop("checked") )
         {

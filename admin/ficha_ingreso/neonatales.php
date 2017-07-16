@@ -2,7 +2,7 @@
   <div class="panel-body">
   <form>
     <h4>
-    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span> <a id="sec_principal_neonatales">Patologías Neonatales </a> 
+    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span> <a id="sec_principal_neonatales">Patologías Neonatales <span class="glyphicon glyphicon-question-sign" data-toggle="tooltip" aria-hidden="true" title="Considerar primeras 24 horas como día 0."></span></a> 
     <small> 
        <a id="sec_oftalmologica"><span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span> Evaluación oftalmológica</a>  
        <a id="sec_sepsis"><span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span> Sepsis</a>
@@ -14,7 +14,9 @@
       <div class="col-lg-12">    
 
         <div class="form-group col-lg-6">
-          <label for="sdr" class="col-lg-5 control-label">Clínica SDR</label>
+          <label for="sdr" class="col-lg-5 control-label">Clínica SDR 
+          <span class="glyphicon glyphicon-question-sign" data-toggle="tooltip" aria-hidden="true" title="Si: Presenta quejido, retracción, aleteo nasal, respiración paradojal, cianosis o requerimientos de 02 en las primeras 24 horas."></span>
+          </label>
           <label for="sdr" class="control-label radio-inline col-lg-2">
             <input type="radio" name="sdr" value="si"> Sí
           </label>
@@ -26,7 +28,9 @@
         <div class="clearfix visible-lg-block"></div>
 
         <div class="form-group col-lg-6">
-          <label for="radio_torax" class="col-lg-5 control-label">Radiografía tórax alterada</label>
+          <label for="radio_torax" class="col-lg-5 control-label">Radiografía tórax alterada 
+            <span class="glyphicon glyphicon-question-sign" data-toggle="tooltip" aria-hidden="true" title="Si: En las primeras 24 horas tiene opacidad difusa, patrón reticulonodular, infiltrado alveolar o volumen pulmonar disminuido."></span>
+          </label>
           <label for="radio_torax" class="control-label radio-inline col-lg-2">
             <input type="radio" name="radio_torax" value="si"> Sí
           </label>
@@ -38,31 +42,47 @@
         <div class="clearfix visible-lg-block"></div>
 
         <div class="form-group col-lg-6">
-          <label for="oxigeno_28" class="col-lg-5 control-label">Oxígeno 28 días</label>
+          <label for="oxigeno_28" class="col-lg-5 control-label">Oxígeno 28 días 
+            <span class="glyphicon glyphicon-question-sign" data-toggle="tooltip" aria-hidden="true" title="Si: Requerimiento continuo de O2 a los 28 días de edad."></span>
+          </label>
           <label for="oxigeno_28" class="control-label radio-inline col-lg-2">
             <input type="radio" name="oxigeno_28" value="si"> Sí
           </label>
           <label for="oxigeno_28" class="control-label radio-inline col-lg-2" >
             <input type="radio" name="oxigeno_28" value="no"> No
           </label>
+          <label for="oxigeno_28" class="control-label radio-inline col-lg-2" >
+            <input type="radio" name="oxigeno_28" value="s_i"> S/I
+          </label>
         </div>
 
         <div class="clearfix visible-lg-block"></div>
 
         <div class="form-group col-lg-6">
-          <label for="oxigeno_36" class="col-lg-5 control-label">Oxígeno 36 sem.</label>
+          <label for="oxigeno_36" class="col-lg-5 control-label">Oxígeno 36 sem. 
+            <span class="glyphicon glyphicon-question-sign" data-toggle="tooltip" data-html="true" aria-hidden="true" title="Se refiere a requerimientos de O2 a las 36 semanas de EC. <br>S/I: Si es trasladado."></span>
+          </label>
           <label for="oxigeno_36" class="control-label radio-inline col-lg-2">
             <input type="radio" name="oxigeno_36" value="si"> Sí
           </label>
           <label for="oxigeno_36" class="control-label radio-inline col-lg-2" >
             <input type="radio" name="oxigeno_36" value="no"> No
           </label>
+          <label for="oxigeno_36" class="control-label radio-inline col-lg-2" >
+            <input type="radio" name="oxigeno_36" value="s_i"> S/I
+          </label>
         </div>
 
         <div class="clearfix visible-lg-block"></div>
 
         <div class="form-group col-lg-6">
-          <label for="displasia" class="col-lg-5 control-label">Severidad Displasia BP</label>
+          <label for="displasia" class="col-lg-5 control-label">Severidad Displasia BP 
+          <span class="glyphicon glyphicon-question-sign" data-toggle="tooltip" data-html="true" aria-hidden="true" title="Se definida en manual operativo. <br>
+          Leve: Sin req O2 a 36 semanas.<br>
+          Moderada: Req O2 pero <30% a 36 semanas.<br>
+          Severa: Req O2 > 36 semanas o CPAP o V Mec. a las 36 semanas.<br>
+          Sin información (S/I): Si el RN fallece o es trasladado antes de las 36 semanas."></span>
+          </label>
           <div class="col-lg-7">
             <select name="displasia" class="form-control input-sm">
               <option value="0">Seleccione</option>
@@ -144,12 +164,19 @@
         <div class="clearfix visible-lg-block"></div>
 
         <div class="form-group col-lg-6">
-          <label for="hic" class="col-lg-5 control-label">HIC (Grado)</label>
+          <label for="hic" class="col-lg-5 control-label">HIC (Grado)
+            <span class="glyphicon glyphicon-question-sign" data-toggle="tooltip" data-html="true" aria-hidden="true" 
+            title="Diagnóstico por ultrasonografía o autopsia grados 1 a 4 según Papille.<br>
+            Sin información se utiliza cuando RN fallece precozmente y no se realiza ECO."></span>
+          </label>
           <label for="hic" class="control-label radio-inline col-lg-2">
             <input type="radio" name="hic" value="si" id="hic_si"> Sí
           </label>
           <label for="hic" class="control-label radio-inline col-lg-2" >
             <input type="radio" name="hic" value="no" id="hic_no"> No
+          </label>
+          <label for="hic" class="control-label radio-inline col-lg-2" >
+            <input type="radio" name="hic" value="no" id="hic_s_i"> S/I
           </label>
         </div>
 
@@ -242,7 +269,9 @@
 
 
         <div class="form-group col-lg-6">
-          <label for="ecn" class="col-lg-5 control-label">ECN</label>
+          <label for="ecn" class="col-lg-5 control-label">ECN 
+            <span class="glyphicon glyphicon-question-sign" data-toggle="tooltip" data-html="true" aria-hidden="true" title="Si: Radipgrafía con neumatosis o perforación o diagnóstivo en cirugía o anatomía patológica."></span>
+          </label>
           <label for="ecn" class="control-label radio-inline col-lg-2">
             <input type="radio" name="ecn" value="si"> Sí
           </label>
@@ -288,7 +317,9 @@
               <tr>
                 <td>Ojo</td>
                 <td>ROP</td>
-                <td>Localización</td>
+                <td>Localización 
+                  <span class="glyphicon glyphicon-question-sign" data-toggle="tooltip" data-html="true" aria-hidden="true" title="Esquema del fondo de ojo para la clasificación de la retinopatía del prematuro."></span>
+                </td>
                 <td>Severidad</td>
                 <td>Enf. Plus</td>
                 <td>Cirugía ROP</td>
@@ -446,7 +477,9 @@
       <div class="col-lg-12">
 
         <div class="form-group col-lg-6">
-          <label for="sepsis_precoz" class="col-lg-5 control-label">Sepsis Precoz</label>
+          <label for="sepsis_precoz" class="col-lg-5 control-label">Sepsis Precoz 
+            <span class="glyphicon glyphicon-question-sign" data-toggle="tooltip" data-html="true" aria-hidden="true" title="Si: Hemocultivo positivo en primeras 72 horas de vida."></span>
+          </label>
           <label for="sepsis_precoz" class="control-label radio-inline col-lg-2">
             <input type="radio" name="sepsis_precoz" value="si" id="sepsis_precoz_si"> Sí
           </label>
@@ -479,7 +512,9 @@
         <div class="clearfix visible-lg-block"></div>
 
         <div class="form-group col-lg-6">
-          <label for="sepsis_tardia" class="col-lg-5 control-label">Sepsis Tardía</label>
+          <label for="sepsis_tardia" class="col-lg-5 control-label">Sepsis Tardía 
+            <span class="glyphicon glyphicon-question-sign" data-toggle="tooltip" data-html="true" aria-hidden="true" title="Si: Hemocultivo positivo después de las 72 horas de vida y antibióticos por más de 5 días o menos si fallece."></span>
+          </label>
           <label for="sepsis_tardia" class="control-label radio-inline col-lg-2">
             <input type="radio" name="sepsis_tardia" value="si" id="sepsis_tardia_si"> Sí
           </label>
@@ -492,7 +527,9 @@
         
         <div class="form-group col-lg-6">
           <div class="form-group" id="num_sepsis">
-            <label for="num_sepsis" class="col-lg-5 txt_izq control-label">N° de sepsis clínicas</label>
+            <label for="num_sepsis" class="col-lg-5 txt_izq control-label">N° de sepsis clínicas 
+              <span class="glyphicon glyphicon-question-sign" data-toggle="tooltip" data-html="true" aria-hidden="true" title="Cuadro clínico de spesis, pero con cultivo negativo y tratado por más de 5 días o menos si fallece."></span>
+            </label>
             <div class="col-lg-3">
               <input type="number" min="1" max="99" step="1" name="num_sepsis" class="form-control input-sm">
             </div>

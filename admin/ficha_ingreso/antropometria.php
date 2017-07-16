@@ -3,7 +3,7 @@
 	  	<form>
 	    	<h4>
 	    		<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-				Antropometría
+				Antropometría <span class="glyphicon glyphicon-question-sign" data-toggle="tooltip" data-html="true" aria-hidden="true" title="Los datos del nacimiento corresponde a los indicados en los antecedentes del parto.<br>Peso: Indicar pesos en gramos sin separador de miles.<br>Talla y Cir. Cráneo: Indicar medición en centímetros con no más de un decimal."></span>
 	    	</h4>
 
 	    	<div class="col-lg-12">
