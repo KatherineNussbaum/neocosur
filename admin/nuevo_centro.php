@@ -6,7 +6,7 @@
 		<?php include 'header.php'; ?>
 		 <div class="row">
 	      	<div class="col-lg-12">
-	        	<h1>Nuevo Centros</h1>
+	        	<h1>Nuevo Centro</h1>
 	      	</div>
 		</div>
 
@@ -27,19 +27,20 @@
 	          </div>
 
 	          <div role="tabpanel" class="tab-pane" id="estadisticas">
-	            <?php //include 'centros/estadisticas.php'; ?>
+
+	            <?php include 'centros/estadisticas.php'; ?>
 	          </div>
 
 	          <div role="tabpanel" class="tab-pane" id="recursos">
-	            <?php //include 'centros/recursos.php'; ?>
+	            <?php include 'centros/recursos.php'; ?>
 	          </div>
 
 	          <div role="tabpanel" class="tab-pane" id="seguimiento">
-	            <?php //include 'centros/seguimiento.php'; ?>
+	            <?php include 'centros/seguimiento.php'; ?>
 	          </div>
 
 	          <div role="tabpanel" class="tab-pane" id="equipo">
-	            <?php //include 'centros/equipo.php'; ?>
+	            <?php include 'centros/equipo.php'; ?>
 	          </div>
 
 	        </div>
