@@ -3,7 +3,7 @@
     <form>
       <h4>
         <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-        <a id="sec_principal">Antecedentes Prentatales</a> <small> <a id="sec_malformacion"> <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span> Malformación Congénita mayor</a></small>
+        <a id="sec_principal">Antecedentes Prentatales</a> 
       </h4>
 
 
@@ -22,7 +22,7 @@
           <div class="form-group col-lg-6">
             <label for="escolaridad" class="col-lg-5 control-label">Años de escolaridad</label>
             <div class="col-lg-6">
-                <input type="number" min="0" step="1" name="escolaridad" class="form-control input-sm">
+                <input type="number" min="1" max="12" step="1" name="escolaridad" class="form-control input-sm">
               </div>
           </div>
 
@@ -69,11 +69,11 @@
           
           <div class="form-group col-lg-6">
             <label for="edad_maternal" class="col-lg-5 control-label">Control de embarazo</label>
-            <label for="control_embarazo" class="control-label radio-inline col-lg-2">
-              <input type="radio" name="control_embarazo" value="si"> Sí
+            <label for="control_embarazo" class="control-label radio-inline col-lg-2" >
+              <input type="radio" name="control_embarazo" value="si" required > Sí
             </label>
             <label for="control_embarazo" class="control-label radio-inline col-lg-2" >
-              <input type="radio" name="control_embarazo"  value="no"> No
+              <input type="radio" name="control_embarazo" value="no"> No
             </label>
           </div>
 
@@ -117,7 +117,7 @@
           <div class="clearfix visible-lg-block"></div>
 
           <div class="form-group col-lg-6">
-            <label for="ht_art" class="col-lg-5 control-label">HT Art</label>
+            <label for="ht_art" class="col-lg-5 control-label">Hipertensión Arterial</label>
             <label for="ht_art" class="control-label radio-inline col-lg-2">
               <input type="radio" name="ht_art" value="si" id="ht_art_si"> Sí
             </label>
@@ -158,6 +158,15 @@
             <label for="multiple" class="control-label radio-inline col-lg-2" >
               <input type="radio" name="multiple" value="no" id="multiple_no"> No
             </label>
+          </div>
+
+          <div class="clearfix visible-lg-block"></div>
+
+          <div class="form-group col-lg-6">
+            <label for="edad_gest" class="col-lg-5 control-label">Edad gest. FUR:</label>
+            <div class="col-lg-6">
+              <input type="number" min="23" max="36" step="1" name="edad_gest" class="form-control input-sm" >
+            </div>
           </div>
 
           <div class="form-group col-lg-6 sub-form multiple">
@@ -212,7 +221,7 @@
           <div class="clearfix visible-lg-block"></div>
 
           <div class="form-group col-lg-6">
-            <label for="cort_prenatal" class="col-lg-5 control-label">Cort. prenatal</label>
+            <label for="cort_prenatal" class="col-lg-5 control-label">Corticoide prenatal</label>
             <label for="cort_prenatal" class="control-label radio-inline col-lg-2">
               <input type="radio" name="cort_prenatal" value="si" id="cort_prenatal_si"> Sí
             </label>
@@ -271,34 +280,34 @@
           <div class="form-group col-lg-6">
             <label for="doppler" class="col-lg-5 control-label">Alteración del doppler fetal</label>
             <label for="doppler" class="control-label radio-inline col-lg-2">
-              <input type="radio" name="doppler" value="si"> Sí
+              <input type="radio" name="doppler" value="si" id="doppler_fetal_si"> Sí
             </label>
             <label for="doppler" class="control-label radio-inline col-lg-2" >
-              <input type="radio" name="doppler"  value="no" > No
+              <input type="radio" name="doppler"  value="no" id="doppler_fetal_no" > No
             </label>
           </div>
 
-          <div class="form-group col-lg-6 sub-form ">
+          <div class="form-group col-lg-6 sub-form doppler_fetal">
             <div class="checkbox">
               <label for="" class="control-label txt_izq col-lg-12 margin-left">
-                <input type="checkbox" value="">
+                <input type="checkbox" value="" class="doppler">
                 Flujo reverso en vena umbilical
               </label>
 
               <label for="" class="control-label txt_izq col-lg-12 margin-left">
-                <input type="checkbox" value="">
+                <input type="checkbox" value="" class="doppler">
                 Dilatación cerebral media
               </label>
 
               <label for="" class="control-label txt_izq col-lg-12 margin-left">
-                <input type="checkbox" value="">
+                <input type="checkbox" value="" class="doppler">
                 Otra alteración
               </label>
             </div>            
           </div>
 
           <div class="form-group col-lg-12">
-            <label for="obs_doppler" class="control-label">
+            <label for="obs_doppler" class="control-label col-lg-5" >
               Observaciones prenatales
             </label>
             <div>
@@ -310,81 +319,6 @@
         </div>
 
         <div class="clearfix visible-lg-block"></div>
-      </div>
-      <div id="malformacion_cognitiva">
-          <div class="col-lg-6">
-            <div class="form-group">
-              <label for="malformacion" class="col-lg-5 control-label">Malformación congénita mayor</label>
-              <label for="malformacion" class="control-label radio-inline col-lg-2">
-                <input type="radio" name="malformacion" value="si" id="malformacion_si"> Sí
-              </label>
-              <label for="malformacion" class="control-label radio-inline col-lg-2" >
-                <input type="radio" name="malformacion" value="no" id="malformacion_no"> No
-              </label>
-              <label for="malformacion" class="control-label radio-inline col-lg-2" >
-                <input type="radio" name="malformacion" value="no" id="malformacion_s_i"> S/I
-              </label>
-            </div>
-          </div>
-
-          <div class="col-lg-6">
-              <div class="form-group sub-form compromete">
-                <label for="compromete" class="control-label radio-inline col-lg-5">
-                  <input type="radio" name="compromete" value="no" id="compromete_no"> No compromete la vida
-                </label>
-                <label for="compromete" class="control-label radio-inline col-lg-5" >
-                  <input type="radio" name="compromete"  value="si" id="compromete_si"> Compromete la vida
-                </label>
-              </div>
-            <div class="form-group sub-form detalle_compromete">
-            
-              <div class="checkbox">
-                <label for="" class="control-label txt_izq col-lg-12">
-                  <input type="checkbox" name="sistema_nervios" class="detalle_compromete" value="">
-                  Defectos del Sistema Nervioso Central
-                </label>
-
-                <label for="" class="control-label txt_izq col-lg-12">
-                  <input type="checkbox" name="cardiacos" class="detalle_compromete" value="">
-                  Defectos cardíacos
-                </label>
-
-                <label for="" class="control-label txt_izq col-lg-12">
-                  <input type="checkbox" name="gastrointestinales" class="detalle_compromete" value="">
-                  Defectos gastrointestinales
-                </label>
-
-                <label for="" class="control-label txt_izq col-lg-12">
-                  <input type="checkbox" name="genitourinarios" class="detalle_compromete" value="">
-                  Defectos genitourinarios
-                </label>
-
-                <label for="" class="control-label txt_izq col-lg-12">
-                  <input type="checkbox" name="cromosomica" class="detalle_compromete" value="">
-                  Anomalías cromosómicas
-                </label>
-
-                <label for="" class="control-label txt_izq col-lg-12">
-                  <input type="checkbox" name="otro_defecto" id="otro_defecto" class="detalle_compromete" value="">
-                  Otros defectos
-                </label>
-
-                <div id="cual_defecto" class="sub-form">
-                  <label for="cual_defecto" class="col-lg-3 txt_izq control-label">Si es otro, cuál?</label>
-                  <div class="col-lg-9">
-                    <input type="text" name="cual_defecto" class="form-control input-sm">
-                  </div>
-                </div>  
-              </div>
-
-              <label for="obs_malformaciones" class="col-lg-12 control-label">
-                Observaciones
-              </label>
-              <div>
-                  <textarea class="form-control" name="obs_malformaciones" rows="3"></textarea>
-              </div>
-            </div>
-          </div>
       </div>
 
         <div class=" col-lg-offset-10 col-lg-2">

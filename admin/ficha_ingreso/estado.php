@@ -6,24 +6,6 @@
 				Estado de Ficha
 	    	</h4>
 	    	<div id="informacion_alta">
-	    		<div class="col-lg-12">
-
-			    	<div class="form-group col-lg-6">
-						<label for="seleccion_responsable" class="col-lg-6 control-label">Responsable ingreso de datos</label>
-						<div class="col-lg-6">
-							<select name="seleccion_responsable" class="form-control input-sm" id="seleccion_responsable">
-				               	<option value="">Seleccione</option>
-				               	<option value="Leticia">Leticia </option>
-				               	<option value="otro">Otro</option>
-				            </select>
-						</div>
-						<div class="col-lg-6 col-lg-offset-6">
-					       	<input type="text" name="responsable" class="form-control input-sm" id="responsable" readonly>
-					    </div>
-
-					</div>
-
-				</div>
 
 				<div class="col-lg-12">
 

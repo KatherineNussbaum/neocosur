@@ -137,6 +137,18 @@ jQuery(document).ready(function(){
     		$("input[class*='detalle_compromete']").removeProp("checked");
             $("textarea[name*='obs_malformaciones']").val("");
 
+            $("#detalle_sistema_nervioso").hide();
+            $("input[class*='detalle_sistema_nervioso']").removeProp("checked");
+            $("#detalle_defectos_cardiacos").hide();
+            $("input[class*='detalle_defectos_cardiacos']").removeProp("checked");
+            $("#detalle_defectos_gastrointestinal").hide();
+            $("input[class*='detalle_defectos_gastrointestinal']").removeProp("checked");
+            $("#detalle_defectos_genitourinarios").hide();
+            $("input[class*='detalle_defectos_genitourinarios']").removeProp("checked");
+            $("#detalle_defectos_cromosomicas").hide();
+            $("input[class*='detalle_defectos_cromosomicas']").removeProp("checked");
+            $("#detalle_defectos_otros").hide();
+            $("input[class*='detalle_defectos_otros']").removeProp("checked");
     	}});
 
 	$("#compromete_si").change(function(){
@@ -158,19 +170,101 @@ jQuery(document).ready(function(){
     		$("input[class*='detalle_compromete']").removeProp("checked");
             $("textarea[name*='obs_malformaciones']").val("");
             
+            $("#detalle_sistema_nervioso").hide();
+            $("input[class*='detalle_sistema_nervioso']").removeProp("checked");
+            $("#detalle_defectos_cardiacos").hide();
+            $("input[class*='detalle_defectos_cardiacos']").removeProp("checked");
+            $("#detalle_defectos_gastrointestinal").hide();
+            $("input[class*='detalle_defectos_gastrointestinal']").removeProp("checked");
+            $("#detalle_defectos_genitourinarios").hide();
+            $("input[class*='detalle_defectos_genitourinarios']").removeProp("checked");
+            $("#detalle_defectos_cromosomicas").hide();
+            $("input[class*='detalle_defectos_cromosomicas']").removeProp("checked");
+            $("#detalle_defectos_otros").hide();
+            $("input[class*='detalle_defectos_otros']").removeProp("checked");
     	}
 	});
+
+
+    $("#sistema_nervioso").change(function(){
+        var $input = $( this );
+        if( $input.prop("checked") )
+        {
+            $("#detalle_sistema_nervioso").show();
+        }
+        else
+        {
+            $("#detalle_sistema_nervioso").hide();
+            $("input[class*='detalle_sistema_nervioso']").removeProp("checked");
+        }
+    });
+
+    $("#cardiacos").change(function(){
+        var $input = $( this );
+        if( $input.prop("checked") )
+        {
+            $("#detalle_defectos_cardiacos").show();
+        }
+        else
+        {
+            $("#detalle_defectos_cardiacos").hide();
+            $("input[class*='detalle_defectos_cardiacos']").removeProp("checked");
+        }
+    });
+
+    $("#defectos_gastrointestinal").change(function(){
+        var $input = $( this );
+        if( $input.prop("checked") )
+        {
+            $("#detalle_defectos_gastrointestinal").show();
+        }
+        else
+        {
+            $("#detalle_defectos_gastrointestinal").hide();
+            $("input[class*='detalle_defectos_gastrointestinal']").removeProp("checked");
+        }
+    });
+
+    $("#detalle_compromete").change(function(){
+        var $input = $( this );
+        if( $input.prop("checked") )
+        {
+            $("#detalle_defectos_genitourinarios").show();
+        }
+        else
+        {
+            $("#detalle_defectos_genitourinarios").hide();
+            $("input[class*='detalle_defectos_genitourinarios']").removeProp("checked");
+        }
+    });
+
+    $("#cromosomica").change(function(){
+        var $input = $( this );
+        if( $input.prop("checked") )
+        {
+            $("#detalle_defectos_cromosomicas").show();
+        }
+        else
+        {
+            $("#detalle_defectos_cromosomicas").hide();
+            $("input[class*='detalle_defectos_cromosomicas']").removeProp("checked");
+        }
+    });
+
 
     $("#otro_defecto").change(function(){
         var $input = $( this );
         if( $input.prop("checked") )
         {
             $("#cual_defecto").show();
+            $("#detalle_defectos_otros").show();
         }
         else
         {
             $("#cual_defecto").hide();
             $("input[name*='cual_defecto']").val("");
+            $("#detalle_defectos_otros").hide();
+            $("input[class*='detalle_defectos_otros']").removeProp("checked");
         }
     });
 
@@ -200,6 +294,10 @@ jQuery(document).ready(function(){
             $("#antropometria input").removeProp("checked");
             $("#antropometria select").val("0");
             $('#antropometria .sub-form').hide();
+
+            $('#fecha_alta').prop("required", true);
+            $('#destino').val("fallece");
+            $('#destino').attr("disabled", true);
         }
     })
     $("#fallece_sala_no").change(function(){
@@ -207,6 +305,9 @@ jQuery(document).ready(function(){
         if( $input.prop("checked") )
         {
             $(".dinamico_fallece").show();
+            $('#fecha_alta').removeProp("required");
+            $('#destino').val("0");
+            $('#destino').attr("disabled", false);
         }
     })
 
@@ -738,6 +839,21 @@ jQuery(document).ready(function(){
     });
 
 
+// Doppler Fetal
+// -------------------------------------------
+    $( "#doppler_fetal_si" ).change(function() {
+        var $input = $( this );
+        if( $input.prop("checked") )
+        {
+            $(".doppler_fetal").show();
+        }});
+    $( "#doppler_fetal_no" ).change(function() {
+        var $input = $( this );
+        if( $input.prop("checked") )
+        {
+            $(".doppler_fetal").hide();
+            $("input[class*='doppler']").removeProp("checked");
+        }});
 
 // Mostrar/Cambiar de Sub-Secciones
 // ===========================================
@@ -882,6 +998,10 @@ jQuery(document).ready(function(){
         var parent = $(this).parents().get(1);
         $(parent).remove();
     });
+
+
+
+
 
 // cierre de archivo
 });

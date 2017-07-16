@@ -10,6 +10,7 @@
 	      	</div>
 			<div class="col-lg-5">
 				<div class="btn-group" role="group" aria-label="">
+
 				  	<button type="button" class="btn btn-primary btn-sm">
 				  		<span class="glyphicon glyphicon-print" aria-hidden="true"></span> 
 				  		Imprimir Listado
@@ -63,7 +64,7 @@
 		            </tr>
 		        </tfoot>
 		        <tbody>
-		            <tr>
+              <tr>
 		                <td>AR12</td>
 		                <td>Centro Perinatologico Hospital J.B. turraspe</td>
 		                <td>Argentina</td>
@@ -139,7 +140,6 @@
 		                	<a class="btn btn-success btn-xs" href="#" role="button" ><span class="glyphicon glyphicon-ok" aria-hidden="true"></span></a>
 		                </td>
 		            </tr>
-		           
 		        </tbody>
 		    </table>
 		</div>

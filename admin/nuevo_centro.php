@@ -27,6 +27,7 @@
 	          </div>
 
 	          <div role="tabpanel" class="tab-pane" id="estadisticas">
+
 	            <?php include 'centros/estadisticas.php'; ?>
 	          </div>
 
