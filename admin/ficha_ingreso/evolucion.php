@@ -3,7 +3,7 @@
 	  	<form>
 	    	<h4>
 	    		<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-	    		 	<a id="sec_respiratorio">Evolución y Tratamiento | <small>Soporte Respiratorio </small></a> 
+	    		 	<a id="sec_respiratorio">Evolución y Tratamiento | <small>Soporte Respiratorio <span class="glyphicon glyphicon-question-sign" data-toggle="tooltip" data-html="true" aria-hidden="true" title="Si duración de soporte es < 1 día, ingresar sólo horas.<br>Si duración de soporte es > 1 día, ingresar días completos."></span></small></a> 
 	    		<small> 
 	       			<a id="sec_medicamentos">
 	       				<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span> 
@@ -11,7 +11,7 @@
 	       			</a>  
 	       			<a id="sec_cateteres">
 	       				<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span> 
-	       				Catéteres
+	       				Catéteres <span class="glyphicon glyphicon-question-sign" data-toggle="tooltip" data-html="true" aria-hidden="true" title="Si duración es < 1 día, ingresar sólo horas.<br>Si duración es > 1 día, ingresar días completos."></span>
 	       			</a>
 	       			<a id="sec_cirugia">
 	       				<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span> 
@@ -246,9 +246,9 @@
 				              <input type="checkbox" value="selectivo" class="detalle_surfactante">
 				              Selectivo
 				            </label>
-				            <label for="" class="control-label txt_izq col-lg-12 margin-left">
+				            <label for="" class="control-label txt_izq col-lg-12 margin-left"> 
 				              <input type="checkbox" value="insure" class="detalle_surfactante">
-				              Insure
+				              Insure <span class="glyphicon glyphicon-question-sign" data-toggle="tooltip" data-html="true" aria-hidden="true" title="Intubación - Surfactante - Extubación a CPAP."></span>
 				            </label>
 				        </div>
 
@@ -411,7 +411,7 @@
 
 			    <div class="col-lg-12">
 	    			<div class="form-group col-lg-6">
-			          	<label for="num_transfusiones" class="col-lg-5 control-label">N° transfusiones</label>
+			          	<label for="num_transfusiones" class="col-lg-5 control-label">N° transfusiones <span class="glyphicon glyphicon-question-sign" data-toggle="tooltip" data-html="true" aria-hidden="true" title="Registrar sólo transfusiones de glóbulos rojos o sangre."></span></label>
 			          	<div class="col-lg-3">
 			          		<input type="number" min="1" step="1" name="num_transfusiones" class="form-control input-sm">
 			          	</div>
@@ -536,7 +536,7 @@
 
 			        <div class="form-group col-lg-6 detalle_percutaneo sub-form">
 
-			        	<label for="hrs_percutaneo" class="col-lg-5 control-label">Duración Cat. Percutáneo</label>
+			        	<label for="hrs_percutaneo" class="col-lg-5 control-label">Duración Cat. Percutáneo <span class="glyphicon glyphicon-question-sign" data-toggle="tooltip" data-html="true" aria-hidden="true" title="Total de horas/días con catéter percutáneo (Silastic) o cateter central (yugular, femoral, o subclavio)."></span></label>
           				<div class="col-lg-3 input-group linea">
             				<input type="number" min="1" max="100" step="1" name="hrs_percutaneo" class="form-control input-sm detalle_percutaneo" aria-describedby="basic-addon2">
             				<span class="input-group-addon" id="basic-addon2">hrs.</span>

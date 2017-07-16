@@ -53,7 +53,9 @@
           <div class="clearfix visible-lg-block"></div>
 
           <div class="form-group col-lg-6">
-            <label for="tabaquismo" class="col-lg-5 control-label">Tabaquísmo</label>
+            <label for="tabaquismo" class="col-lg-5 control-label">Tabaquísmo 
+            <span class="glyphicon glyphicon-question-sign" data-toggle="tooltip" aria-hidden="true" title="Si: Si madre declara que fuma, independiente de la cantidad o frecuencia."></span>
+            </label>
             <label for="tabaquismo" class="control-label radio-inline col-lg-2">
               <input type="radio" name="tabaquismo" value="si" id="tabaquismo_si"> Sí
             </label>
@@ -68,7 +70,9 @@
           <div class="clearfix visible-lg-block"></div>
           
           <div class="form-group col-lg-6">
-            <label for="edad_maternal" class="col-lg-5 control-label">Control de embarazo</label>
+            <label for="edad_maternal" class="col-lg-5 control-label">Control de embarazo 
+            <span class="glyphicon glyphicon-question-sign" data-toggle="tooltip" aria-hidden="true" title="Si: Tiene al menos un control prenatal."></span>
+            </label>
             <label for="control_embarazo" class="control-label radio-inline col-lg-2" >
               <input type="radio" name="control_embarazo" value="si" required > Sí
             </label>
@@ -163,7 +167,9 @@
           <div class="clearfix visible-lg-block"></div>
 
           <div class="form-group col-lg-6">
-            <label for="edad_gest" class="col-lg-5 control-label">Edad gest. FUR:</label>
+            <label for="edad_gest" class="col-lg-5 control-label">Edad gest. FUR: 
+              <span class="glyphicon glyphicon-question-sign" data-toggle="tooltip" aria-hidden="true" title="La mejor estimación según fecha de última menstruación, ecografía precoz o examen neonatal."></span>
+            </label>
             <div class="col-lg-6">
               <input type="number" min="23" max="36" step="1" name="edad_gest" class="form-control input-sm" >
             </div>
@@ -183,7 +189,9 @@
           <div class="clearfix visible-lg-block"></div>
 
           <div class="form-group col-lg-6">
-            <label for="rciu" class="col-lg-5 control-label">RCIU</label>
+            <label for="rciu" class="col-lg-5 control-label">Retardo Crecimiento Intrauterino 
+              <span class="glyphicon glyphicon-question-sign" data-toggle="tooltip" aria-hidden="true" title="Según diagnóstico en ficha materna independiente del parámetro usado."></span>
+            </label>
             <label for="rciu" class="control-label radio-inline col-lg-2">
               <input type="radio" name="rciu" value="si"> Sí
             </label>
@@ -195,7 +203,9 @@
           <div class="clearfix visible-lg-block"></div>
 
           <div class="form-group col-lg-6">
-            <label for="rpm" class="col-lg-5 control-label">RPM</label>            
+            <label for="rpm" class="col-lg-5 control-label">Ruptura Pre Membrana 
+              <span class="glyphicon glyphicon-question-sign" data-toggle="tooltip" aria-hidden="true" title="Tiempo en días y horas de ruptura de membranas previo al parto."></span>
+            </label>            
             <div class="col-lg-3 input-group linea">
               <input type="number" min="1" max="99" step="1" name="rpm_dias" class="form-control input-sm" aria-describedby="basic-addon2">
               <span class="input-group-addon" id="basic-addon2">días</span>
@@ -254,7 +264,9 @@
           <div class="clearfix visible-lg-block"></div>
 
           <div class="form-group col-lg-6">
-            <label for="corioamnionitis" class="col-lg-5 control-label">Corioamnionitis</label>
+            <label for="corioamnionitis" class="col-lg-5 control-label">Corioamnionitis 
+              <span class="glyphicon glyphicon-question-sign" data-toggle="tooltip" aria-hidden="true" title="Según diagnóstico obstétrico."></span>
+            </label>
             <label for="corioamnionitis" class="control-label radio-inline col-lg-2">
               <input type="radio" name="corioamnionitis" value="si"> Sí
             </label>
@@ -266,7 +278,9 @@
           <div class="clearfix visible-lg-block"></div>
 
           <div class="form-group col-lg-6">
-            <label for="sulfato" class="col-lg-5 control-label">Sulfato de Mg</label>
+            <label for="sulfato" class="col-lg-5 control-label">Sulfato de Mg 
+              <span class="glyphicon glyphicon-question-sign" data-toggle="tooltip" aria-hidden="true" title="Según diagnóstico obstétrico."></span>
+            </label>
             <label for="sulfato" class="control-label radio-inline col-lg-2">
               <input type="radio" name="sulfato" value="si"> Sí
             </label>

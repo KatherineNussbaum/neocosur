@@ -13,7 +13,10 @@
         </div>
 
         <div class="form-group col-lg-6">
-          <label for="id" class="col-lg-5 control-label" >Identificador Neocosur </label>
+          <label for="id" class="col-lg-5 control-label" >Identificador Neocosur 
+            <span class="glyphicon glyphicon-question-sign" data-toggle="tooltip" aria-hidden="true" title="Código numerico que el sistema otorga a un paciente y permite identificarlo en la base de datos."></span>
+          </label>
+          
           <div class="col-lg-7">
             <input type="text" name="identificador" class="form-control input-sm" disabled="disabled">
           </div>
