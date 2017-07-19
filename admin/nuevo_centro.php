@@ -17,7 +17,6 @@
 	          <li role="presentation"><a href="#estadisticas" aria-controls="profile" role="tab" data-toggle="tab">Estadísticas</a></li>
 	          <li role="presentation"><a href="#recursos" aria-controls="messages" role="tab" data-toggle="tab">Recursos</a></li>
 	          <li role="presentation" class="dinamico_fallece"><a href="#seguimiento" aria-controls="settings" role="tab" data-toggle="tab">Seguimiento</a></li>
-	          <li role="presentation" class="dinamico_fallece"><a href="#equipo" aria-controls="settings" role="tab" data-toggle="tab">Equipo</a></li>
 	        </ul>
 	      </div>
 	      <div class="col-lg-12">
@@ -37,10 +36,6 @@
 
 	          <div role="tabpanel" class="tab-pane" id="seguimiento">
 	            <?php include 'centros/seguimiento.php'; ?>
-	          </div>
-
-	          <div role="tabpanel" class="tab-pane" id="equipo">
-	            <?php include 'centros/equipo.php'; ?>
 	          </div>
 
 	        </div>

@@ -5,19 +5,11 @@
 		<!-- Inicio del Contenido -->
 		<?php include 'header.php'; ?>
 		 <div class="row">
-	      	<div class="col-lg-7">
+	      	<div class="col-lg-10">
 	        	<h1>Centros</h1>
 	      	</div>
-			<div class="col-lg-5">
+			<div class="col-lg-2">
 				<div class="btn-group" role="group" aria-label="">
-
-				  	<button type="button" class="btn btn-primary btn-sm">
-				  		<span class="glyphicon glyphicon-print" aria-hidden="true"></span> 
-				  		Imprimir Listado
-				  	</button>
-				  	<button type="button" class="btn btn-success btn-sm">
-				  		<span class="glyphicon glyphicon-download-alt" aria-hidden="true"></span> 
-				  		Descargar en Excel</button>
 				  	<a class="btn btn-warning btn-sm" href="nuevo_centro.php" role="button">
 				  		<span class="glyphicon glyphicon-plus" aria-hidden="true"></span> Agregar Nuevo Centro
 				  	</a>
@@ -154,9 +146,19 @@
 <script src="../js/bootstrap.js"></script>
 <script src="../js/npm.js"></script>
 <script src="../js/data_table.min.js"></script>
+<script src="../js/data_table_button.js"></script>
+<script src="../js/jjszip.min.js"></script>
+<script src="../js/buttons.html5.min.js"></script>
+<script src="../js/data_table_print.js"></script>
 <script type="text/javascript">
 	$(document).ready(function() {
-    	$('#tbl_centros').DataTable();
+    	$('#tbl_centros').DataTable({
+	    	dom: 'Bfrtip',
+	        buttons: [
+	            'excelHtml5',
+	            'print'
+	        ]
+		});
 	} );
 </script>
 
