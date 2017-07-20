@@ -6,13 +6,24 @@
     <!-- Inicio de Título -->
     <div class="row">
 
-      <div class="col-lg-10">
-        <h1>Mantenedor de Fichas</h1>
-      </div>
+      	<div class="col-lg-10">
+        	<h1>Mantenedor de Fichas</h1>
+      	</div>
+
+      	<div class="col-lg-2">
+			<div class="btn-group" role="group" aria-label="">
+			  	<a class="btn btn-warning btn-sm" href="ficha_ingreso.php" role="button">
+			  		<span class="glyphicon glyphicon-plus" aria-hidden="true"></span> Agregar Nueva Ficha
+			  	</a>
+			</div>
+		</div>
 
     </div>
-    <div class="row">
-		<h4>Buscador</h4>                            
+    <div class="row panel panel-info">
+    	<div class="col-lg-12">
+    		<h4>Buscador</h4>  
+    	</div>
+		                          
 	    
 	    <div class="form-group col-lg-6">
 
@@ -116,7 +127,7 @@
 
     </div>
 
-    <div class="row">
+    <div class="row ">
     	<h4>Listado Fichas</h4> 
 			<table id="tbl_fichas" class="display" cellspacing="0" width="100%">
 		        <thead>
