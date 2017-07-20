@@ -22,6 +22,7 @@
                 <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Gestión de Fichas<span class="caret"></span></a>
                 <ul class="dropdown-menu">
                   <li><a href="centros.php">Mantenedor de Centros</a></li>
+                  <li><a href="usuarios.php">Mantenedor de Usuarios</a></li>
                   <li><a href="fichas.php">Mantenedor de Fichas</a></li>
                   <li><a href="#">Datos en Excel</a></li>
                   <li><a href="#">Mantenedor de Parámetros</a></li>

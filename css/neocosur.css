@@ -96,11 +96,13 @@ fieldset legend {
 
 .panel-body{
     background-color: #fcfcfc;
+
 }
 
 .tap-content {
 	    margin-left: 2px;
 }
+
 
 /*Formulario */
 
@@ -149,3 +151,4 @@ button[type="submit"] { margin-top: 10px; margin-bottom: 10px; }
 .tooltip-arrow {
     border-top-color: rgba(68, 157, 68, 1) !important;
 }
+
