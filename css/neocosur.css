@@ -6,7 +6,7 @@ html {
     min-height: 100%;
 }
 body {
-    margin-bottom: 60px; /* Altrura para el footer */
+    margin-bottom: 100px; /* Altrura para el footer */
     font-size: 12px;
 }
 h1 {
@@ -47,6 +47,21 @@ h1 {
 }
 h4 {
 	margin-bottom: 25px;
+}
+
+
+.txt_destacado{
+    color: #FFF;
+    padding: 25px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    font-size: larger;
+}
+.blue{
+    background-color: #003e80;
+}
+.green{
+    background-color: #006e17;
 }
 fieldset legend {
     font-size: 14px;
@@ -151,4 +166,3 @@ button[type="submit"] { margin-top: 10px; margin-bottom: 10px; }
 .tooltip-arrow {
     border-top-color: rgba(68, 157, 68, 1) !important;
 }
-
