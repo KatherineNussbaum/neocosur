@@ -51,18 +51,36 @@ h4 {
 
 
 .txt_destacado{
-    color: #FFF;
-    padding: 25px;
-    border-radius: 5px;
-    margin-bottom: 20px;
-    font-size: larger;
+    padding: 25px !important;
+    border-radius: 5px !important;
+    margin-bottom: 20px !important;
+    font-size: larger !important;
 }
 .blue{
+    color: #FFF;
     background-color: #003e80;
 }
 .green{
+    color: #FFF;
     background-color: #006e17;
 }
+.ui-accordion-header {
+    background-color: #fefefe !important;
+    border-style: solid;
+    border-color: #aaa;
+    border-width: 1px;
+    color: #333 !important;
+    padding: 5px !important;
+    border-radius: 5px !important;
+    margin-bottom: 0px !important;
+    font-size: larger !important;
+}
+.ui-accordion-header-active{
+    background-color: #337ab7 !important;
+    color: #FFF !important;
+}
+.ui-accordion-header-active small{ color: #fff;}
+
 fieldset legend {
     font-size: 14px;
     color: #666;
