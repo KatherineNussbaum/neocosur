@@ -6,7 +6,7 @@ html {
     min-height: 100%;
 }
 body {
-    margin-bottom: 60px; /* Altrura para el footer */
+    margin-bottom: 100px; /* Altrura para el footer */
     font-size: 12px;
 }
 h1 {
@@ -48,6 +48,39 @@ h1 {
 h4 {
 	margin-bottom: 25px;
 }
+
+
+.txt_destacado{
+    padding: 25px !important;
+    border-radius: 5px !important;
+    margin-bottom: 20px !important;
+    font-size: larger !important;
+}
+.blue{
+    color: #FFF;
+    background-color: #003e80;
+}
+.green{
+    color: #FFF;
+    background-color: #006e17;
+}
+.ui-accordion-header {
+    background-color: #f1f1f1 !important;
+    /*border-style: solid;
+    border-color: #aaa;
+    border-width: 1px;*/
+    color: #333 !important;
+    padding: 5px !important;
+    border-radius: 5px !important;
+    margin-bottom: 0px !important;
+    font-size: larger !important;
+}
+.ui-accordion-header-active{
+    background-color: #337ab7 !important;
+    color: #FFF !important;
+}
+.ui-accordion-header-active small{ color: #fff;}
+
 fieldset legend {
     font-size: 14px;
     color: #666;
@@ -151,4 +184,3 @@ button[type="submit"] { margin-top: 10px; margin-bottom: 10px; }
 .tooltip-arrow {
     border-top-color: rgba(68, 157, 68, 1) !important;
 }
-

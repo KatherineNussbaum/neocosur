@@ -19,9 +19,9 @@
           <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
             <ul class="nav navbar-nav">
               <li><a href="index.php">Inicio</a></li>
-              <li><a href="#">Acerca de</a></li>
-              <li><a href="#">Estructura</a></li>
-              <li><a href="#">Integrantes</a></li>
+              <li><a href="neocosur.php">Acerca de</a></li>
+              <li><a href="estructura.php">Estructura</a></li>
+              <li><a href="integrantes.php">Integrantes</a></li>
               <li><a href="#">Cálculo Score</a></li>
               <li><a href="#">Revista Neocosur</a></li>
               <li><a href="#">Publicaciones Neocosur</a></li>

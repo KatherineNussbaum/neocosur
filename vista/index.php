@@ -14,10 +14,10 @@
 
       <div class="col-lg-9">
         <div  class="page-header">
-          <h1>Inicio <small>Neocosur</small></h1>
+          <h1>Neocosur <small>| Inicio</small></h1>
         </div>
         <div>
-          <div class="alert alert-info" role="alert">
+          <div class="txt_destacado blue">
             <p>NEOCOSUR es una asociación voluntaria sin fines de lucro de Unidades de Cuidado Intensivo Neonatal de un grupo de países sud-americanos, cuya misión principal es mejorar el cuidado neonatal y sus resultados en la región.</p>
           </div>
           <p><b>Las estrategias principales para lograr esta misión incluye</b></p>
@@ -39,7 +39,7 @@
           <h1> <small></small></h1>
         </div>
 
-        <div class="panel panel-default">
+        <div class="panel panel-info">
           <div class="panel-heading">
             <h3 class="panel-title"><span class="glyphicon glyphicon-user" aria-hidden="true"></span> Iniciar Sesión</h3>
           </div>
@@ -54,11 +54,37 @@
                 <input type="password" name="pass" class="form-control" placeholder="Contraseña">
               </div>
 
-              <button type="submit" class="btn btn-default">Ingresar</button>
-              <p><a>¿Olvidó su contraseña?</a></p>
+              <button type="submit" class="btn btn-success center-block">Ingresar</button>
+              <div class="text-center">
+                <a href="#">¿Olvidó su contraseña?</a>
+              </div>
             </form>
           </div>
           
+        </div>
+
+        <div class="panel panel-info">
+          <div class="panel-heading">
+            <h3 class="panel-title"><span class="glyphicon glyphicon-star" aria-hidden="true"></span> Noticias</h3>
+          </div>
+          <div class="panel-body">
+            <div class="list-group">
+              
+              <a href="#" class="list-group-item">
+                <h4 class="list-group-item-heading">Riesgo de parto prematuro</h4>
+                <p class="list-group-item-text">Expertos llaman a abordar riesgo de parto prematuro al inicio del embarazo. </p>
+              </a>
+              <a href="#" class="list-group-item">
+                <h4 class="list-group-item-heading">Riesgo de parto prematuro</h4>
+                <p class="list-group-item-text">Expertos llaman a abordar riesgo de parto prematuro al inicio del embarazo. </p>
+              </a>
+              <a href="#" class="list-group-item">
+                <h4 class="list-group-item-heading">Riesgo de parto prematuro</h4>
+                <p class="list-group-item-text">Expertos llaman a abordar riesgo de parto prematuro al inicio del embarazo. </p>
+              </a>
+            </div>
+            
+          </div>
         </div>
 
       </div>
