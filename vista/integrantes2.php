@@ -9,7 +9,7 @@
       <div class="col-lg-12">
 
         <div  class="page-header">
-          <h1>Neocosur <small>| Integrantes </small></h1>
+          <h1>Integrantes</h1>
         </div>
 
         <div>
@@ -19,9 +19,12 @@
         </div>
         <div class="col-lg-2">
           <ul class="nav nav-pills nav-stacked">
-            <li role="presentation" class="active"><a href="#">Argentina</a></li>
-            <li role="presentation"><a href="#">Brasil</a></li>
-            <li role="presentation"><a href="#">Chile</a></li>        
+            <li role="presentation" id="btn_argentina" class="active"><a >Argentina</a></li>
+            <li role="presentation" id="btn_brasil" ><a>Brasil</a></li>
+            <li role="presentation" id="btn_chile"><a >Chile</a></li>
+            <li role="presentation" id="btn_paraguay"><a >Paraguay</a></li>
+            <li role="presentation" id="btn_peru"><a >Peru</a></li>
+            <li role="presentation" id="btn_uruguay"><a >Uruguay</a></li>
           </ul>
         </div>
         <div class="col-lg-10">
@@ -29,7 +32,7 @@
 
             <div id="accordion_argentina">
 
-              <h5 >Clínica y Maternidad Suizo Argentina<br><small>Buenos Aires</small></h5>
+              <h5 >Clínica y Maternidad Suizo Argentina<small> | Buenos Aires</small></h5>
               <div>
                 <dl class="dl-horizontal">
                   <dt>Jefe Unidad</dt>
@@ -45,7 +48,7 @@
                 </dl>
               </div>
 
-              <h5>Hospital Italiano<br><small>Buenos Aires</small></h5>
+              <h5>Hospital Italiano<small> | Buenos Aires</small></h5>
               <div>
                 <dl class="dl-horizontal">
                   <dt>Jefe Unidad</dt>
@@ -62,7 +65,7 @@
               </div>
 
 
-              <h5>Hospital Juan Fernández<br><small>Buenos Aires</small></h5>
+              <h5>Hospital Juan Fernández<small> | Buenos Aires</small></h5>
               <div>
                 <dl class="dl-horizontal">
                   <dt>Jefe Unidad</dt>
@@ -79,7 +82,7 @@
               </div>
 
 
-              <h5>Hospital Lagomaggiore<br><small>Mendoza</small></h5>
+              <h5>Hospital Lagomaggiore<small> | Mendoza</small></h5>
 
               <div>
                 <dl class="dl-horizontal">
@@ -96,7 +99,7 @@
                 </dl>
               </div>
 
-              <h5>Maternidad Sardá<br><small>Buenos Aires</small></h5>
+              <h5>Maternidad Sardá<small> | Buenos Aires</small></h5>
               <div>
                 <dl class="dl-horizontal">
                   <dt>Jefe Unidad</dt>
@@ -112,7 +115,7 @@
                 </dl>
               </div>
 
-              <h5>Sanatorio de la Trinidad<br><small>Buenos Aires</small></h5>
+              <h5>Sanatorio de la Trinidad<small> | Buenos Aires</small></h5>
               <div>
                 <dl class="dl-horizontal">
                   <dt>Jefe Unidad</dt>
@@ -128,7 +131,7 @@
                 </dl>
               </div>
 
-              <h5>Hospital Español de Mendoza<br><small>Mendoza</small></h5>
+              <h5>Hospital Español de Mendoza<small> | Mendoza</small></h5>
               <div>
                 <dl class="dl-horizontal">
                   <dt>Jefe Unidad</dt>
@@ -140,7 +143,7 @@
                 </dl>  
               </div>
 
-              <h5>Hospital Universitario Austral<br><small></small></h5>
+              <h5>Hospital Universitario Austral<small> </small></h5>
               <div>
                 <dl class="dl-horizontal">
                   <dt>Jefe Unidad</dt>
@@ -156,7 +159,7 @@
                 </dl>
               </div>
 
-              <h5>Hospital Nuestra Señora de la Misericordia<br><small></small></h5>
+              <h5>Hospital Nuestra Señora de la Misericordia<small> </small></h5>
               <div>
                 <dl class="dl-horizontal">
                   <dt>Jefe Unidad</dt>
@@ -168,7 +171,7 @@
                 </dl>
               </div>
 
-              <h5>Clínica Universitaria Reina Fabiola<br><small></small></h5>
+              <h5>Clínica Universitaria Reina Fabiola<small> </small></h5>
               <div>
                 <dl class="dl-horizontal">
                   <dt>Jefe Unidad</dt>
@@ -191,7 +194,7 @@
 
             <div id="accordion_brasil">
 
-              <h5 class="txt_destacado grey" >Hospital Universitario UFMA<br><small></small></h5>
+              <h5 class="txt_destacado grey" >Hospital Universitario UFMA<small> </small></h5>
               <div>
                 <dl class="dl-horizontal">
                   <dt>Jefe Unidad</dt>
@@ -215,7 +218,7 @@
 
             <div id="accordion_chile">
 
-              <h5 class="txt_destacado grey" >Hospital Clínico Universidad Católica de Chile<br><small>Santiago</small></h5>
+              <h5 class="txt_destacado grey" >Hospital Clínico Universidad Católica de Chile<small> | Santiago</small></h5>
               <div>
                 <dl class="dl-horizontal">
                   <dt>Jefe Unidad</dt>
@@ -231,7 +234,7 @@
                 </dl>
               </div>
 
-              <h5 class="txt_destacado grey" >Hospital Clínico Universidad de Chile<br><small>Santiago</small></h5>
+              <h5 class="txt_destacado grey" >Hospital Clínico Universidad de Chile<small> | Santiago</small></h5>
               <div>
                 <dl class="dl-horizontal">
                   <dt>Jefe Unidad</dt>
@@ -247,7 +250,7 @@
                 </dl>
               </div>
 
-              <h5 class="txt_destacado grey" >Hospital Guillermo Grant<br><small>Concepción</small></h5>
+              <h5 class="txt_destacado grey" >Hospital Guillermo Grant<small> | Concepción</small></h5>
               <div>
                 <dl class="dl-horizontal">
                   <dt>Jefe Unidad</dt>
@@ -259,7 +262,7 @@
                 </dl>
               </div>
 
-              <h5 class="txt_destacado grey" >Hospital Guillermo Grant<br><small>Viña del Mar</small></h5>
+              <h5 class="txt_destacado grey" >Hospital Guillermo Grant<small> | Viña del Mar</small></h5>
               <div>
                 <dl class="dl-horizontal">
                   <dt>Jefe Unidad</dt>
@@ -271,7 +274,7 @@
                 </dl>
               </div>
 
-              <h5 class="txt_destacado grey" >Hospital San José<br><small>Santiago</small></h5>
+              <h5 class="txt_destacado grey" >Hospital San José<small> | Santiago</small></h5>
               <div>
                 <dl class="dl-horizontal">
                   <dt>Jefe Unidad</dt>
@@ -287,7 +290,7 @@
                 </dl>
               </div>
 
-              <h5 class="txt_destacado grey" >Hospital Dr. Sótero del Río<br><small>Santiago</small></h5>
+              <h5 class="txt_destacado grey" >Hospital Dr. Sótero del Río<small> | Santiago</small></h5>
               <div>
                 <dl class="dl-horizontal">
                   <dt>Jefe Unidad</dt>
@@ -303,7 +306,7 @@
                 </dl>
               </div>
 
-              <h5 class="txt_destacado grey" >Hospital San Borja Arriarán<br><small>Santiago</small></h5>
+              <h5 class="txt_destacado grey" >Hospital San Borja Arriarán<small> | Santiago</small></h5>
               <div>
                 <dl class="dl-horizontal">
                   <dt>Jefe Unidad</dt>
@@ -319,7 +322,7 @@
                 </dl>
               </div>
 
-              <h5 class="txt_destacado grey" >Hospital de Puerto Montt<br><small></small></h5>
+              <h5 class="txt_destacado grey" >Hospital de Puerto Montt<small> </small></h5>
               <div>
                 <dl class="dl-horizontal">
                   <dt>Jefe Unidad</dt>
@@ -335,7 +338,7 @@
                 </dl>
               </div>
 
-              <h5 class="txt_destacado grey" >Hospital Van Buren<br><small></small></h5>
+              <h5 class="txt_destacado grey" >Hospital Van Buren<small> </small></h5>
               <div>
                 <dl class="dl-horizontal">
                   <dt>Jefe Unidad</dt>
@@ -351,7 +354,7 @@
                 </dl>
               </div>
 
-              <h5 class="txt_destacado grey" >Hospital Regional de Antofagasta<br><small></small></h5>
+              <h5 class="txt_destacado grey" >Hospital Regional de Antofagasta<small> </small></h5>
               <div>
                 <dl class="dl-horizontal">
                   <dt>Jefe Unidad</dt>
@@ -367,10 +370,114 @@
             
           </div>
          
+          <div id="paraguay">
 
+            <div id="accordion_paraguay">
 
+              <h5 class="txt_destacado grey" >Hospital de Clínicas de Asunción<small> </small></h5>
+              <div>
+                <dl class="dl-horizontal">
+                  <dt>Jefe Unidad</dt>
+                  <dd>Dr. Ramón Mir</dd>
+                </dl>
+                <dl class="dl-horizontal">
+                  <dt>Colaboradores</dt>
+                  <dd>Dr. José María Lacarrubba<br> Dra. Larissa Genes<br> Dr. Ramón Mir<br> Dr. Elizabeth Céspedes<br> Dra. Elvira Mendieta</dd>
+                </dl>
+                <dl class="dl-horizontal">
+                  <dt>Seguimiento</dt>
+                  <dd>Dra. Rosanna Fonseca</dd>
+                </dl>
+              </div>
 
+              <h5 class="txt_destacado grey" >Hospital San Pablo<small> | Asunción</small></h5>
+              <div>
+                <dl class="dl-horizontal">
+                  <dt>Jefe Unidad</dt>
+                  <dd>Dra. Rosanna Fonseca</dd>
+                </dl>
+                <dl class="dl-horizontal">
+                  <dt>Colaboradores</dt>
+                  <dd>Dra. Rosanna Fonseca<br> Dra. Larissa Genes<br> Dra. Leticia Zapata<br> Dra. Sonia Pereira</dd>
+                </dl>
+                <dl class="dl-horizontal">
+                  <dt>Seguimiento</dt>
+                  <dd>Dr. Domingo Bogarín<br> Dra. Silvia Irala.</dd>
+                </dl>
+              </div>
+            </div>
 
+          </div>
+
+          <div id="peru">
+
+            <div id="accordion_peru">
+
+              <h5 class="txt_destacado grey" >Hospital Cayetano Heredia<small> | Lima </small></h5>
+              <div>
+                <dl class="dl-horizontal">
+                  <dt>Jefe Unidad</dt>
+                  <dd></dd>
+                </dl>
+                <dl class="dl-horizontal">
+                  <dt>Colaboradores</dt>
+                  <dd>Dra. Verónica Webb<br> Dra. Margarita Llontop<br> Dra. Lili Chancafe<br> Dra. Patricia Reyes<br> Dra. Sandra Rado</dd>
+                </dl>
+                <dl class="dl-horizontal">
+                  <dt>Seguimiento</dt>
+                  <dd>Dra. Sicilia Bellomo</dd>
+                </dl>
+              </div>
+
+              <h5 class="txt_destacado grey" >Hospital Guillermo Almenara<small> | Lima</small></h5>
+              <div>
+                <dl class="dl-horizontal">
+                  <dt>Jefe Unidad</dt>
+                  <dd>Dr. César García</dd>
+                </dl>
+                <dl class="dl-horizontal">
+                  <dt>Colaboradores</dt>
+                  <dd>Dr. Oscar Chumbes<br> Dra. Anne Castañeda<br> Dr. Walter Cabrera<br> Dr. Jorge Mucha</dd>
+                </dl>
+              </div>
+            </div>
+
+          </div>
+
+          <div id="uruguay">
+
+            <div id="accordion_uruguay">
+
+              <h5 class="txt_destacado grey" >Facultad de Medicina Servicio de Recién Nacidos, Pereyra Rossell<small> | Montevideo </small></h5>
+              <div>
+                <dl class="dl-horizontal">
+                  <dt>Jefe Unidad</dt>
+                  <dd>Dr. Daniel Borbonet</dd>
+                </dl>
+                <dl class="dl-horizontal">
+                  <dt>Colaboradores</dt>
+                  <dd>Dra. Sandra Gugliucci<br> Dra. Ana Lain<br> Dra. Micaela Murillo<br> Dr. Ricardo Tambasco</dd>
+                </dl>
+                <dl class="dl-horizontal">
+                  <dt>Seguimiento</dt>
+                  <dd>Dra. Sicilia Bellomo</dd>
+                </dl>
+              </div>
+
+              <h5 class="txt_destacado grey" >Hospital Guillermo Almenara<small> | Lima</small></h5>
+              <div>
+                <dl class="dl-horizontal">
+                  <dt>Jefe Unidad</dt>
+                  <dd>Dr. César García</dd>
+                </dl>
+                <dl class="dl-horizontal">
+                  <dt>Colaboradores</dt>
+                  <dd>Dr. Oscar Chumbes<br> Dra. Anne Castañeda<br> Dr. Walter Cabrera<br> Dr. Jorge Mucha</dd>
+                </dl>
+              </div>
+            </div>
+
+          </div>
 
         </div>
 
@@ -395,6 +502,7 @@
 <script src="../js/jjszip.min.js"></script>
 <script src="../js/buttons.html5.min.js"></script>
 <script src="../js/data_table_print.js"></script>
+
 <script type="text/javascript">
   $(document).ready(function() {
       $('#tbl_comite').DataTable();
@@ -402,9 +510,14 @@
       $( "#accordion_argentina" ).accordion();
       $( "#accordion_brasil" ).accordion();
       $( "#accordion_chile" ).accordion();
+      $( "#accordion_paraguay" ).accordion();
+      $( "#accordion_peru" ).accordion();
+      $( "#accordion_uruguay" ).accordion();
 
   } );
 </script>
+
+<script src="../js/vista/integrantes.js"></script>
 
 </body>
 </html>

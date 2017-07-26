@@ -65,10 +65,10 @@ h4 {
     background-color: #006e17;
 }
 .ui-accordion-header {
-    background-color: #fefefe !important;
-    border-style: solid;
+    background-color: #f1f1f1 !important;
+    /*border-style: solid;
     border-color: #aaa;
-    border-width: 1px;
+    border-width: 1px;*/
     color: #333 !important;
     padding: 5px !important;
     border-radius: 5px !important;
