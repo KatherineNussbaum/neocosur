@@ -21,10 +21,8 @@ h4 a {color: #000;}
 
 h4 a:hover{ text-decoration: none; color: #003b7e; cursor: pointer; }
 
-
 .container {
 }
-
 
 .footer {
     position: absolute;
@@ -49,6 +47,9 @@ h4 {
 	margin-bottom: 25px;
 }
 
+.subtitulo{
+    margin-bottom: 25px;
+}
 
 .txt_destacado{
     padding: 25px !important;
@@ -66,9 +67,6 @@ h4 {
 }
 .ui-accordion-header {
     background-color: #f1f1f1 !important;
-    /*border-style: solid;
-    border-color: #aaa;
-    border-width: 1px;*/
     color: #333 !important;
     padding: 5px !important;
     border-radius: 5px !important;
@@ -116,7 +114,6 @@ fieldset legend {
 }
 
 .ficha {
-
 	border-radius: 4px;
     border-top-left-radius: 0px;
     border-top-right-radius: 0px;
@@ -147,7 +144,6 @@ fieldset legend {
     /*font-size: 11px;*/
     text-decoration: none;
     font-weight: normal;
-
 }
 
 .radio input[type='radio'], .radio-inline input[type='radio'] {

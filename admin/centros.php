@@ -1,5 +1,4 @@
 <?php include 'head.php'; ?>
-
   	
 	<div class="container">
 		<!-- Inicio del Contenido -->
@@ -10,7 +9,7 @@
 	      	</div>
 			<div class="col-lg-2">
 				<div class="btn-group" role="group" aria-label="">
-				  	<a class="btn btn-warning btn-sm" href="nuevo_centro.php" role="button">
+				  	<a class="btn btn-warning btn-sm" href="centro.php" role="button">
 				  		<span class="glyphicon glyphicon-plus" aria-hidden="true"></span> Agregar Nuevo Centro
 				  	</a>
 				</div>
@@ -56,80 +55,76 @@
 		            </tr>
 		        </tfoot>
 		        <tbody>
-              <tr>
-		                <td>AR12</td>
-		                <td>Centro Perinatologico Hospital J.B. turraspe</td>
-		                <td>Argentina</td>
-		                <td>Privado</td>
-		                <td>Si</td>
-		                <td>0</td>
-		                <td>0</td>
-		                <td>0</td>
-		                <td>0</td>
-		                <td>0</td>
-		                <td>2</td>
-		                <td>2</td>
+              		<tr id="1">
+		                <td class="centro">AR12</td>
+		                <td class="centro">Centro Perinatologico Hospital J.B. turraspe</td>
+		                <td class="centro">Argentina</td>
+		                <td class="centro">Privado</td>
+		                <td class="centro">Si</td>
+		                <td class="centro">0</td>
+		                <td class="centro">0</td>
+		                <td class="centro">0</td>
+		                <td class="centro">0</td>
+		                <td class="centro">0</td>
+		                <td class="centro">2</td>
+		                <td class="centro">2</td>
 		                <td><a href="#">Ir a las fichas</a></td>
-		                <td>
-		                	<a class="btn btn-warning btn-xs" href="#" role="button" ><span class="glyphicon glyphicon-pencil" aria-hidden="true"></span></a> 
-		                	<a class="btn btn-success btn-xs" href="#" role="button" ><span class="glyphicon glyphicon-ok" aria-hidden="true"></span></a>
+		                <td>		                	
+		                	<a class="btn btn-success btn-xs" href="#" role="button" ><span class="glyphicon glyphicon-ok" aria-hidden="true" onclick="estado(1)"></span></a>
 		                </td>
 		            </tr>
-		            <tr>
-		                <td>AR12</td>
-		                <td>Centro Perinatologico Hospital J.B. turraspe</td>
-		                <td>Argentina</td>
-		                <td>Privado</td>
-		                <td>Si</td>
-		                <td>0</td>
-		                <td>0</td>
-		                <td>0</td>
-		                <td>0</td>
-		                <td>0</td>
-		                <td>2</td>
-		                <td>2</td>
+		            <tr id="2">
+		                <td class="centro">AR12</td>
+		                <td class="centro">Centro Perinatologico Hospital J.B. turraspe</td>
+		                <td class="centro">Argentina</td>
+		                <td class="centro">Privado</td>
+		                <td class="centro">Si</td>
+		                <td class="centro">0</td>
+		                <td class="centro">0</td>
+		                <td class="centro">0</td>
+		                <td class="centro">0</td>
+		                <td class="centro">0</td>
+		                <td class="centro">2</td>
+		                <td class="centro">2</td>
 		                <td><a href="#">Ir a las fichas</a></td>
-		                <td>
-		                	<a class="btn btn-warning btn-xs" href="#" role="button" ><span class="glyphicon glyphicon-pencil" aria-hidden="true"></span></a> 
-		                	<a class="btn btn-success btn-xs" href="#" role="button" ><span class="glyphicon glyphicon-ok" aria-hidden="true"></span></a>
+		                <td>		                	
+		                	<a class="btn btn-success btn-xs" href="#" role="button" ><span class="glyphicon glyphicon-ok" aria-hidden="true" onclick="estado(2)"></span></a>
 		                </td>
 		            </tr>
-		            <tr>
-		                <td>AR12</td>
-		                <td>Centro Perinatologico Hospital J.B. turraspe</td>
-		                <td>Argentina</td>
-		                <td>Privado</td>
-		                <td>Si</td>
-		                <td>0</td>
-		                <td>0</td>
-		                <td>0</td>
-		                <td>0</td>
-		                <td>0</td>
-		                <td>2</td>
-		                <td>2</td>
+		            <tr id="3">
+		                <td class="centro">AR12</td>
+		                <td class="centro">Centro Perinatologico Hospital J.B. turraspe</td>
+		                <td class="centro">Argentina</td>
+		                <td class="centro">Privado</td>
+		                <td class="centro">Si</td>
+		                <td class="centro">0</td>
+		                <td class="centro">0</td>
+		                <td class="centro">0</td>
+		                <td class="centro">0</td>
+		                <td class="centro">0</td>
+		                <td class="centro">2</td>
+		                <td class="centro">2</td>
 		                <td><a href="#">Ir a las fichas</a></td>
-		                <td>
-		                	<a class="btn btn-warning btn-xs" href="#" role="button" ><span class="glyphicon glyphicon-pencil" aria-hidden="true"></span></a> 
-		                	<a class="btn btn-success btn-xs" href="#" role="button" ><span class="glyphicon glyphicon-ok" aria-hidden="true"></span></a>
+		                <td>		                	
+		                	<a class="btn btn-success btn-xs" href="#" role="button" ><span class="glyphicon glyphicon-ok" aria-hidden="true" onclick="estado(3)"></span></a>
 		                </td>
 		            </tr>
-		            <tr>
-		                <td>AR12</td>
-		                <td>Centro Perinatologico Hospital J.B. turraspe</td>
-		                <td>Argentina</td>
-		                <td>Privado</td>
-		                <td>Si</td>
-		                <td>0</td>
-		                <td>0</td>
-		                <td>0</td>
-		                <td>0</td>
-		                <td>0</td>
-		                <td>2</td>
-		                <td>2</td>
+		            <tr id="4">
+		                <td class="centro">AR12</td>
+		                <td class="centro">Centro Perinatologico Hospital J.B. turraspe</td>
+		                <td class="centro">Argentina</td>
+		                <td class="centro">Privado</td>
+		                <td class="centro">Si</td>
+		                <td class="centro">0</td>
+		                <td class="centro">0</td>
+		                <td class="centro">0</td>
+		                <td class="centro">0</td>
+		                <td class="centro">0</td>
+		                <td class="centro">2</td>
+		                <td class="centro">2</td>
 		                <td><a href="#">Ir a las fichas</a></td>
-		                <td>
-		                	<a class="btn btn-warning btn-xs" href="#" role="button" ><span class="glyphicon glyphicon-pencil" aria-hidden="true"></span></a> 
-		                	<a class="btn btn-success btn-xs" href="#" role="button" ><span class="glyphicon glyphicon-ok" aria-hidden="true"></span></a>
+		                <td>		                	
+		                	<a class="btn btn-success btn-xs" href="#" role="button" ><span class="glyphicon glyphicon-ok" aria-hidden="true" onclick="estado(4)"></span></a>
 		                </td>
 		            </tr>
 		        </tbody>
@@ -152,6 +147,7 @@
 <script src="../js/data_table_print.js"></script>
 <script type="text/javascript">
 	$(document).ready(function() {
+
     	$('#tbl_centros').DataTable({
 	    	dom: 'Bfrtip',
 	        buttons: [
@@ -159,7 +155,18 @@
 	            'print'
 	        ]
 		});
+
+		$('#tbl_centros tbody').on( 'click', 'tr .centro', function () {
+	       	var id = $(this).parent().prop('id');
+	       	window.location.href = "centro.php?id=" + id;
+	    } );
+
+	    
+
 	} );
+	function estado(id){
+		   alert("Debe cambiar estado del centro. Id: " + id);
+		};
 </script>
 
 </body>

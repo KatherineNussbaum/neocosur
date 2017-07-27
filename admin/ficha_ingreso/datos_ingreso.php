@@ -1,8 +1,8 @@
 <div class="ficha panel panel-default">
   <div class="panel-body">
     <form>
-      <h4> <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span> Datos del Ingreso</h4>
-
+      <button class="btn btn-success active subtitulo" type="button" ><span class="glyphicon glyphicon-chevron-right" aria-hidden="true" ></span> Datos del Ingreso</button>
+      
       <div class="col-lg-12">
                                     
         <div class="form-group col-lg-6">

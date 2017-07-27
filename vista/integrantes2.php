@@ -19,7 +19,7 @@
         </div>
         <div class="col-lg-2">
           <ul class="nav nav-pills nav-stacked">
-            <li role="presentation" id="btn_argentina" class="active"><a >Argentina</a></li>
+            <li role="presentation" id="btn_argentina"><a >Argentina</a></li>
             <li role="presentation" id="btn_brasil" ><a>Brasil</a></li>
             <li role="presentation" id="btn_chile"><a >Chile</a></li>
             <li role="presentation" id="btn_paraguay"><a >Paraguay</a></li>
@@ -507,12 +507,24 @@
   $(document).ready(function() {
       $('#tbl_comite').DataTable();
 
-      $( "#accordion_argentina" ).accordion();
-      $( "#accordion_brasil" ).accordion();
-      $( "#accordion_chile" ).accordion();
-      $( "#accordion_paraguay" ).accordion();
-      $( "#accordion_peru" ).accordion();
-      $( "#accordion_uruguay" ).accordion();
+      $( "#accordion_argentina" ).accordion({
+      heightStyle: "content"
+    });
+      $( "#accordion_brasil" ).accordion({
+      heightStyle: "content"
+    });
+      $( "#accordion_chile" ).accordion({
+      heightStyle: "content"
+    });
+      $( "#accordion_paraguay" ).accordion({
+      heightStyle: "content"
+    });
+      $( "#accordion_peru" ).accordion({
+      heightStyle: "content"
+    });
+      $( "#accordion_uruguay" ).accordion({
+      heightStyle: "content"
+    });
 
   } );
 </script>

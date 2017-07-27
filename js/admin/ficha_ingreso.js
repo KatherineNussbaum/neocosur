@@ -857,6 +857,7 @@ jQuery(document).ready(function(){
 
 // Mostrar/Cambiar de Sub-Secciones
 // ===========================================
+/*
     $("#sec_malformacion").click(function(){
         $( this ).css( {"color" : "#000", "background": "#eee" , "padding":"10px", "border-radius":"5px" });
         $("#sec_principal").css( {"color" : "#999" });
@@ -872,27 +873,27 @@ jQuery(document).ready(function(){
         $("#malformacion_cognitiva").fadeOut('fast');
         $("#principal").fadeIn('slow');
     });
+
+    */
     
     $("#sec_principal_neonatales").click(function(){
-        $( this ).css( {"color" : "#000" });
-        $("#sec_oftalmologica, #sec_sepsis").css( {"color" : "#999", "background": "none" });
+
+        $(this).addClass("active btn-success");
+        $(this).removeClass("btn-default");
 
         $("#oftalmologica, #sepsis").fadeOut('fast');
         $("#principal_neonatales").fadeIn('slow');
     });
 
     $("#sec_oftalmologica").click(function(){
-        $( this ).css( {"color" : "#000", "background": "#eee" , "padding":"10px", "border-radius":"5px" });
-        $("#sec_sepsis, #sec_principal_neonatales").css( {"color" : "#999", "background": "none" });
-
+        $(this).addClass("active btn-success").removeClass("btn-default");
+        
         $("#principal_neonatales, #sepsis").fadeOut('fast');
         $("#oftalmologica").fadeIn('slow');
     });
 
     $("#sec_sepsis").click(function(){
-        $( this ).css( {"color" : "#000", "background": "#eee" , "padding":"10px", "border-radius":"5px" });
-        $("#sec_oftalmologica, #sec_principal_neonatales").css( {"color" : "#999", "background": "none" });
-
+        $(this).addClass("active btn-success").removeClass("btn-default");
         $("#principal_neonatales, #oftalmologica").fadeOut('fast');
         $("#sepsis").fadeIn('slow');
     });

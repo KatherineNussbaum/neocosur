@@ -1,13 +1,11 @@
 <div class="ficha panel panel-default" id="antropometria">
   	<div class="panel-body">
 	  	<form>
-	    	<h4>
-	    		<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-				Antropometría <span class="glyphicon glyphicon-question-sign" data-toggle="tooltip" data-html="true" aria-hidden="true" title="Los datos del nacimiento corresponde a los indicados en los antecedentes del parto.<br>Peso: Indicar pesos en gramos sin separador de miles.<br>Talla y Cir. Cráneo: Indicar medición en centímetros con no más de un decimal."></span>
-	    	</h4>
+
+	  		<button class="btn btn-success active subtitulo" type="button" ><span class="glyphicon glyphicon-chevron-right" aria-hidden="true" ></span> Antropometría <span class="glyphicon glyphicon-question-sign" data-toggle="tooltip" data-html="true" aria-hidden="true" title="Los datos del nacimiento corresponde a los indicados en los antecedentes del parto.<br>Peso: Indicar pesos en gramos sin separador de miles.<br>Talla y Cir. Cráneo: Indicar medición en centímetros con no más de un decimal."></span></button>
 
 	    	<div class="col-lg-12">
-		    	<table>
+		    	<table class="col-lg-12">
 		    		<thead>
 		    			<tr>
 		    				<td class="col-lg-3">Edad</td>
@@ -26,7 +24,7 @@
 		          				</div>
 		    				</td>
 		    				<td>
-		    					<div class="input-group linea col-lg-6">
+		    					<div class="input-group linea col-lg-6 ">
 		            				<input type="number" min="20" max="50" step="1" name="talla_7" class="form-control input-sm" aria-describedby="basic-addon2">
 		            				<span class="input-group-addon" id="basic-addon2">cm</span>
 		          				</div>
@@ -41,7 +39,7 @@
 		    			<tr>
 		    				<td><label for="alta_antropometria" class="control-label radio-inline" >28 días</label></td>
 		    				<td>
-		    					<div class="input-group linea col-lg-6">
+		    					<div class="input-group linea  col-lg-6">
 		            				<input type="number" min="500" max="2400" step="1" name="pesos_28" class="form-control input-sm" aria-describedby="basic-addon2">
 		            				<span class="input-group-addon" id="basic-addon2">g.</span>
 		          				</div>
@@ -68,13 +66,13 @@
 		          				</div>
 		    				</td>
 		    				<td>
-		    					<div class="input-group linea col-lg-6">
+		    					<div class="input-group linea  col-lg-6">
 		            				<input type="number" min="20" max="60" step="1" name="talla_28" class="form-control input-sm" aria-describedby="basic-addon2">
 		            				<span class="input-group-addon" id="basic-addon2">cm</span>
 		          				</div>
 		    				</td>
 		    				<td>
-		    					<div class="input-group linea col-lg-6">
+		    					<div class="input-group linea col-lg-6 ">
 		            				<input type="number" min="18" max="55" step="1" name="craneo_28" class="form-control input-sm" aria-describedby="basic-addon2">
 		            				<span class="input-group-addon" id="basic-addon2">cm</span>
 		          				</div>
@@ -82,8 +80,8 @@
 		    			</tr>
 		    			<tr>
 		    				<td>
-		    					<label for="alta_antropometria" class="control-label radio-inline col-lg-2" >Alta</label>
-		    					<div class="input-group linea col-lg-5">
+		    					<label for="alta_antropometria col-lg-6" class="control-label radio-inline col-lg-2" >Alta</label>
+		    					<div class="input-group linea  col-lg-6">
 		            				<input type="number" min="1" max="999" step="1" name="pesos_28" class="form-control input-sm" aria-describedby="basic-addon2">
 		            				<span class="input-group-addon" id="basic-addon2">días</span>
 		          				</div>

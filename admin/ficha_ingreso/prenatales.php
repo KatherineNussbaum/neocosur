@@ -1,11 +1,7 @@
 <div class="ficha panel panel-default">
   <div class="panel-body">
     <form>
-      <h4>
-        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-        <a id="sec_principal">Antecedentes Prentatales</a> 
-      </h4>
-
+      <button class="btn btn-success active subtitulo" type="button" ><span class="glyphicon glyphicon-chevron-right" aria-hidden="true" ></span> Antecedentes Prentatales</button>
 
       <div id="principal">
         <div class="col-lg-12">

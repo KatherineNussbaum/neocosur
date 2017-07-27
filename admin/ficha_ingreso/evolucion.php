@@ -1,32 +1,18 @@
 <div class="ficha panel panel-default" id="evolucion_tratamiento">
   	<div class="panel-body">
 	  	<form>
-	    	<h4>
-	    		<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-	    		 	<a id="sec_respiratorio">Evolución y Tratamiento | <small>Soporte Respiratorio <span class="glyphicon glyphicon-question-sign" data-toggle="tooltip" data-html="true" aria-hidden="true" title="Si duración de soporte es < 1 día, ingresar sólo horas.<br>Si duración de soporte es > 1 día, ingresar días completos."></span></small></a> 
-	    		<small> 
-	       			<a id="sec_medicamentos">
-	       				<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span> 
-	       				Medicamentos
-	       			</a>  
-	       			<a id="sec_cateteres">
-	       				<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span> 
-	       				Catéteres <span class="glyphicon glyphicon-question-sign" data-toggle="tooltip" data-html="true" aria-hidden="true" title="Si duración es < 1 día, ingresar sólo horas.<br>Si duración es > 1 día, ingresar días completos."></span>
-	       			</a>
-	       			<a id="sec_cirugia">
-	       				<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span> 
-	       				Cirugía
-	       			</a>
-	       			<a id="sec_alimentacion">
-	       				<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span> 
-	       				Alimentación
-	       			</a>
-	       			<a id="sec_observaciones">
-	       				<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span> 
-	       				Observaciones
-	       			</a>
-	    		</small>
-	    	</h4>
+
+	    	<button class="btn btn-success active subtitulo" type="button" id="sec_respiratorio"><span class="glyphicon glyphicon-chevron-right" aria-hidden="true" ></span> Soporte Respiratorio <span class="glyphicon glyphicon-question-sign" data-toggle="tooltip" data-html="true" aria-hidden="true" title="Si duración de soporte es < 1 día, ingresar sólo horas.<br>Si duración de soporte es > 1 día, ingresar días completos."></span></button>
+
+	    	<button class="btn btn-success active subtitulo" type="button" id="sec_medicamentos"><span class="glyphicon glyphicon-chevron-right" aria-hidden="true" ></span> Medicamentos</button>
+
+	    	<button class="btn btn-success active subtitulo" type="button" id="sec_cateteres"><span class="glyphicon glyphicon-chevron-right" aria-hidden="true" ></span> Catéteres <span class="glyphicon glyphicon-question-sign" data-toggle="tooltip" data-html="true" aria-hidden="true" title="Si duración es < 1 día, ingresar sólo horas.<br>Si duración es > 1 día, ingresar días completos."></span></button>
+
+	    	<button class="btn btn-success active subtitulo" type="button" id="sec_cirugia"><span class="glyphicon glyphicon-chevron-right" aria-hidden="true" ></span> Cirugía</button>
+
+	    	<button class="btn btn-success active subtitulo" type="button" id="sec_alimentacion"><span class="glyphicon glyphicon-chevron-right" aria-hidden="true" ></span> Alimentación</button>
+
+	    	<button class="btn btn-success active subtitulo" type="button" id="sec_observaciones"><span class="glyphicon glyphicon-chevron-right" aria-hidden="true" ></span> Observaciones</button>
 
 	    	<div id="respiratorio"> 
 
@@ -568,13 +554,13 @@
 		                <td></td>
 		                <td>
 		                  <div class="input-group linea">
-		                    <input type="number" min="1" max="999" step="1" name="detalle_cirugia_dias" class="form-control input-sm detalle_sepsis_tardia" aria-describedby="basic-addon2">
+		                    <input type="number" min="1" max="999" step="1" name="detalle_cirugia_dias[]" class="form-control input-sm detalle_sepsis_tardia" aria-describedby="basic-addon2">
 		                    <span class="input-group-addon" id="basic-addon2">días</span>
 		                  </div>
 		                </td>
 		                  
 		                <td>
-		                  	<select name="detalle_cirugia" class="form-control input-sm detalle_sepsis_tardia detalle_cirugia" id="detalle_cirugia">
+		                  	<select name="detalle_cirugia[]" class="form-control input-sm detalle_sepsis_tardia detalle_cirugia" id="detalle_cirugia">
 		                    	<option value="0">Seleccione</option>
 		                    	<option value="1">Cirugía ROP</option>
 		                    	<option value="otro">Otro</option>
@@ -586,7 +572,7 @@
 		                    	<label for="detalle_cirugia_otro" class="txt_izq control-label">Si es otro, cuál?</label>
 		                  	</div>
 		                  	<div class="col-lg-7 detalle_cirugia_otro sub-form">
-		                    	<input type="text" name="detalle_cirugia_otro" class="form-control input-sm">
+		                    	<input type="text" name="detalle_cirugia_otro[]" class="form-control input-sm">
 		                  	</div>
 		                </td>
 		                <td><button type="button" class="btn btn-danger btn-xs eliminar"><span class="glyphicon glyphicon-remove" aria-hidden="true"></span></button></td>
