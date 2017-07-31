@@ -857,6 +857,7 @@ jQuery(document).ready(function(){
 
 // Mostrar/Cambiar de Sub-Secciones
 // ===========================================
+/*
     $("#sec_malformacion").click(function(){
         $( this ).css( {"color" : "#000", "background": "#eee" , "padding":"10px", "border-radius":"5px" });
         $("#sec_principal").css( {"color" : "#999" });
@@ -872,90 +873,126 @@ jQuery(document).ready(function(){
         $("#malformacion_cognitiva").fadeOut('fast');
         $("#principal").fadeIn('slow');
     });
+
+    */
     
     $("#sec_principal_neonatales").click(function(){
-        $( this ).css( {"color" : "#000" });
-        $("#sec_oftalmologica, #sec_sepsis").css( {"color" : "#999", "background": "none" });
 
+        $(this).removeClass("btn-default");
+        $(this).addClass("active btn-success");
+
+        $("#sec_oftalmologica, #sec_sepsis").removeClass("active btn-success");
+        $("#sec_oftalmologica, #sec_sepsis").addClass("btn-default");
+        
         $("#oftalmologica, #sepsis").fadeOut('fast');
         $("#principal_neonatales").fadeIn('slow');
     });
 
     $("#sec_oftalmologica").click(function(){
-        $( this ).css( {"color" : "#000", "background": "#eee" , "padding":"10px", "border-radius":"5px" });
-        $("#sec_sepsis, #sec_principal_neonatales").css( {"color" : "#999", "background": "none" });
+        $(this).removeClass("btn-default");
+        $(this).addClass("active btn-success");
 
+        $("#sec_principal_neonatales, #sec_sepsis").removeClass("active btn-success");
+        $("#sec_principal_neonatales, #sec_sepsis").addClass("btn-default");
+        
         $("#principal_neonatales, #sepsis").fadeOut('fast');
         $("#oftalmologica").fadeIn('slow');
     });
 
     $("#sec_sepsis").click(function(){
-        $( this ).css( {"color" : "#000", "background": "#eee" , "padding":"10px", "border-radius":"5px" });
-        $("#sec_oftalmologica, #sec_principal_neonatales").css( {"color" : "#999", "background": "none" });
+        $(this).removeClass("btn-default");
+        $(this).addClass("active btn-success");
+
+        $("#sec_oftalmologica, #sec_principal_neonatales").removeClass("active btn-success");
+        $("#sec_oftalmologica, #sec_principal_neonatales").addClass("btn-default");
 
         $("#principal_neonatales, #oftalmologica").fadeOut('fast');
         $("#sepsis").fadeIn('slow');
     });
 
     $("#sec_respiratorio").click(function(){
-        $( this ).css( {"color" : "#000"});
-        $("#sec_medicamentos, #sec_cateteres, #sec_cirugia, #sec_alimentacion, #sec_observaciones").css( {"color" : "#999", "background": "none" });
+        $(this).removeClass("btn-default");
+        $(this).addClass("active btn-success");
+
+        $("#sec_medicamentos, #sec_cateteres, #sec_cirugia, #sec_alimentacion, #sec_observaciones").removeClass("active btn-success");
+        $("#sec_medicamentos, #sec_cateteres, #sec_cirugia, #sec_alimentacion, #sec_observaciones").addClass("btn-default");
 
         $("#medicamentos, #cateteres, #cirugia, #alimentacion, #observaciones").fadeOut('fast');
         $("#respiratorio").fadeIn('slow');
     });
 
     $("#sec_medicamentos").click(function(){
-        $( this ).css( {"color" : "#000", "background": "#eee" , "padding":"10px", "border-radius":"5px" });
-        $("#sec_respiratorio, #sec_cateteres, #sec_cirugia, #sec_alimentacion, #sec_observaciones").css( {"color" : "#999", "background": "none" });
+        $(this).removeClass("btn-default");
+        $(this).addClass("active btn-success");
+
+        $("#sec_respiratorio, #sec_cateteres, #sec_cirugia, #sec_alimentacion, #sec_observaciones").removeClass("active btn-success");
+        $("#sec_respiratorio, #sec_cateteres, #sec_cirugia, #sec_alimentacion, #sec_observaciones").addClass("btn-default");
 
         $("#respiratorio, #cateteres, #cirugia, #alimentacion, #observaciones").fadeOut('fast');
         $("#medicamentos").fadeIn('slow');
     });
 
     $("#sec_cateteres").click(function(){
-        $( this ).css( {"color" : "#000", "background": "#eee" , "padding":"10px", "border-radius":"5px" });
-        $("#sec_medicamentos, #sec_respiratorio, #sec_cirugia, #sec_alimentacion, #sec_observaciones").css( {"color" : "#999", "background": "none" });
+        $(this).removeClass("btn-default");
+        $(this).addClass("active btn-success");
+
+        $("#sec_medicamentos, #sec_respiratorio, #sec_cirugia, #sec_alimentacion, #sec_observaciones").removeClass("active btn-success");
+        $("#sec_medicamentos, #sec_respiratorio, #sec_cirugia, #sec_alimentacion, #sec_observaciones").addClass("btn-default");
 
         $("#medicamentos, #respiratorio, #cirugia, #alimentacion, #observaciones").fadeOut('fast');
         $("#cateteres").fadeIn('slow');
     });
 
     $("#sec_cirugia").click(function(){
-        $( this ).css( {"color" : "#000", "background": "#eee" , "padding":"10px", "border-radius":"5px" });
-        $("#sec_medicamentos, #sec_respiratorio, #sec_cateteres, #sec_alimentacion, #sec_observaciones").css( {"color" : "#999", "background": "none" });
+        $(this).removeClass("btn-default");
+        $(this).addClass("active btn-success");
+
+        $("#sec_medicamentos, #sec_cateteres, #sec_respiratorio, #sec_alimentacion, #sec_observaciones").removeClass("active btn-success");
+        $("#sec_medicamentos, #sec_cateteres, #sec_respiratorio, #sec_alimentacion, #sec_observaciones").addClass("btn-default");
 
         $("#medicamentos, #respiratorio, #respiratorio, #alimentacion, #observaciones, #cateteres").fadeOut('fast');
         $("#cirugia").fadeIn('slow');
     });
 
     $("#sec_alimentacion").click(function(){
-        $( this ).css( {"color" : "#000", "background": "#eee" , "padding":"10px", "border-radius":"5px" });
-        $("#sec_medicamentos, #sec_respiratorio, #sec_cateteres, #sec_cirugia, #sec_observaciones").css( {"color" : "#999", "background": "none" });
+        $(this).removeClass("btn-default");
+        $(this).addClass("active btn-success");
+
+        $("#sec_medicamentos, #sec_cateteres, #sec_cirugia, #sec_respiratorio, #sec_observaciones").removeClass("active btn-success");
+        $("#sec_medicamentos, #sec_cateteres, #sec_cirugia, #sec_respiratorio, #sec_observaciones").addClass("btn-default");
 
         $("#medicamentos, #respiratorio, #respiratorio, #cirugia, #observaciones, #cateteres").fadeOut('fast');
         $("#alimentacion").fadeIn('slow');
     });
 
     $("#sec_observaciones").click(function(){
-        $( this ).css( {"color" : "#000", "background": "#eee" , "padding":"10px", "border-radius":"5px" });
-        $("#sec_medicamentos, #sec_respiratorio, #sec_cateteres, #sec_cirugia, #sec_alimentacion").css( {"color" : "#999", "background": "none" });
+        $(this).removeClass("btn-default");
+        $(this).addClass("active btn-success");
+
+        $("#sec_medicamentos, #sec_cateteres, #sec_cirugia, #sec_alimentacion, #sec_respiratorio").removeClass("active btn-success");
+        $("#sec_medicamentos, #sec_cateteres, #sec_cirugia, #sec_alimentacion, #sec_respiratorio").addClass("btn-default");
 
         $("#medicamentos, #respiratorio, #respiratorio, #cirugia, #alimentacion, #cateteres").fadeOut('fast');
         $("#observaciones").fadeIn('slow');
     });
 
     $("#sec_fallece").click(function(){
-        $( this ).css( {"color" : "#000", "background": "#eee" , "padding":"10px", "border-radius":"5px" });
-        $("#sec_informacion_alta").css( {"color" : "#999", "background": "none" });
+        $(this).removeClass("btn-default");
+        $(this).addClass("active btn-success");
+
+        $("#sec_informacion_alta").removeClass("active btn-success");
+        $("#sec_informacion_alta").addClass("btn-default");
 
         $("#informacion_alta").fadeOut('fast');
         $("#fallecimiento").fadeIn('slow');
     });
 
     $("#sec_informacion_alta").click(function(){
-        $( this ).css( {"color" : "#000", "background": "#eee" , "padding":"10px", "border-radius":"5px" });
-        $("#sec_fallece").css( {"color" : "#999", "background": "none" });
+        $(this).removeClass("btn-default");
+        $(this).addClass("active btn-success");
+
+        $("#sec_fallece").removeClass("active btn-success");
+        $("#sec_fallece").addClass("btn-default");
 
         $("#fallecimiento").fadeOut('fast');
         $("#informacion_alta").fadeIn('slow');

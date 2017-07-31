@@ -4,6 +4,13 @@
     <h4><span class="glyphicon glyphicon-chevron-down" aria-hidden="true"></span> Permisos</h4>
     <div class="col-lg-6">
       <div class="form-group">
+
+        <label for="centro" class="col-lg-5 control-label">Centro</label>
+        <div class="col-lg-7">
+          <select name="centro" class="form-control input-sm">
+              <option value="0">Seleccione</option>
+            </select>
+        </div>
         <label for="nombres" class="col-lg-5 control-label">Cargo</label>
         <div class="col-lg-7">
           <select name="cargo" class="form-control input-sm">

@@ -1,7 +1,7 @@
 <div class="ficha panel panel-default">
   <div class="panel-body">
   <form>
-    <h4> <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span> Antecedentes del Parto</h4>
+    <button class="btn btn-success active subtitulo" type="button" ><span class="glyphicon glyphicon-chevron-right" aria-hidden="true" ></span> Antecedentes del Parto</button>
 
     <div class="col-lg-12">
 

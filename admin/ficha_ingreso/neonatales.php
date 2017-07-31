@@ -1,13 +1,11 @@
 <div class="ficha panel panel-default" id="patologias_neonatales">
   <div class="panel-body">
   <form>
-    <h4>
-    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span> <a id="sec_principal_neonatales">Patologías Neonatales <span class="glyphicon glyphicon-question-sign" data-toggle="tooltip" aria-hidden="true" title="Considerar primeras 24 horas como día 0."></span></a> 
-    <small> 
-       <a id="sec_oftalmologica"><span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span> Evaluación oftalmológica</a>  
-       <a id="sec_sepsis"><span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span> Sepsis</a>
-    </small>
-    </h4>
+    <button class="btn btn-success active subtitulo" type="button" id="sec_principal_neonatales"><span class="glyphicon glyphicon-chevron-right" aria-hidden="true" ></span> Patologías Neonatales</button>
+
+    <button class="btn btn-default subtitulo" type="button" id="sec_oftalmologica"><span class="glyphicon glyphicon-chevron-right" aria-hidden="true" ></span> Evaluación oftalmológica</button>
+
+    <button class="btn btn-default subtitulo" type="button" id="sec_sepsis"><span class="glyphicon glyphicon-chevron-right" aria-hidden="true" ></span> Sepsis</button>
 
     <div id="principal_neonatales"> 
     

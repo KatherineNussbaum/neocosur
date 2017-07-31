@@ -1,19 +1,10 @@
 <div class="ficha panel panel-default">
   	<div class="panel-body">
 	  	<form>
-	    	<h4>
-	    		<a id="sec_informacion_alta">
-	    			<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-					Información del Alta 
-				</a>
-				<small> 
-			       	<a id="sec_fallece">
-			       		<span class="glyphicon glyphicon-chevron-right" aria-hidden="true">
-			       		</span> 
-			       		Fallecimiento
-			       	</a>
-			    </small>
-	    	</h4>
+	  		<button class="btn btn-success active subtitulo" type="button" id="sec_informacion_alta"><span class="glyphicon glyphicon-chevron-right" aria-hidden="true" ></span> Información del Alta </button>
+
+	  		<button class="btn btn-default subtitulo" type="button" id="sec_fallece"><span class="glyphicon glyphicon-chevron-right" aria-hidden="true" ></span> Fallecimiento </button>
+
 	    	<div id="informacion_alta">
 	    		<div class="col-lg-12">
 
