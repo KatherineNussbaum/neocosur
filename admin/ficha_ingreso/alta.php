@@ -3,7 +3,7 @@
 	  	<form>
 	  		<button class="btn btn-success active subtitulo" type="button" id="sec_informacion_alta"><span class="glyphicon glyphicon-chevron-right" aria-hidden="true" ></span> Información del Alta </button>
 
-	  		<button class="btn btn-success active subtitulo" type="button" id="sec_fallece"><span class="glyphicon glyphicon-chevron-right" aria-hidden="true" ></span> Fallecimiento </button>
+	  		<button class="btn btn-default subtitulo" type="button" id="sec_fallece"><span class="glyphicon glyphicon-chevron-right" aria-hidden="true" ></span> Fallecimiento </button>
 
 	    	<div id="informacion_alta">
 	    		<div class="col-lg-12">

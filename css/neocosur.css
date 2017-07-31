@@ -65,6 +65,13 @@ h4 {
     color: #FFF;
     background-color: #006e17;
 }
+
+.pie{
+    font-size: 11px !important;
+    margin-top: 25px !important;
+    display: block !important;
+    color: #999 !important;
+}
 .ui-accordion-header {
     background-color: #f1f1f1 !important;
     color: #333 !important;

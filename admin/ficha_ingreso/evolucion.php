@@ -4,15 +4,15 @@
 
 	    	<button class="btn btn-success active subtitulo" type="button" id="sec_respiratorio"><span class="glyphicon glyphicon-chevron-right" aria-hidden="true" ></span> Soporte Respiratorio <span class="glyphicon glyphicon-question-sign" data-toggle="tooltip" data-html="true" aria-hidden="true" title="Si duración de soporte es < 1 día, ingresar sólo horas.<br>Si duración de soporte es > 1 día, ingresar días completos."></span></button>
 
-	    	<button class="btn btn-success active subtitulo" type="button" id="sec_medicamentos"><span class="glyphicon glyphicon-chevron-right" aria-hidden="true" ></span> Medicamentos</button>
+	    	<button class="btn btn-default  subtitulo" type="button" id="sec_medicamentos"><span class="glyphicon glyphicon-chevron-right" aria-hidden="true" ></span> Medicamentos</button>
 
-	    	<button class="btn btn-success active subtitulo" type="button" id="sec_cateteres"><span class="glyphicon glyphicon-chevron-right" aria-hidden="true" ></span> Catéteres <span class="glyphicon glyphicon-question-sign" data-toggle="tooltip" data-html="true" aria-hidden="true" title="Si duración es < 1 día, ingresar sólo horas.<br>Si duración es > 1 día, ingresar días completos."></span></button>
+	    	<button class="btn btn-default  subtitulo" type="button" id="sec_cateteres"><span class="glyphicon glyphicon-chevron-right" aria-hidden="true" ></span> Catéteres <span class="glyphicon glyphicon-question-sign" data-toggle="tooltip" data-html="true" aria-hidden="true" title="Si duración es < 1 día, ingresar sólo horas.<br>Si duración es > 1 día, ingresar días completos."></span></button>
 
-	    	<button class="btn btn-success active subtitulo" type="button" id="sec_cirugia"><span class="glyphicon glyphicon-chevron-right" aria-hidden="true" ></span> Cirugía</button>
+	    	<button class="btn btn-default  subtitulo" type="button" id="sec_cirugia"><span class="glyphicon glyphicon-chevron-right" aria-hidden="true" ></span> Cirugía</button>
 
-	    	<button class="btn btn-success active subtitulo" type="button" id="sec_alimentacion"><span class="glyphicon glyphicon-chevron-right" aria-hidden="true" ></span> Alimentación</button>
+	    	<button class="btn btn-default  subtitulo" type="button" id="sec_alimentacion"><span class="glyphicon glyphicon-chevron-right" aria-hidden="true" ></span> Alimentación</button>
 
-	    	<button class="btn btn-success active subtitulo" type="button" id="sec_observaciones"><span class="glyphicon glyphicon-chevron-right" aria-hidden="true" ></span> Observaciones</button>
+	    	<button class="btn btn-default  subtitulo" type="button" id="sec_observaciones"><span class="glyphicon glyphicon-chevron-right" aria-hidden="true" ></span> Observaciones</button>
 
 	    	<div id="respiratorio"> 
 

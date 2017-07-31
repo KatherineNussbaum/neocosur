@@ -22,8 +22,8 @@
               <li><a href="neocosur.php">Acerca de</a></li>
               <li><a href="estructura.php">Estructura</a></li>
               <li><a href="integrantes.php">Integrantes</a></li>
-              <li><a href="#">Cálculo Score</a></li>
-              <li><a href="#">Revista Neocosur</a></li>
+              <li><a href="score.php">Cálculo Score</a></li>
+              <li><a href="revistas.php">Revista Neocosur</a></li>
               <li><a href="#">Publicaciones Neocosur</a></li>
             </ul>
           </div>
