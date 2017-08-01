@@ -8,7 +8,7 @@
 
       <div class="col-lg-12">
         <div  class="page-header">
-          <h1>Neocosur <small>| Estructura </small></h1>
+          <h1>Estructura <small> </small></h1>
         </div>
         <div>
           <p>

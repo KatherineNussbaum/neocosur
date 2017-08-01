@@ -24,7 +24,7 @@
               <li><a href="integrantes.php">Integrantes</a></li>
               <li><a href="score.php">Cálculo Score</a></li>
               <li><a href="revistas.php">Revista Neocosur</a></li>
-              <li><a href="#">Publicaciones Neocosur</a></li>
+              <li><a href="publicaciones.php">Publicaciones Neocosur</a></li>
             </ul>
           </div>
         </div>
