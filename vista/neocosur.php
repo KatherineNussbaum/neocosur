@@ -8,7 +8,7 @@
 
       <div class="col-lg-9">
         <div  class="page-header">
-          <h1>Neocosur <small>| Antecedentes Históricos </small></h1>
+          <h1>Antecedentes Históricos <small> </small></h1>
         </div>
         <div>
           <div class="txt_destacado green">
