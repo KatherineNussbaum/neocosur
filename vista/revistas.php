@@ -22,6 +22,41 @@
               </div>
             </div>
           </div>
+
+          <div class="col-lg-3">
+            <div class="thumbnail">
+              <img src="../img/revistas/2016_01.jpg">
+              <div class="caption">
+                <h3>2015, N°2</h3>
+                <h4>Hernia Diafragmática congénita</h4>
+                <p><a href="" class="btn btn-primary" role="button">Descargar</a></p>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="col-lg-3">
+            <div class="thumbnail">
+              <img src="../img/revistas/2016_01.jpg">
+              <div class="caption">
+                <h3>2015, N°1</h3>
+                <h4>Eficacia y seguridad del CPAP de burbuja en el cuidado neonatal en países de bajos y medianos ingresos: una revisión sistemática</h4>
+                <p><a href="" class="btn btn-primary" role="button">Descargar</a></p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3">
+            <div class="thumbnail">
+              <img src="../img/revistas/2016_01.jpg">
+              <div class="caption">
+                <h3>2013, N°5</h3>
+                <h4>Aspectos del cuidado del prematuro tardío después del alta hospitalaria</h4>
+                <p><a href="" class="btn btn-primary" role="button">Descargar</a></p>
+              </div>
+            </div>
+          </div>
+
         </div>
       </div>
       <!-- Fin del Contenido -->  
