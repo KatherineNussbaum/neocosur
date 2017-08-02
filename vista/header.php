@@ -1,6 +1,7 @@
 <!-- Inicio de Header -->
 <div id="header" class="row">
   <div id="logo" class="col-lg-3"><img src="../img/neocosur.jpg" width="224" height="72"></div>
+  <div id="banderas" class="col-lg-3 pull-right"><img src="../img/banderas.jpg" height="72"></div>
   <div class="col-lg-9"></div>
         
   <!-- Inicio de Menu -->
