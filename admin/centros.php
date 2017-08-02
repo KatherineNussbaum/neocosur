@@ -5,7 +5,7 @@
 		<?php include 'header.php'; ?>
 		 <div class="row">
 	      	<div class="col-lg-10">
-	        	<h1>Mantenedor de Centros</h1>
+	        	<h2>Mantenedor de Centros</h2>
 	      	</div>
 			<div class="col-lg-2">
 				<div class="btn-group" role="group" aria-label="">

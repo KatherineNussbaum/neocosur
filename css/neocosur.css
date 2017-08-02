@@ -192,3 +192,9 @@ button[type="submit"] { margin-top: 10px; margin-bottom: 10px; }
 .tooltip-arrow {
     border-top-color: rgba(68, 157, 68, 1) !important;
 }
+
+#sidebar{ margin-top: 85px !important;}
+
+.thumbnail {
+        background-color: #f8f8f8 !important;
+}
