@@ -6,7 +6,7 @@
 		<?php include 'header.php'; ?>
 		 <div class="row">
 	      	<div class="col-lg-12">
-	        	<h1>Usuario</h1>
+	        	<h2>Usuario</h2>
 	      	</div>
 		</div>
 

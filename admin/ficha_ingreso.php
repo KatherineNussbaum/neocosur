@@ -7,7 +7,7 @@
     <div class="row">
 
       <div class="col-lg-10">
-        <h1>Ficha de Ingreso</h1>
+        <h2>Ficha de Ingreso</h2>
       </div>
                 
       <div class="col-lg-2">

@@ -6,7 +6,7 @@
     <!-- Inicio de Título -->
     <div class="row">
 
-      <div class="col-lg-12">
+      <div class="col-lg-9">
 
         <div  class="page-header">
           <h1>Integrantes</h1>
@@ -482,6 +482,12 @@
         </div>
 
       </div>
+
+      <?php 
+        include "sidebar.php";
+      ?>
+
+
     </div>
 </div>
 

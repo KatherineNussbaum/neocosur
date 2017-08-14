@@ -7,7 +7,7 @@
     <div class="row">
 
       <div class="col-lg-10">
-        <h1>Control de Seguimiento</h1>
+        <h2>Control de Seguimiento</h2>
       </div>
 
     </div>

@@ -7,7 +7,7 @@
     <div class="row">
 
       <div class="col-lg-10">
-        <h1>Mantenedor de Usuarios</h1>
+        <h2>Mantenedor de Usuarios</h2>
       </div>
 
       <div class="col-lg-2">
