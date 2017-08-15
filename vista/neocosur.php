@@ -2,16 +2,20 @@
 
 <div class="container">
   <!-- Inicio del Contenido -->
-    <?php include 'header.php'; ?>
+
+    <!-- Inicio del Contenido -->
+    <div class="row">
+      <?php include 'header.php'; ?>
+    </div>
     <!-- Inicio de Título -->
     <div class="row">
 
-      <div class="col-lg-9">
-        <div  class="page-header">
-          <h1>Antecedentes Históricos <small> </small></h1>
+      <div class="col-lg-12">
+        <div class="page-header">
+          <h4><span class="text-primary">Antecedentes Históricos </span></h4>
         </div>
         <div>
-          <div class="txt_destacado green">
+          <div class="txt_destacado text-white bg-success">
             <p>Neocosur fue creado en 1997 tras una convocatoria de José Luis Tapia para formar un grupo colaborativo de trabajo, como propuesta ante la necesidad de tener datos localesy la misión de contribuir al mejoramiento continuo de los indicadores de salud neonatal de la región. Con gran entusiasmo se integraron 11 Unidades Neonatales de Argentina, Chile y Uruguay.</p>
           </div>
           <p>
@@ -27,11 +31,11 @@
             <p>
             En la actualidad la red cuenta con 26 centros participantes provenientes de 5 países del cono sur, todos centros terciarios y afiliados a Universidades. </p>
         </div>
-        <div class="txt_destacado green">
+        <div class="txt_destacado text-white bg-success">
            <p>Según estatutos de funcionamiento de la red, las Directivas son renovadas cada 4 años, por elección democrática. El Directorio electo para el período 2015 – 2018, quedó constituido por:</p>
         </div>
 
-        <h4>Directorio Neocosur 2014 - 2018</h4>
+        <h4><span class="text-success">Directorio Neocosur 2014 - 2018</span></h4>
         <dl class="dl-horizontal">
           <dt>Comité Directivo</dt>
           <dd>José Luis Tapia (Presidente), Ivonne D’Apremont (Secretaria), Gabriel Musante, Aldo Bancalari, Jaime Zegarra, Jorge Tavosnanska (Directores).</dd>
@@ -71,10 +75,6 @@
 
 
       </div>
-
-      <?php 
-        include "sidebar.php";
-      ?>
 
     </div>
 

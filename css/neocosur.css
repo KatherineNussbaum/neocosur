@@ -86,7 +86,7 @@ h4 {
     font-size: larger !important;
 }
 .ui-accordion-header-active{
-    background-color: #337ab7 !important;
+    background-color: #007bff !important;
     color: #FFF !important;
 }
 .ui-accordion-header-active small{ color: #fff;}
@@ -197,4 +197,91 @@ button[type="submit"] { margin-top: 10px; margin-bottom: 10px; }
 
 .thumbnail {
         background-color: #f8f8f8 !important;
+}
+
+
+.img_inicio{
+    margin-bottom: 25px;
+}
+
+.footer_publico {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 90px /*Altura del footer */
+}
+
+
+.login, .noticia{
+    padding-top: 15px;
+    border-radius: 10px;
+    margin-bottom: 25px;
+    padding-bottom:  15px;
+}
+.login h4, .noticia h4{
+    font-size: 16px;
+}
+.fondo_footer{
+    margin-top: 70px;
+    display: block;
+    height: 80px;
+
+
+}
+.text-muted{
+    margin-top: 0px;
+    height: 18px;
+    display: block;
+    padding-top: 20px;
+}
+
+.nav-link{
+    text-transform: uppercase;
+    font-weight: bold;
+    border-bottom: solid 5px #FFF;
+    padding-left: 10px !important;
+    padding-right: 10px !important;
+    margin-right: 19px;
+    margin-left: 19px;
+}
+
+.nav-link:hover{
+    border-bottom: solid 5px #c0e7dc;
+    color: #444;
+}
+.navbar{
+    border: solid 1px #f3f3f3;
+    border-radius: 10px;
+}
+
+.display-4 {
+    font-size: 26px;
+    border-bottom: solid 1px #f3f3f3;
+    padding-bottom: 15px;
+    margin-top: 25px;
+}
+.publicacion {
+    margin-bottom: 25px !important;
+}
+
+.text-primary {
+    color: #0455a7!important;
+}
+
+.bg-primary, .btn-primary { 
+    background-color: #0455a7!important;
+}
+.ui-accordion-header-active {
+    background-color: #0455a7 !important;
+    color: #FFF !important;
+}
+a {
+    color: #0455a7;
+}
+.text-success {
+    color: #008e1f !important;
+}
+
+.bg-success, .btn-success {
+    background-color: #008e1f !important;
 }
