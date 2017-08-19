@@ -132,7 +132,7 @@
               <input type="radio" name="ht_embarazo" value="si"> Sí
             </label>
             <label for="ht_embarazo" class="control-label radio-inline col-lg-2" >
-              <input type="radio" name="ht_embarazo"  value="no"> No
+              <input type="radio" name="ht_embarazo" value="no"> No
             </label>
           </div>
 

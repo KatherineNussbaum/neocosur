@@ -37,7 +37,7 @@ jQuery(document).ready(function(){
     		$("input[name*='diabetes_gestacional']").removeProp("checked");
     	}});
 
-// Ht Art
+// Hipertensión Arterial
 // -------------------------------------------
 	$( "#ht_art_si" ).change(function() {
     	var $input = $( this );
@@ -50,7 +50,7 @@ jQuery(document).ready(function(){
     	if( $input.prop("checked") )
     	{
     		$(".ht_art").hide();
-    		$("input[name*='ht_art']").removeProp("checked");
+    		$("input[name*='ht_embarazo']").removeProp("checked");
     	}});
 
 // Multiple
@@ -85,7 +85,8 @@ jQuery(document).ready(function(){
     	if( $input.prop("checked") )
     	{
     		$(".cort_prenatal").hide();
-    		$("#completo_si, #completo_no, #curso1, #curso2").removeProp("checked");
+    		$("#completo_si, #completo_no").removeProp("checked");
+            $("input[name*='curso']").removeProp("checked");
     		$(".completo").hide();
     	}});
 	$( "#cort_prenatal_s_i" ).change(function() {
@@ -93,7 +94,8 @@ jQuery(document).ready(function(){
     	if( $input.prop("checked") )
     	{
     		$(".cort_prenatal").hide();
-    		$("#completo_si, #completo_no, #curso1, #curso2").removeProp("checked");
+    		$("#completo_si, #completo_no").removeProp("checked");
+            $("input[name*='curso']").removeProp("checked");
     		$(".completo").hide();
     	}});
 
