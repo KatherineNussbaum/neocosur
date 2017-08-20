@@ -1,27 +1,33 @@
 <!-- Inicio de Header -->
-<div id="header" class="row col-lg-12">
-  <div id="logo" class="col-lg-9 float-left">
-    <img src="../img/neocosur.jpg" width="224" height="72">
-  </div>
-  <div id="banderas" class="col-lg-3 ffloat-right">
-    <img src="../img/banderas.jpg" height="72">
-  </div>
-  <div class="col-lg-9"></div>
-        
-  <!-- Inicio de Menu -->
-  <div class="container" style="margin-bottom: 25px;" >
-    <nav class="navbar navbar-expand-lg navbar-light bg-white">
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
 
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <ul class="navbar-nav mr-auto">
+
+
+  <div class="container">
+    <div class="row">
+      <div id="logo" class="col-8 float-left">
+        <img src="../img/neocosur.jpg" width="224" height="72">
+      </div>
+      <div id="banderas" class="col-4 float-right">
+        <div class="row">
+          <div class="col-2"><img src="../img/banderas/argentina.png" width="30px"></div>
+          <div class="col-2"><img src="../img/banderas/uruguay.png" width="30px"></div>
+          <div class="col-2"><img src="../img/banderas/brasil.png" width="30px"></div>
+          <div class="col-2"><img src="../img/banderas/peru.png" width="30px"></div>
+          <div class="col-2"><img src="../img/banderas/paraguay.png" width="30px"></div>
+          <div class="col-2"><img src="../img/banderas/chile.png" width="30px"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container-fluid" id="menu_publico">
+
+    <div class="container">
+      <div class="row" >
+        <!-- Inicio del Menu -->
+        <ul class="nav">
           <li class="nav-item">
-            <a class="nav-link" href="index.php">Inicio</a>
+            <a class="nav-link" href="index.php" id="btn_inicio">Inicio</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="neocosur.php">Acerca de</a>
@@ -38,14 +44,11 @@
           <li class="nav-item">
             <a class="nav-link" href="revistas.php">Revista Neocosur</a>
           </li>
-          <li class="nav-item">
+          <li>
             <a class="nav-link" href="publicaciones.php">Publicaciones Neocosur</a>
           </li>
         </ul>
       </div>
-    </nav>
+    </div>
   </div>
-
-  <!-- Fin de Menu -->         
-</div>
 <!-- Fin de Header -->

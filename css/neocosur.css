@@ -62,14 +62,8 @@ h4 {
     margin-bottom: 20px !important;
     font-size: larger !important;
 }
-.blue{
-    color: #FFF;
-    background-color: #003e80;
-}
-.green{
-    color: #FFF;
-    background-color: #006e17;
-}
+
+
 
 .pie{
     font-size: 11px !important;
@@ -274,14 +268,4 @@ button[type="submit"] { margin-top: 10px; margin-bottom: 10px; }
 .ui-accordion-header-active {
     background-color: #0455a7 !important;
     color: #FFF !important;
-}
-a {
-    color: #0455a7;
-}
-.text-success {
-    color: #008e1f !important;
-}
-
-.bg-success, .btn-success {
-    background-color: #008e1f !important;
 }

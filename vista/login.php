@@ -5,40 +5,39 @@
   <?php include 'header.php'; ?>
 
   <div class="container">
-    <img src="../img/home_neocosur.jpg" id="img_home">
+    
+    <div class="row ">
+      <div class="col">
+        
+      </div>
+      <div class="col">
+
+        <div class="row text-center login" >
+          <h1 class="display-4 ">Login</h1>
+        </div>
+        <form>
+          <div class="form-group">
+            <label>Usuario</label>
+            <input type="usuario" class="form-control"  placeholder="usuario">
+          </div>
+          <div class="form-group">
+            <label>Contraseña</label>
+            <input type="password" class="form-control" placeholder="contraseña">
+          </div>
+          <button type="submit" class="btn btn-primary">Entrar</button>
+        </form>
+
+      </div>
+      <div class="col">
+        
+      </div>
+      
+    </div>
   </div>
 
-  <div class="container">
-    <div class="row" id="home_icons">
-      <div class="col-3">
-        
-      </div>
-      <div class="col-2 home_cuadro_1" id="">
-        <a href="login.php"><i data-feather="globe"></i></a>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit
-        </p>  
-      </div>
-      <div class="col-2 home_cuadro_2" id="">
-        <a href="login.php"><i data-feather="log-in"></i></a>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit
-        </p>  
-      </div>
-      <div class="col-2 home_cuadro_3" id="">
-        <a href="login.php"><i data-feather="users"></i></a>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit
-        </p>  
-      </div>
-      <div class="col-6">
-        
-      </div>
-    </div>
-  </div>  
-    <?php
-      include 'footer.php';
-    ?>
+  <?php
+    include 'footer.php';
+  ?>
 </div>
  
 
