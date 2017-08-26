@@ -1,20 +1,15 @@
 <?php include 'head.php'; ?>
 
-<div class="container">
+<div class="container-fluid">
   <!-- Inicio del Contenido -->
-    <div class="row">
-      <?php include 'header.php'; ?>
-    </div>
-    <!-- Inicio de Título -->
-    <div class="row">
-
-      <div class="col-lg-12">
-        <div  class="page-header">
-          <h4><span class="text-success">Score </h4>
-        </div>
-
-        <div class="col-lg-6 float-left">
-          <h4 class="display-4">Neocosur Score RN <small>entre 500 y 1500 grs.</small></h4>
+    <?php include 'header.php'; ?>
+    <div class="container">
+      <div class="row">
+        <h1 class="display-4">Score</h1>
+      </div>
+      <div class="row">
+        <div class="col-6">
+          <h4>Neocosur Score RN <small>entre 500 y 1500 grs.</small></h4>
           <form>
             <div class="form-group row">
               <label for="peso" class="col-lg-6 control-label" >Peso al Nacer </label>
@@ -80,7 +75,7 @@
               </div>
             </div>
 
-            <div class="col-lg-offset-8 col-lg-2">
+            <div class="text-right">
               <button type="button" class="btn btn-primary">Calcular</button>
 
             </div>
@@ -91,11 +86,10 @@
             </div>
           </form>
         </div>
-
-        <div class="col-lg-6 float-left">
+        <div class="col-6">
+          
+          <h4>Neocosur Score HIC <small></small></h4>
           <form>
-            <h4 class="display-4">Neocosur Score HIC <small></small></h4>
-
             <div class="form-group row">
               <label for="sexo" class="col-lg-6 col-form-label">Género</label>
               <div class="col-lg-6">
@@ -178,7 +172,7 @@
               </div>
             </div>
 
-            <div class="col-lg-offset-8 col-lg-2">
+            <div class="text-right">
               <button type="button" class="btn btn-primary">Calcular</button>
             </div>
 
@@ -187,17 +181,18 @@
               <br>J Perinatol. 2014 Jan;34(1):43-8. </p>
             </div>
           </form>
+
         </div>
-
       </div>
-      <!-- Fin del Contenido -->  
-    </div> 
-
+    </div>
 </div>
 <?php
   include 'footer.php';
 ?>     
 <!-- Inicio de JavaScript -->
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
 <script src="../js/jquery.js"></script>
 <script src="../js/jquery-ui.js"></script>
 <script src="../js/bootstrap.js"></script>

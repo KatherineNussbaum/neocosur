@@ -1,20 +1,15 @@
 <?php include 'head.php'; ?>
 
-<div class="container">
+<div class="container-fluid">
   <!-- Inicio del Contenido -->
-    <div class="row">
-      <?php include 'header.php'; ?>
-    </div>
-    <!-- Inicio de Título -->
-    <div class="row">
+    <?php include 'header.php'; ?>
 
-      <div class="col-lg-12">
-        <div  class="page-header">
-          <h4><span class="text-primary">Publicaciones Neocosur </span></h4>
-        </div>
-
-        <div class="row">
-          <div class="col-lg-4 publicacion">
+    <div class="container">
+      <div class="row">
+        <h1 class="display-4">Publicaciones Neocosur</h1>
+      </div>
+      <div class="row">
+        <div class="col-4 publicacion">
             <div class="card">
               <div class="card-body">
                 <h5 class="card-title">Effect of prophylactic CPAP in very low birth weight infants in South America 2016</h5>
@@ -26,7 +21,7 @@
             </div>
           </div>
 
-          <div class="col-lg-4 publicacion" >
+          <div class="col-4 publicacion" >
             <div class="card">
               <div class="card-body">
                 <h5 class="card-title">Mode of delivery and antenatal steroids and their association with survival and severe intraventricular hemorrhage in very low birth weight infants 2016</h5>
@@ -37,7 +32,7 @@
             </div>
           </div>
 
-          <div class="col-lg-4 publicacion">
+          <div class="col-4 publicacion">
             <div class="card">
               <div class="card-body">
                 <h5 class="card-title">Impact of maternal diabetes mellitus on mortality and morbidity of very low birth weight infants: a multicenter Latin America study</h5>
@@ -48,7 +43,7 @@
             </div>
           </div>
 
-          <div class="col-lg-4 publicacion">
+          <div class="col-4 publicacion">
             <div class="card">
               <div class="card-body">
                 <h5 class="card-title">Estrés en padres de recién nacidos prematuros de muy bajo peso hospitalizados en unidades de cuidados intensivos neonatales. Estudio multicéntrico</h5>
@@ -59,7 +54,7 @@
             </div>
           </div>
 
-          <div class="col-lg-4 publicacion">
+          <div class="col-4 publicacion">
             <div class="card">
               <div class="card-body">
                 <h5 class="card-title">Evacuación del Meconio Intestinal Para Mejorar Tolerancia Alimentaria En Prematuro De Muy Bajo Peso” (Protocolo Emita)</h5>
@@ -70,13 +65,8 @@
               </div>
             </div>
           </div>
-        </div>
-
-        </div>
       </div>
-      <!-- Fin del Contenido -->  
-    </div> 
-
+    </div>
 </div>
 <?php
   include 'footer.php';
