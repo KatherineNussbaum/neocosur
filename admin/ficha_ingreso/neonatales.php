@@ -7,6 +7,9 @@
 
     <button class="btn btn-default subtitulo" type="button" id="sec_sepsis"><span class="glyphicon glyphicon-chevron-right" aria-hidden="true" ></span> Sepsis</button>
 
+    <button class="btn btn-default subtitulo" type="button" id="sec_auditivo"><span class="glyphicon glyphicon-chevron-right" aria-hidden="true" ></span> Evacluación Adutitiva</button>
+
+
     <div id="principal_neonatales"> 
     
       <div class="col-lg-12">    
@@ -542,43 +545,15 @@
               <tr>
                 <td class="col-lg-1"></td>
                 <td class="col-lg-2">Edad</td>
-                <td class="col-lg-4">Germen</td>
+                <td class="col-lg-2">Germen</td>
                 <td class="col-lg-4"></td>
+                <td class="col-lg-3"></td>
                 <td class="col-lg-1"></td>
               </tr>
             </thead>
             <tbody>
-
-              <tr>
-                <td>LRC positivo</td>
-                <td>
-                  <div class="input-group linea">
-                    <input type="number" min="1" max="999" step="1" name="lrc_dias" class="form-control input-sm detalle_sepsis_tardia" aria-describedby="basic-addon2">
-                    <span class="input-group-addon" id="basic-addon2">días</span>
-                  </div>
-                </td>
-                  
-                <td>
-                  <select name="lrc_germen" class="form-control input-sm detalle_sepsis_tardia" id="detalle_lrc_germen">
-                    <option value="0">Seleccione</option>
-                    <option value="1">Listeria</option>
-                    <option value="otro">Otro</option>
-                  </select> 
-                </td>
-
-                <td>
-                  <div class="col-lg-5 sub-form detalle_lrc_otro">
-                    <label for="detalle_lrc_otro" class="txt_izq control-label">Si es otro, cuál?</label>
-                  </div>
-                  <div class="col-lg-7 sub-form detalle_lrc_otro">
-                    <input type="text" name="detalle_lrc_otro" class="form-control input-sm detalle_sepsis_tardia detalle_lrc_otro">
-                  </div>
-                </td>
-                <td></td>
-              </tr>
-
               <tr class="fila_oculta">
-                <td>Sepsis 1</td>
+                <td></td>
                 <td>
                   <div class="input-group linea">
                     <input type="number" min="1" max="999" step="1" name="detalle_sepsis_tardia_dias" class="form-control input-sm detalle_sepsis_tardia" aria-describedby="basic-addon2">
@@ -595,12 +570,18 @@
                 </td>
 
                 <td>
-                  <div class="col-lg-5 sub-form detalle_sepsis_tardia_otro">
+                  <div class="sub-form detalle_sepsis_tardia_otro">
                     <label for="detalle_sepsis_tardia_otro" class="txt_izq control-label">Si es otro, cuál?</label>
                   </div>
-                  <div class="col-lg-7 sub-form detalle_sepsis_tardia_otro">
+                  <div class=" sub-form detalle_sepsis_tardia_otro">
                     <input type="text" name="detalle_sepsis_tardia_otro" class="form-control input-sm detalle_sepsis_tardia_otro">
                   </div>
+                </td>
+                <td>
+                  <label for="sepsis_tardia_tipo" class="control-label radio-inline col-lg-6" >
+                    <input type="radio" name="sepsis_tardia_tipo" value="hemocultivo" id="sepsis_tardia_hemocultivo"> Hemocultivo
+                    <input type="radio" name="sepsis_tardia_tipo" value="lcr" id="sepsis_tardia_lcr"> LCR positivo
+                  </label>
                 </td>
                 <td><button type="button" class="btn btn-danger btn-xs eliminar"><span class="glyphicon glyphicon-remove" aria-hidden="true"></span></button></td>
               </tr>
@@ -615,6 +596,85 @@
         </div>
 
       </div>
+    </div>
+
+    <div id="auditivo">
+      <div class="col-lg-6">
+        <div class="form-group col-lg-12">
+
+          <label for="" class="col-lg-4 control-label">Pesquisa antes del alta</label>
+          <label for="" class="control-label radio-inline col-lg-2">
+            <input type="radio" name="pesquisa" value="pesquisa_si" class="" id="pesquisa_si"> Sí
+          </label>
+          <label for="" class="control-label radio-inline col-lg-2" >
+            <input type="radio" name="pesquisa" value="pesquisa_no" class="" id="pesquisa_no"> No
+          </label>
+
+        </div>
+      </div>
+        <div class="col-lg-6" id="tabla_auditivo">
+          <table class="table table-bordered">
+            <thead>
+              <tr>
+                <td colspan="3"><h5><b>Evaluación al alta</b></h5></td>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="col-lg-1"><input type="checkbox" name="peat_automatizados" value="peat_automatizados" class="form-check-input check-auditivo" id="peat_automatizados"></td>
+                <td class="col-lg-4">Potenciales Evocados del Tronco Cerebral (PEAT) Automatizados
+                </td>
+                <td class="col-lg-2">
+                  <div id="peat_automatizados_cel">
+                    ¿Normal?<br>
+                    <label for="" class="control-label radio-inline col-lg-1">
+                      <input type="radio" name="peat_automatizados_normal" value="peat_automatizados_si" class="check-auditivo"> Sí
+                    </label>
+                    <label for="" class="control-label radio-inline col-lg-1" >
+                      <input type="radio" name="peat_automatizados_normal" value="peat_automatizados_no" class="check-auditivo"> No
+                    </label>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td class="col-lg-1"><input type="checkbox" name="peat_extendidos" value="peat_extendidos" class="form-check-input check-auditivo" id="peat_extendidos"></td>
+                <td class="col-lg-4">Potenciales Evocados del Tronco Cerebral (PEAT) Extendidos
+                </td>
+                <td class="col-lg-2">
+
+                  <div id="peat_extendidos_cel">
+                    ¿Normal?<br>
+                    <label for="" class="control-label radio-inline col-lg-1">
+                      <input type="radio" name="peat_extendidos_normal" value="peat_extendidos_si" class="check-auditivo"> Sí
+                    </label>
+                    <label for="" class="control-label radio-inline col-lg-1" >
+                      <input type="radio" name="peat_extendidos_normal" value="peat_extendidos_no" class="check-auditivo"> No
+                    </label>
+                  </div>
+                  
+                </td>
+              </tr>
+              <tr>
+                <td class="col-lg-1"><input type="checkbox" name="emisiones" value="emisiones" class="form-check-input check-auditivo" id="emisiones"></td>
+                <td class="col-lg-4">Emisiones Otoacústicas
+                </td>
+                <td class="col-lg-2" >
+                  <div id="emisiones_cel">
+                    ¿Normal?<br>
+                    <label for="" class="control-label radio-inline col-lg-1">
+                      <input type="radio" name="emisiones_normal" value="emisiones_si" class="check-auditivo"> Sí
+                    </label>
+                    <label for="" class="control-label radio-inline col-lg-1" >
+                      <input type="radio" name="emisiones_normal" value="emisiones_no" class="check-auditivo"> No
+                    </label>
+                  </div>
+                  
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        
     </div>
 
     <div class=" col-lg-offset-10 col-lg-2">

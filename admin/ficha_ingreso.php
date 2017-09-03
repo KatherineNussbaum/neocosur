@@ -69,6 +69,10 @@
             <?php include 'ficha_ingreso/alta.php'; ?>
           </div>
 
+          <div role="tabpanel" class="tab-pane" id="auditiva">
+            <?php include 'ficha_ingreso/auditiva.php'; ?>
+          </div>
+
           <div role="tabpanel" class="tab-pane" id="estado">
             <?php include 'ficha_ingreso/estado.php'; ?>
           </div>

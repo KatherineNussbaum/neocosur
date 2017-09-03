@@ -13,6 +13,7 @@ jQuery(document).ready(function(){
     $("#malformacion_cognitiva").hide();
     $("#oftalmologica").hide();
     $("#sepsis").hide();
+    $("#auditivo").hide();
     $("#medicamentos").hide();
     $("#cateteres").hide();
     $("#cirugia").hide();
@@ -20,6 +21,9 @@ jQuery(document).ready(function(){
     $("#observaciones").hide();
     $("#fallecimiento").hide();
     $("#sec_fallece").hide();
+    $("#tabla_auditivo").hide();
+    $("#peat_automatizados_cel, #peat_extendidos_cel, #emisiones_cel").hide();
+
 
 // Diabetes
 // -------------------------------------------
@@ -857,36 +861,72 @@ jQuery(document).ready(function(){
             $("input[class*='doppler']").removeProp("checked");
         }});
 
+ // Tabla Auditivo
+// -------------------------------------------
+    $("#pesquisa_si").change(function(){
+        var $input = $(this);
+        if($input.prop("checked")){
+            $("#tabla_auditivo").show();
+        }
+    });
+    $("#pesquisa_no").change(function(){
+        var $input = $(this);
+        if($input.prop("checked")){
+            $("#tabla_auditivo").hide();
+            $("input[class*='check-auditivo']").removeProp("checked");
+            $("#peat_automatizados_cel, #peat_extendidos_cel, #emisiones_cel").hide();
+        }
+    });
+
+    $("#peat_automatizados").change(function(){
+        var $input = $(this);
+        if($input.prop("checked")){
+            $("#peat_automatizados_cel").show();
+        }
+        else{
+            $("#peat_automatizados_cel").hide();
+            $("input[name*='peat_automatizados_normal']").removeProp("checked");
+        }
+    });
+
+    $("#peat_extendidos").change(function(){
+        var $input = $(this);
+        if($input.prop("checked")){
+            $("#peat_extendidos_cel").show();
+        }
+        else{
+            $("#peat_extendidos_cel").hide();
+            $("input[name*='peat_extendidos_normal']").removeProp("checked");
+        }
+    });
+
+    $("#emisiones").change(function(){
+        var $input = $(this);
+        if($input.prop("checked")){
+            $("#emisiones_cel").show();
+        }
+        else{
+            $("#emisiones_cel").hide();
+            $("input[name*='emisiones_normal']").removeProp("checked");
+        }
+    });
+
+
+
+
+
 // Mostrar/Cambiar de Sub-Secciones
 // ===========================================
-/*
-    $("#sec_malformacion").click(function(){
-        $( this ).css( {"color" : "#000", "background": "#eee" , "padding":"10px", "border-radius":"5px" });
-        $("#sec_principal").css( {"color" : "#999" });
-
-        $("#principal").fadeOut('fast');
-        $("#malformacion_cognitiva").fadeIn('slow');
-    });
-
-    $("#sec_principal").click(function(){
-        $( this ).css( {"color" : "#000" });
-        $("#sec_malformacion").css( {"color" : "#999", "background": "none" });
-
-        $("#malformacion_cognitiva").fadeOut('fast');
-        $("#principal").fadeIn('slow');
-    });
-
-    */
     
     $("#sec_principal_neonatales").click(function(){
 
         $(this).removeClass("btn-default");
         $(this).addClass("active btn-success");
 
-        $("#sec_oftalmologica, #sec_sepsis").removeClass("active btn-success");
-        $("#sec_oftalmologica, #sec_sepsis").addClass("btn-default");
+        $("#sec_oftalmologica, #sec_sepsis, #sec_auditivo").removeClass("active btn-success");
+        $("#sec_oftalmologica, #sec_sepsis, #sec_auditivo").addClass("btn-default");
         
-        $("#oftalmologica, #sepsis").fadeOut('fast');
+        $("#oftalmologica, #sepsis, #auditivo").fadeOut('fast');
         $("#principal_neonatales").fadeIn('slow');
     });
 
@@ -894,10 +934,10 @@ jQuery(document).ready(function(){
         $(this).removeClass("btn-default");
         $(this).addClass("active btn-success");
 
-        $("#sec_principal_neonatales, #sec_sepsis").removeClass("active btn-success");
-        $("#sec_principal_neonatales, #sec_sepsis").addClass("btn-default");
+        $("#sec_principal_neonatales, #sec_sepsis, #sec_auditivo").removeClass("active btn-success");
+        $("#sec_principal_neonatales, #sec_sepsis, #sec_auditivo").addClass("btn-default");
         
-        $("#principal_neonatales, #sepsis").fadeOut('fast');
+        $("#principal_neonatales, #sepsis, #auditivo").fadeOut('fast');
         $("#oftalmologica").fadeIn('slow');
     });
 
@@ -905,11 +945,22 @@ jQuery(document).ready(function(){
         $(this).removeClass("btn-default");
         $(this).addClass("active btn-success");
 
-        $("#sec_oftalmologica, #sec_principal_neonatales").removeClass("active btn-success");
-        $("#sec_oftalmologica, #sec_principal_neonatales").addClass("btn-default");
+        $("#sec_oftalmologica, #sec_principal_neonatales, #sec_auditivo").removeClass("active btn-success");
+        $("#sec_oftalmologica, #sec_principal_neonatales, #sec_auditivo").addClass("btn-default");
 
-        $("#principal_neonatales, #oftalmologica").fadeOut('fast');
+        $("#principal_neonatales, #oftalmologica, #auditivo").fadeOut('fast');
         $("#sepsis").fadeIn('slow');
+    });
+
+    $("#sec_auditivo").click(function(){
+        $(this).removeClass("btn-default");
+        $(this).addClass("active btn-success");
+
+        $("#sec_oftalmologica, #sec_principal_neonatales, #sec_sepsis").removeClass("active btn-success");
+        $("#sec_oftalmologica, #sec_principal_neonatales, #sec_sepsis").addClass("btn-default");
+
+        $("#principal_neonatales, #oftalmologica, #sepsis").fadeOut('fast');
+        $("#auditivo").fadeIn('slow');
     });
 
     $("#sec_respiratorio").click(function(){
@@ -1011,7 +1062,7 @@ jQuery(document).ready(function(){
         $( ultimaFila ).clone().removeClass('fila_oculta').appendTo("#tabla_sepsis tbody");
 
         var numFila = $("#tabla_sepsis tbody tr").length;
-        var num = numFila-2;
+        var num = numFila-1;
         $("#tabla_sepsis tbody tr:eq(-1) td:eq(0)").html("Sepsis " + num);
         $("#tabla_sepsis tbody tr:eq(-1)").find(".sub-form").hide();
     });
