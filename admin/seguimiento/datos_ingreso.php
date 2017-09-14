@@ -3,13 +3,7 @@
   <form>
     <h4><span class="glyphicon glyphicon-chevron-down" aria-hidden="true"></span> Datos del Ingreso</h4>
     <div class="col-lg-6">
-      <div class="form-group">
-        <label for="rut_dni" class="col-lg-5 control-label">Rut / DNI</label>
-        <div class="col-lg-7">
-          <input type="text" name="rut_dni" class="form-control input-sm" contenteditable="false" disabled >
-        </div>
-      </div>
-                              
+                             
       <div class="form-group">
         <label for="nombres" class="col-lg-5 control-label">Nombres</label>
         <div class="col-lg-7">

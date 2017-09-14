@@ -77,27 +77,23 @@
       <div class="col-lg-12">
         <div class="tab-content">
           <div role="tabpanel" class="tab-pane active" id="ingreso">
-            <?php include 'ficha_ingreso/datos_ingreso.php'; ?>
+            <?php include 'seguimiento/datos_ingreso.php'; ?>
           </div>
 
-          <div role="tabpanel" class="tab-pane" id="prenatales">
-            <?php include 'ficha_ingreso/prenatales.php'; ?>
+          <div role="tabpanel" class="tab-pane" id="control">
+            <?php include 'seguimiento/control.php'; ?>
           </div>
 
-          <div role="tabpanel" class="tab-pane" id="parto">
-            <?php include 'ficha_ingreso/parto.php'; ?>
+          <div role="tabpanel" class="tab-pane" id="connatales">
+            <?php include 'seguimiento/connatales.php'; ?>
           </div>
 
-          <div role="tabpanel" class="tab-pane" id="neonatales">
-            <?php include 'ficha_ingreso/neonatales.php'; ?>
-          </div>
-
-          <div role="tabpanel" class="tab-pane" id="evolucion">
-            <?php include 'ficha_ingreso/evolucion.php'; ?>
+          <div role="tabpanel" class="tab-pane" id="familiares">
+            <?php include 'seguimiento/familiares.php'; ?>
           </div>
 
           <div role="tabpanel" class="tab-pane" id="antropometria">
-            <?php include 'ficha_ingreso/antropometria.php'; ?>
+            <?php include 'seguimiento/antropometria.php'; ?>
           </div>
 
           <div role="tabpanel" class="tab-pane" id="alta">

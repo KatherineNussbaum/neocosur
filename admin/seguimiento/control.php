@@ -51,6 +51,7 @@
       </div>
     </div>                   
     <div class="col-lg-5">
+      <a class="btn btn-default" href="#" role="button">Ver Cronograma de Seguimiento</a>
     </div>
     <div class=" col-lg-offset-10 col-lg-2">
       <button type="submit" class="btn btn-success">Guardar</button>
