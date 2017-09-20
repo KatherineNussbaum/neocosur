@@ -69,7 +69,7 @@
           <li role="presentation" class="dinamico_fallece"><a href="#neonatales" aria-controls="settings" role="tab" data-toggle="tab">Patologías Neonatales</a></li>
           <li role="presentation" class="dinamico_fallece"><a href="#evolucion" aria-controls="settings" role="tab" data-toggle="tab">Evolución y Tratamiento</a></li>
           <li role="presentation" class="dinamico_fallece"><a href="#antropometria" aria-controls="settings" role="tab" data-toggle="tab">Antropometría</a></li>
-          <li role="presentation"><a href="#alta" aria-controls="settings" role="tab" data-toggle="tab">Información del Alta</a></li>
+          <li role="presentation"><a href="#alta" aria-controls="settings" role="tab" data-toggle="tab">Alimentación</a></li>
           <li role="presentation"><a href="#estado" aria-controls="settings" role="tab" data-toggle="tab">Estado de Ficha</a></li>
         </ul>
       </div>
@@ -96,12 +96,16 @@
             <?php include 'seguimiento/antropometria.php'; ?>
           </div>
 
-          <div role="tabpanel" class="tab-pane" id="alta">
-            <?php include 'ficha_ingreso/alta.php'; ?>
+          <div role="tabpanel" class="tab-pane" id="alimentacion">
+            <?php include 'seguimiento/alimentacion.php'; ?>
           </div>
 
-          <div role="tabpanel" class="tab-pane" id="estado">
-            <?php include 'ficha_ingreso/estado.php'; ?>
+          <div role="tabpanel" class="tab-pane" id="auditiva">
+            <?php include 'seguimiento/funcion_auditiva.php'; ?>
+          </div>
+
+          <div role="tabpanel" class="tab-pane" id="visual">
+            <?php include 'seguimiento/funcion_visual.php'; ?>
           </div>
 
         </div>

@@ -3,117 +3,97 @@
     <form>
     <h4><span class="glyphicon glyphicon-chevron-down" aria-hidden="true"></span> Antropometría</h4>
 
-    <div class="col-lg-12">
+    <div class="col-lg-8">
 
       <div class="form-group">
-        <label for="" class="col-lg-3 control-label">Antropometría control actual</label>
-        <div class="col-lg-9">
-          <div class="form-group">
-            <label>Peso</label>
-            <input type="peso" class="form-control" id="peso" placeholder="Email">
-          </div>
-        </div>
+        <label class="control-label col-lg-12">Antropometría control actual</label>
+
+        <table cellpadding="3" cellspacing="3">
+          <thead>
+            <tr>
+              <td class="col-lg-3"><label for="" class="col-lg-2 control-label">Peso</label></td>
+              <td class="col-lg-3"><label for="" class="col-lg-2 control-label">Talla</label></td>
+              <td class="col-lg-3"><label for="" class="col-lg-2 control-label">Cir. Craneana</label></td>
+              <td class="col-lg-3"><label for="" class="col-lg-2 control-label">IMC</label></td>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="col-lg-3">
+                <div class="input-group">
+                  <input type="number" min="0" step="1" name="peso" class="form-control input-sm">
+                  <div class="input-group-addon input-sm">gr.</div>
+                </div>
+              </td>
+
+              <td class="col-lg-3">
+                <div class="input-group">
+                  <input type="number" min="0" step="1" name="talla" class="form-control input-sm">
+                  <div class="input-group-addon input-sm">cm</div>
+                </div>
+              </td>
+
+              <td class="col-lg-3">
+                <div class="input-group">
+                  <input type="number" min="0" step="1" name="circunferencia" class="form-control input-sm">
+                  <div class="input-group-addon input-sm">cm</div>
+                </div>
+              </td>
+
+              <td class="col-lg-3">
+                <div class="input-group">
+                  <input type="number" min="0" step="1" name="imc" class="form-control input-sm">
+                </div>
+              </td>
+
+            </tr>
+          </tbody>
+        </table>
       </div>
 
+      <div class="clearfix"></div>
+
       <div class="form-group">
-        <label for="" class="col-lg-6 control-label">Cuidador responsable</label>
+        <label for="" class="col-lg-12 control-label">Estado nutricional según OMS</label>
         <div class="col-lg-6">
-          <select name="cuidador_responsable" class="form-control input-sm">
-            <option value="0"></option>
-            <option value="1">Madre</option>
-            <option value="2">Padre</option>
+         <select name="estad_nutricional" class="form-control input-sm">
+            <option value="0">Seleccione</option>
+            <option value="1">Eutrofico</option>
           </select> 
         </div>
       </div>
 
-      <div class="form-group">
-        <label for="" class="col-lg-6 control-label">País de residencia</label>
-        <div class="col-lg-6">
-          <select name="pais_residencia" class="form-control input-sm">
-            <option value="0"></option>
-            <option value="1">Chile</option>
-            <option value="2">Argentina</option>
-          </select> 
-        </div>
+      <div class="clearfix"></div>
+
+      <div class="form-group checkbox col-lg-12">
+
+        <label for="" class="control-label txt_izq col-lg-12">
+          <input name="talla_baja" type="checkbox" value="">
+          Talla Baja
+        </label>
+        <label for="" class="control-label txt_izq col-lg-12">
+          <input name="Microcefalia" type="checkbox" value="">
+          Microcefalia
+        </label>
+        <label for="" class="control-label txt_izq col-lg-12">
+          <input name="Macrocefalia" type="checkbox" value="">
+          Macrocefalia
+        </label>
       </div>
 
-      <div class="form-group">
-        <label for="" class="col-lg-6 control-label">Ciudad</label>
-        <div class="col-lg-6">
-          <select name="ciudad" class="form-control input-sm">
-            <option value="0"></option>
-            <option value="1">Chile</option>
-            <option value="2">Argentina</option>
-          </select> 
-        </div>
-      </div>
+      <div class="clearfix"></div>
 
       <div class="form-group">
-        <label for="paterno" class="col-lg-6 control-label">Comuna o Barrio</label>
-        <div class="col-lg-6">
-          <input type="text" name="comuna" class="form-control input-sm">
-        </div>
+        <label class="control-label col-lg-12">Registro antropométrico</label>
+        <a href="" class="btn btn-default col-lg-3" rol="button">Ver Registro Histórico</a>
+        <p class="col-lg-12">* Para que los datos del control actual aparezcan en el regstro histórico, grabe los datos de esta sección.</p>
       </div>
-
-      <div class="form-group">
-        <label for="paterno" class="col-lg-6 control-label">N° de niños (<18 años) del grupo familiar</label>
-        <div class="col-lg-6">
-          <input type="number" min="0" step="1" name="comuna" class="form-control input-sm">
-        </div>
-      </div>
-
 
     </div>
-                               
-    <div class="col-lg-6">
-      <table>
-        <thead>
-          <tr>
-            <td colspan="2">
-              <label class="control-label">Familiar Nivel educacional</label>
-            </td>
-            <td>
-              <label class="control-label">Ocupación principal</label>
-            </td>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td class="col-lg-2">Madre</td>
-            <td class="col-lg-5">
-              <select name="nivel_madre" class="form-control input-sm">
-                <option value="0"></option>
-                <option value="1">Analfabeta</option>
-                <option value="2">Ed. Básica Incompleta</option>
-              </select>
-            </td>
-            <td class="col-lg-5">
-              <select name="ocupacion_madre" class="form-control input-sm">
-                <option value="0"></option>
-                <option value="1">Profesional, pequeño empresario</option>
-                <option value="2">Oficio independiente</option>
-              </select>
-            </td>
-          </tr>
-          <tr>
-            <td class="col-lg-2">Padre</td>
-            <td class="col-lg-5">
-              <select name="nivel_padre" class="form-control input-sm">
-                <option value="0"></option>
-                <option value="1">Analfabeta</option>
-                <option value="2">Ed. Básica Incompleta</option>
-              </select>
-            </td>
-            <td class="col-lg-5">
-              <select name="ocupacion_padre" class="form-control input-sm">
-                <option value="0"></option>
-                <option value="1">Profesional, pequeño empresario</option>
-                <option value="2">Oficio independiente</option>
-              </select>
-            </td>
-          </tr>
-        </tbody>
-      </table>
+
+           
+    <div class="col-lg-4">
+
     </div>
 
     <div class=" col-lg-offset-10 col-lg-2">
