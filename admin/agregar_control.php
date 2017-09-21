@@ -108,6 +108,10 @@
             <?php include 'seguimiento/funcion_visual.php'; ?>
           </div>
 
+          <div role="tabpanel" class="tab-pane" id="otros">
+            <?php include 'seguimiento/otros_sistemas.php'; ?>
+          </div>
+
         </div>
       </div>
     </div>

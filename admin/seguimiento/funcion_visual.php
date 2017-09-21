@@ -4,7 +4,11 @@
       <button class="btn btn-success active subtitulo" type="button" id="sec_funcion_auditiva"><span class="glyphicon glyphicon-chevron-right" aria-hidden="true" ></span> Función Visual</button>
 
       <div class="row">
-
+        
+        <div class="col-lg-12">
+          <p>Programa de detección Precoz de Retinopatía del Prematuro (ROP)</p>
+        </div>
+        
         <div class="form-group col-lg-6">
             <label class="col-lg-6 control-label">Evaluación previa al alta</label>
             <div class="col-lg-6">
@@ -93,7 +97,7 @@
                 <div id="cual_izquierdo" class="form-group row">
                   <label class="control-label col-lg-12">¿Cuál?</label>
                     <select class="form-control input-sm" name="cual_izquierdo">
-                    <option value="0" ></option>
+                    <option value="0"></option>
                     <option value="1">Crioterapia</option>
                   </select>
                 </div>
@@ -198,69 +202,179 @@
           </div>
           <div class="col-lg-6 form-group" id="sec_rop">
             <label class="control-label col-lg-12">ROP</label>
+            
             <table>
               <thead>
                 <tr>
                   <td class="col-lg-2">Ojo</td>
-                  <td class="col-lg-3">ROP</td>
-                  <td class="col-lg-4">Cirugía</td>
-                  <td class="col-lg-3"></td>
+                  <td class="col-lg-2">ROP</td>
+                  <td class="col-lg-2">Cirugía</td>
+                  <td class="col-lg-6"></td>
                 </tr>
               </thead>
               <tbody>
                 <tr>
                   <td class="col-lg-2">Izquierdo</td>
-                  <td class="col-lg-3">
-                    <label class="control-label radio-inline">
-                      <input type="radio" name="rop_izquierdo_diagnostico" value="si"> Sí
-                    </label>
-                    <label class="control-label radio-inline">
-                      <input type="radio" name="rop_izquierdo_diagnostico" value="no"> No
-                    </label>
+                  <td class="col-lg-2">
+                    
+                      <div class="col-lg-12">
+                        <label class="control-label radio-inline">
+                          <input type="radio" name="rop_izquierdo_diagnostico" value="si"> Sí
+                        </label>
+                      </div>
+                      <div class="col-lg-12">
+                        <label class="control-label radio-inline">
+                          <input type="radio" name="rop_izquierdo_diagnostico" value="no"> No
+                        </label>
+                      </div>
+                      
+                    
                   </td>
-                  <td class="col-lg-4">
-                    <label class="control-label radio-inline">
-                      <input type="radio" name="cirugia_izquierdo_diagnostico" value="si"> Sí
-                    </label>
-                    <label class="control-label radio-inline">
-                      <input type="radio" name="cirugia_izquierdo_diagnostico" value="no"> No
-                    </label>
-                    <label class="control-label radio-inline">
-                      <input type="radio" name="cirugia_izquierdo_diagnostico" value="s_i"> S/I
-                    </label>
+                  <td class="col-lg-2">
+                    <div class="col-lg-12">
+                      <label class="control-label radio-inline">
+                        <input type="radio" name="cirugia_izquierdo_diagnostico" value="si"> Sí
+                      </label>
+                    </div>
+                    <div class="col-lg-12">
+                      <label class="control-label radio-inline">
+                        <input type="radio" name="cirugia_izquierdo_diagnostico" value="no"> No
+                      </label>
+                    </div>
+                    <div class="col-lg-12">
+                      <label class="control-label radio-inline">
+                        <input type="radio" name="cirugia_izquierdo_diagnostico" value="s_i"> S/I
+                      </label>
+                    </div>
+                    
                   </td>
-                  <td class="col-lg-3">
-                    <div id="cual_izquierdo_diagnostico">
+                  <td class="col-lg-6">
+                    <div id="cual_izquierdo_rop">
                       <label class="control-label">¿Cuál</label>
+                      <select class="form-control input-sm" name="cual_izquierdo_rop">
+                      <option value="0" ></option>
+                      <option value="1">Laser</option>
+                    </select>
                     </div>
                   </td>
                 </tr>
                 <tr>
                   <td class="col-lg-2">Izquierdo</td>
-                  <td class="col-lg-3">
-                    <label class="control-label radio-inline">
-                      <input type="radio" name="rop_izquierdo_diagnostico" value="si"> Sí
+                  <td class="col-lg-2">
+                    <div class="col-lg-12">
+                      <label class="control-label radio-inline">
+                        <input type="radio" name="rop_izquierdo_diagnostico" value="si"> Sí
+                      </label>
+                    </div>
+                    <div class="col-lg-12">
+                      <label class="control-label radio-inline">
+                        <input type="radio" name="rop_izquierdo_diagnostico" value="no"> No
+                      </label>
+                    </div>
+                    
+                  </td>
+                  <td class="col-lg-2">
+                    <div class="col-lg-12">
+                      <label class="control-label radio-inline">
+                        <input type="radio" name="cirugia_izquierdo_diagnostico" value="si"> Sí
+                      </label>
+                    </div>
+                    <div class="col-lg-12">
+                      <label class="control-label radio-inline">
+                        <input type="radio" name="cirugia_izquierdo_diagnostico" value="no"> No
+                      </label>
+                    </div>
+                    <div class="col-lg-12">
+                      <label class="control-label radio-inline">
+                        <input type="radio" name="cirugia_izquierdo_diagnostico" value="s_i"> S/I
+                      </label>
+                    </div>
+                    
+                  </td>
+                  <td class="col-lg-6">
+                    <div id="cual_derecho_rop">
+                      <label class="control-label">¿Cuál</label>
+                      <select class="form-control input-sm" name="cual_derecho_rop">
+                      <option value="0" ></option>
+                      <option value="1">Laser</option>
+                    </select>
+                    </div>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+
+          </div>
+        </div>
+
+        <div class="row">
+
+          <div class="col-lg-6 form-group">
+            <label class="control-label col-lg-6">Requiere cirugía</label>
+            <label class="control-label radio-inline col-lg-2">
+              <input type="radio" name="requiere_cirugia" value="si"> Sí
+            </label>
+            <label class="control-label radio-inline col-lg-2" >
+              <input type="radio" name="requiere_cirugia" value="no"> No
+            </label>
+          </div>
+
+          <div class="col-lg-6 form-group" id="requiere_cirugia">
+            <select class="form-control input-sm" name="requiere_cirugia_cual">
+              <option value="0"></option>
+              <option>Laser</option>
+            </select>
+            <label class="control-label col-lg-12">Observaciones</label>
+            <textarea class="form-control col-lg-12" rows="3" name="observaciones">
+               
+            </textarea>
+            
+          </div>
+
+        </div>
+
+        <div class="row col-lg-12">
+          <div class="col-lg-6">
+            <label class="control-label">Otras Patologías</label>
+
+            <table>
+              <thead>
+                <tr>
+                  <td class="col-lg-3"><label class="control-label">Ojo</label></td>
+                  <td class="col-lg-6"><label class="control-label">Ceguera</label></td>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td class="col-lg-3"><label class="control-label">Izquierdo</label></td>
+                  <td class="col-lg-6">
+                    <label class="control-label radio-inline col-lg-3">
+                      <input type="radio" name="ceguera_izquierdo" value="si"> Sí
                     </label>
-                    <label class="control-label radio-inline">
-                      <input type="radio" name="rop_izquierdo_diagnostico" value="no"> No
+                    <label class="control-label radio-inline col-lg-2" >
+                      <input type="radio" name="ceguera_izquierdo" value="no"> No
                     </label>
                   </td>
-                  <td class="col-lg-4">
-                    <label class="control-label radio-inline">
-                      <input type="radio" name="cirugia_izquierdo_diagnostico" value="si"> Sí
+                </tr>
+                <tr>
+                  <td class="col-lg-3"><label class="control-label">Derecho</label></td>
+                  <td class="col-lg-6">
+                    <label class="control-label radio-inline col-lg-3">
+                      <input type="radio" name="ceguera_derecho" value="si"> Sí
                     </label>
-                    <label class="control-label radio-inline">
-                      <input type="radio" name="cirugia_izquierdo_diagnostico" value="no"> No
-                    </label>
-                    <label class="control-label radio-inline">
-                      <input type="radio" name="cirugia_izquierdo_diagnostico" value="s_i"> S/I
+                    <label class="control-label radio-inline col-lg-2" >
+                      <input type="radio" name="ceguera_derecho" value="no"> No
                     </label>
                   </td>
                 </tr>
               </tbody>
             </table>
+
+
           </div>
+          
         </div>
+
       </div>
 
     <div class=" col-lg-offset-10 col-lg-2">
