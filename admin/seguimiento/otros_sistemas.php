@@ -3,7 +3,7 @@
     <form>
       <button class="btn btn-success active subtitulo" type="button" id="sec_respiratorio"><span class="glyphicon glyphicon-chevron-right" aria-hidden="true" ></span> Respiratorio</button>
 
-      <button class="btn btn-default subtitulo" type="button" id="sec_digestivo"><span class="glyphicon glyphicon-chevron-right" aria-hidden="true" > Digestivo</span> </button>
+      <button class="btn btn-default subtitulo" type="button" id="sec_digestivo"><span class="glyphicon glyphicon-chevron-right" aria-hidden="true" > </span> Digestivo </button>
 
       <div class="row" id="sec_respiratorio">
 
@@ -113,10 +113,61 @@
 
       </div>
 
-
       <div class="row" id="sec_digestivo">
+        
         <div class="form-group col-lg-6">
+          <label class="control-label col-lg-5">Ostomía</label>
+          <div class="col-lg-7">
+            <label class="control-label radio-inline col-lg-2">
+              <input type="radio" name="ostomia" value="si"> Sí
+            </label>
 
+            <label class="control-label radio-inline col-lg-2">
+              <input type="radio" name="ostomia" value="no"> No
+            </label>
+            
+          </div>
+        </div>
+
+        <div id="sec_ostomia" class="col-lg-6">
+
+            <div class="form-group row">
+              <label class="control-label col-lg-5">¿Cuál?</label>
+              <div class="col-lg-7">
+                <select class="form-control input-sm" name="ostomia_cual">
+                  <option value="0" ></option>
+                  <option value="1">Gastrostomia</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="form-group row" >
+              <label class="control-label col-lg-5">Reconstitución del tránsito</label>
+              <div class="col-lg-7">
+                <label class="control-label radio-inline col-lg-2">
+                  <input type="radio" name="reconstitucion" value="si"> Sí
+                </label>
+
+                <label class="control-label radio-inline col-lg-2">
+                  <input type="radio" name="reconstitucion" value="no"> No
+                </label>
+              </div>
+            </div>
+
+            <div class="form-group row" id="sec_fecha_reconstitucion">
+              <label class="control-label col-lg-5">Fecha</label>
+              <div class="col-lg-7">
+                <input type="date" name="fecha_reconstitucion" class="form-control">
+              </div>
+            </div>
+        </div>
+
+      </div>
+
+
+      <div class="row" id="sec_renal">
+
+        <div class="form-group col-lg-6">
           <label class="col-lg-5 control-label">Requiere Profilaxis Antibiótica</label>
           <div class="col-lg-7">
             <label class="control-label radio-inline col-lg-2">
