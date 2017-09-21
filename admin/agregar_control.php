@@ -69,7 +69,7 @@
           <li role="presentation" class="dinamico_fallece"><a href="#neonatales" aria-controls="settings" role="tab" data-toggle="tab">Patologías Neonatales</a></li>
           <li role="presentation" class="dinamico_fallece"><a href="#evolucion" aria-controls="settings" role="tab" data-toggle="tab">Evolución y Tratamiento</a></li>
           <li role="presentation" class="dinamico_fallece"><a href="#antropometria" aria-controls="settings" role="tab" data-toggle="tab">Antropometría</a></li>
-          <li role="presentation"><a href="#alta" aria-controls="settings" role="tab" data-toggle="tab">Información del Alta</a></li>
+          <li role="presentation"><a href="#alta" aria-controls="settings" role="tab" data-toggle="tab">Alimentación</a></li>
           <li role="presentation"><a href="#estado" aria-controls="settings" role="tab" data-toggle="tab">Estado de Ficha</a></li>
         </ul>
       </div>
@@ -77,35 +77,39 @@
       <div class="col-lg-12">
         <div class="tab-content">
           <div role="tabpanel" class="tab-pane active" id="ingreso">
-            <?php include 'ficha_ingreso/datos_ingreso.php'; ?>
+            <?php include 'seguimiento/datos_ingreso.php'; ?>
           </div>
 
-          <div role="tabpanel" class="tab-pane" id="prenatales">
-            <?php include 'ficha_ingreso/prenatales.php'; ?>
+          <div role="tabpanel" class="tab-pane" id="control">
+            <?php include 'seguimiento/control.php'; ?>
           </div>
 
-          <div role="tabpanel" class="tab-pane" id="parto">
-            <?php include 'ficha_ingreso/parto.php'; ?>
+          <div role="tabpanel" class="tab-pane" id="connatales">
+            <?php include 'seguimiento/connatales.php'; ?>
           </div>
 
-          <div role="tabpanel" class="tab-pane" id="neonatales">
-            <?php include 'ficha_ingreso/neonatales.php'; ?>
-          </div>
-
-          <div role="tabpanel" class="tab-pane" id="evolucion">
-            <?php include 'ficha_ingreso/evolucion.php'; ?>
+          <div role="tabpanel" class="tab-pane" id="familiares">
+            <?php include 'seguimiento/familiares.php'; ?>
           </div>
 
           <div role="tabpanel" class="tab-pane" id="antropometria">
-            <?php include 'ficha_ingreso/antropometria.php'; ?>
+            <?php include 'seguimiento/antropometria.php'; ?>
           </div>
 
-          <div role="tabpanel" class="tab-pane" id="alta">
-            <?php include 'ficha_ingreso/alta.php'; ?>
+          <div role="tabpanel" class="tab-pane" id="alimentacion">
+            <?php include 'seguimiento/alimentacion.php'; ?>
           </div>
 
-          <div role="tabpanel" class="tab-pane" id="estado">
-            <?php include 'ficha_ingreso/estado.php'; ?>
+          <div role="tabpanel" class="tab-pane" id="auditiva">
+            <?php include 'seguimiento/funcion_auditiva.php'; ?>
+          </div>
+
+          <div role="tabpanel" class="tab-pane" id="visual">
+            <?php include 'seguimiento/funcion_visual.php'; ?>
+          </div>
+
+          <div role="tabpanel" class="tab-pane" id="otros">
+            <?php include 'seguimiento/otros_sistemas.php'; ?>
           </div>
 
         </div>
