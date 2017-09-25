@@ -434,5 +434,208 @@ jQuery(document).ready(function(){
     });
 
 
+
+// Función Visual
+// --------------------------------------------------------------
+
+    $("#evaluacion_posterior_si").change(function(){
+        var $input = $(this);
+        if($input.prop("checked"))
+        {
+            $("#sec_evaluacion_posterior_si").show();
+        }
+    });
+
+     $("#evaluacion_posterior_no").change(function(){
+        var $input = $(this);
+        if($input.prop("checked"))
+        {
+            $("#sec_evaluacion_posterior_si").hide();
+            $("#sec_instancia_si").hide();
+            $("#sec_oftalmologica_no").hide();
+            $("#sec_cirugia_izquierdo_diagnostico_si").hide();
+            $("#sec_cirugia_derecho_diagnostico_si").hide();
+            $("#sec_requiere_cirugia_si").hide();
+            $("#sec_cirugia_izquierdo_si").hide();
+            $("#sec_cirugia_derecho_si").hide();
+
+            $("input[name*='rop_izquierdo']").removeProp("checked");
+            $("input[name*='plus_izquierdo']").removeProp("checked");
+            $("input[name*='cirugia_izquierdo']").removeProp("checked");
+            $("input[name*='rop_derecho']").removeProp("checked");
+            $("input[name*='plus_derecho']").removeProp("checked");
+            $("input[name*='cirugia_derecho']").removeProp("checked");
+            $("input[name*='bevacizumab']").removeProp("checked");
+            $("input[name*='instancia']").removeProp("checked");
+            $("input[name*='cirugia_izquierdo_diagnostico']").removeProp("checked");
+            $("input[name*='rop_izquierdo_diagnostico']").removeProp("checked");
+            $("input[name*='cirugia_derecho_diagnostico']").removeProp("checked");
+            $("input[name*='rop_derecho_diagnostico']").removeProp("checked");
+            $("input[name*='oftalmologica']").removeProp("checked");
+            $("input[name*='requiere_cirugia']").removeProp("checked");
+            $("input[name*='ceguera_izquierdo']").removeProp("checked");
+            $("input[name*='ceguera_derecho']").removeProp("checked");
+            
+            $("select[name*='localizacion_izquierdo']").val("");
+            $("select[name*='severidad_izquierdo']").val("");
+            $("select[name*='cual_izquierdo']").val("");
+            $("select[name*='localizacion_derecho']").val("");
+            $("select[name*='severidad_derecho']").val("");
+            $("select[name*='cual_derecho']").val("");
+            $("select[name*='cual_izquierdo_rop']").val("0");
+            $("select[name*='cual_derecho_rop']").val("0");
+            $("select[name*='requiere_cirugia_cual']").val("0");
+
+            $("textarea[name*='observaciones']").val("");
+            
+
+        }
+    });
+
+     $("#cirugia_izquierdo_si").change(function(){
+        var $input = $(this);
+        if($input.prop("checked"))
+        {
+            $("#sec_cirugia_izquierdo_si").show();
+        }
+     });
+
+     $("#cirugia_izquierdo_no, #cirugia_izquierdo_s_i").change(function(){
+        var $input = $(this);
+        if($input.prop("checked"))
+        {
+            $("#sec_cirugia_izquierdo_si").hide();
+            $("select[name*='cual_izquierdo']").val("0");
+        }
+     });
+
+     $("#cirugia_derecho_si").change(function(){
+        var $input = $(this);
+        if($input.prop("checked"))
+        {
+            $("#sec_cirugia_derecho_si").show();
+        }
+     });
+
+     $("#cirugia_derecho_no, #cirugia_derecho_s_i").change(function(){
+        var $input = $(this);
+        if($input.prop("checked"))
+        {
+            $("#sec_cirugia_derecho_si").hide();
+            $("select[name*='cual_derecho']").val("0");
+        }
+     });
+
+     $("#instancia_si").change(function(){
+        var $input = $(this);
+        if($input.prop("checked"))
+        {
+            $("#sec_instancia_si").show();
+        }
+     });
+
+     $("#instancia_no").change(function(){
+        var $input = $(this);
+        if($input.prop("checked"))
+        {
+            $("#sec_instancia_si").hide();
+            $("#sec_oftalmologica_no").hide();
+            $("#sec_cirugia_izquierdo_diagnostico_si").hide();
+            $("#sec_cirugia_derecho_diagnostico_si").hide();
+
+            $("input[name*='oftalmologica']").removeProp("checked");
+
+            $("select[name*='cual_izquierdo_rop']").val("0");
+            $("select[name*='cual_derecho_rop']").val("0");
+
+            $("input[name*='cirugia_izquierdo_diagnostico']").removeProp("checked");
+            $("input[name*='rop_izquierdo_diagnostico']").removeProp("checked");
+
+            $("input[name*='cirugia_derecho_diagnostico']").removeProp("checked");
+            $("input[name*='rop_derecho_diagnostico']").removeProp("checked");
+        }
+     });
+
+     $("#oftalmologica_no").change(function(){
+        var $input = $(this);
+        if($input.prop("checked"))
+        {
+            $("#sec_oftalmologica_no").show();
+        }
+     });
+
+     $("#oftalmologica_si").change(function(){
+        var $input = $(this);
+        if($input.prop("checked"))
+        {
+            $("#sec_oftalmologica_no").hide();
+            $("#sec_cirugia_izquierdo_diagnostico_si").hide();
+            $("#sec_cirugia_derecho_diagnostico_si").hide();
+
+            $("select[name*='cual_izquierdo_rop']").val("0");
+            $("select[name*='cual_derecho_rop']").val("0");
+
+            $("input[name*='cirugia_izquierdo_diagnostico']").removeProp("checked");
+            $("input[name*='rop_izquierdo_diagnostico']").removeProp("checked");
+
+            $("input[name*='cirugia_derecho_diagnostico']").removeProp("checked");
+            $("input[name*='rop_derecho_diagnostico']").removeProp("checked");
+        }
+     });
+
+     $("#cirugia_izquierdo_diagnostico_si").change(function(){
+        var $input = $(this);
+        if($input.prop("checked"))
+        {
+            $("#sec_cirugia_izquierdo_diagnostico_si").show();
+        }
+     });
+
+     $("#cirugia_izquierdo_diagnostico_no, #cirugia_izquierdo_diagnostico_s_i").change(function(){
+        var $input = $(this);
+        if($input.prop("checked"))
+        {
+            $("#sec_cirugia_izquierdo_diagnostico_si").hide();
+
+            $("select[name*='cual_izquierdo_rop']").val("0");
+        }
+     });
+
+     $("#cirugia_derecho_diagnostico_si").change(function(){
+        var $input = $(this);
+        if($input.prop("checked"))
+        {
+            $("#sec_cirugia_derecho_diagnostico_si").show();
+        }
+     });
+
+    $("#cirugia_derecho_diagnostico_no, #cirugia_derecho_diagnostico_s_i").change(function(){
+        var $input = $(this);
+        if($input.prop("checked"))
+        {
+            $("#sec_cirugia_derecho_diagnostico_si").hide();
+            $("select[name*='cual_derecho_rop']").val("0");
+        }
+    });
+
+    $("#requiere_cirugia_si").change(function(){
+        var $input = $(this);
+        if($input.prop("checked"))
+        {
+            $("#sec_requiere_cirugia_si").show();
+        }
+    });
+
+    $("#requiere_cirugia_no").change(function(){
+        var $input = $(this);
+        if($input.prop("checked"))
+        {
+            $("#sec_requiere_cirugia_si").hide();
+
+            $("textarea[name*='observaciones']").val("");
+            $("select[name*='requiere_cirugia_cual']").val("0");
+        }
+    });
+
 // Fin de función principal
 });

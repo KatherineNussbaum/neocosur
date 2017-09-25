@@ -9,7 +9,6 @@
       	<div class="col-lg-10">
         	<h2>Nuevo Control de Seguimiento</h2>
       	</div>
-
     </div>
 
     <div id="tabs" class="row">
@@ -65,11 +64,17 @@
 
 
           <li role="presentation"><a href="#prenatales" aria-controls="profile" role="tab" data-toggle="tab">Antecedentes Prenatales</a></li>
+
           <li role="presentation"><a href="#parto" aria-controls="messages" role="tab" data-toggle="tab">Antecedentes del Parto</a></li>
+
           <li role="presentation" class="dinamico_fallece"><a href="#neonatales" aria-controls="settings" role="tab" data-toggle="tab">Patologías Neonatales</a></li>
+
           <li role="presentation" class="dinamico_fallece"><a href="#evolucion" aria-controls="settings" role="tab" data-toggle="tab">Evolución y Tratamiento</a></li>
+
           <li role="presentation" class="dinamico_fallece"><a href="#antropometria" aria-controls="settings" role="tab" data-toggle="tab">Antropometría</a></li>
+
           <li role="presentation"><a href="#alta" aria-controls="settings" role="tab" data-toggle="tab">Alimentación</a></li>
+
           <li role="presentation"><a href="#estado" aria-controls="settings" role="tab" data-toggle="tab">Estado de Ficha</a></li>
         </ul>
       </div>
