@@ -12,6 +12,9 @@ jQuery(document).ready(function(){
 
     $("#sec_evolucion_posterior").hide();
     $("#sec_evaluacion_auditiva_normal_no").hide();
+    $("#sec_digestivo").hide();
+    $("#sec_renal").hide();
+    $("#sec_neurologico").hide();
 
 // Secciones 
 // -------------------------------------------
@@ -39,6 +42,89 @@ jQuery(document).ready(function(){
         $("#sec_funcion_auditiva").fadeIn('slow');
         $("#sec_evolucion_posterior").fadeOut('fast');
     });
+
+    $("#respiratorio").click(function()
+    {
+        $(this).removeClass("btn-default");
+        $(this).addClass("active btn-success");
+
+        $("#digestivo").removeClass("active btn-success");
+        $("#digestivo").addClass("btn-default");
+
+        $("#renal").removeClass("active btn-success");
+        $("#renal").addClass("btn-default");
+
+        $("#neurologico").removeClass("active btn-success");
+        $("#neurologico").addClass("btn-default");
+
+        $("#sec_respiratorio").fadeIn('slow');
+        $("#sec_digestivo").fadeOut('fast');
+        $("#sec_renal").fadeOut('fast');
+        $("#sec_neurologico").fadeOut('fast');
+
+    });
+
+    $("#digestivo").click(function()
+    {
+        $(this).removeClass("btn-default");
+        $(this).addClass("active btn-success");
+
+        $("#respiratorio").removeClass("active btn-success");
+        $("#respiratorio").addClass("btn-default");
+
+        $("#renal").removeClass("active btn-success");
+        $("#renal").addClass("btn-default");
+
+        $("#neurologico").removeClass("active btn-success");
+        $("#neurologico").addClass("btn-default");
+
+        $("#sec_digestivo").fadeIn('slow');
+        $("#sec_respiratorio").fadeOut('fast');
+        $("#sec_renal").fadeOut('fast');
+        $("#sec_neurologico").fadeOut('fast');
+    });
+
+    $("#renal").click(function()
+    {
+        $(this).removeClass("btn-default");
+        $(this).addClass("active btn-success");
+
+        $("#respiratorio").removeClass("active btn-success");
+        $("#respiratorio").addClass("btn-default");
+
+        $("#digestivo").removeClass("active btn-success");
+        $("#digestivo").addClass("btn-default");
+
+        $("#neurologico").removeClass("active btn-success");
+        $("#neurologico").addClass("btn-default");
+
+        $("#sec_renal").fadeIn('slow');
+        $("#sec_respiratorio").fadeOut('fast');
+        $("#sec_digestivo").fadeOut('fast');
+        $("#sec_neurologico").fadeOut('fast');
+    });
+
+    $("#neurologico").click(function()
+    {
+        $(this).removeClass("btn-default");
+        $(this).addClass("active btn-success");
+
+        $("#respiratorio").removeClass("active btn-success");
+        $("#respiratorio").addClass("btn-default");
+
+        $("#digestivo").removeClass("active btn-success");
+        $("#digestivo").addClass("btn-default");
+
+        $("#renal").removeClass("active btn-success");
+        $("#renal").addClass("btn-default");
+
+        $("#sec_neurologico").fadeIn('slow');
+        $("#sec_respiratorio").fadeOut('fast');
+        $("#sec_digestivo").fadeOut('fast');
+        $("#sec_renal").fadeOut('fast');
+    });
+
+
 
 // Función Auditiva - Pesquisa antes del alta
 // -------------------------------------------
@@ -636,6 +722,184 @@ jQuery(document).ready(function(){
             $("select[name*='requiere_cirugia_cual']").val("0");
         }
     });
+
+
+// Respiratorio
+// -------------------------------------------
+
+    $("#diureticos_si").change(function(){
+        var $input = $(this);
+        if($input.prop("checked"))
+        {
+            $("#sec_diureticos_si").show();
+        }
+    });
+
+    $("#diureticos_no").change(function(){
+        var $input = $(this);
+        if($input.prop("checked"))
+        {
+            $("#sec_diureticos_si").hide();
+            $("input[name*='fecha_suspension'], input[name*='fecha_inicio']").val("");
+        }
+    });
+
+
+// Digestivo
+// -------------------------------------------
+
+    $("#ostomia_si").change(function(){
+        var $input = $(this);
+        if($input.prop("checked"))
+        {
+            $("#sec_ostomia_si").show();
+        }
+    });
+
+    $("#ostomia_no").change(function(){
+        var $input = $(this);
+        if($input.prop("checked"))
+        {
+            $("#sec_ostomia_si").hide();
+            $("#sec_reconstitucion_si").hide();
+
+            $("select[name*='ostomia_cual']").val("0");
+            $("input[name*='reconstitucion']").removeProp("checked");
+            $("input[name*='fecha_reconstitucion']").val("");
+        }
+    });
+
+    $("#reconstitucion_si").change(function(){
+        var $input = $(this);
+        if($input.prop("checked"))
+        {
+            $("#sec_reconstitucion_si").show();
+        }
+    });
+
+    $("#reconstitucion_no").change(function(){
+        var $input = $(this);
+        if($input.prop("checked"))
+        {
+            $("#sec_reconstitucion_si").hide();
+
+            $("input[name*='fecha_reconstitucion']").val("");
+        }
+    });
+
+
+// Renal
+// -------------------------------------------
+
+    $("#profilaxis_si").change(function(){
+        var $input = $(this);
+        if($input.prop("checked"))
+        {
+            $("#sec_profilaxis_si").show();
+        }
+    });
+
+    $("#profilaxis_no").change(function(){
+        var $input = $(this);
+        if($input.prop("checked"))
+        {
+            $("#sec_profilaxis_si").hide();
+
+            $("input[name*='fecha_inicio_profilaxis'], input[name*='fecha_suspension_profilaxis']").val("");
+        }
+    });
+
+
+    $("#imagenes_si").change(function(){
+        var $input = $(this);
+        if($input.prop("checked"))
+        {
+            $("#sec_imagenes_si").show();
+        }
+    });
+
+    $("#imagenes_no").change(function(){
+        var $input = $(this);
+        if($input.prop("checked"))
+        {
+            $("#sec_imagenes_si").hide();
+            $("#sec_eco_renal").hide();
+            $("#sec_cintigrafia").hide();
+            $("#sec_uretrocistografia").hide();
+
+            $("input[name*='eco_renal'], input[name*='cintigrafia'], input[name*='uretrocistografia']").removeProp("checked");
+            
+            $("input[name*='eco_renal_alteracion']").removeProp("checked");
+            $("textarea[name*='describa_eco_renal']").val("");
+
+            $("input[name*='cintigrafia_alteracion']").removeProp("checked");
+            $("textarea[name*='describa_cintigrafia']").val("");
+
+            $("input[name*='uretrocistografia_alteracion']").removeProp("checked");
+            $("textarea[name*='describa_uretrocistografia']").val("");
+        }
+    });
+
+    $("#eco_renal").change(function(){
+        var $input = $(this);
+        if($input.prop("checked"))
+        {
+            $("#sec_eco_renal").show();
+        }
+        else
+        {
+            $("#sec_eco_renal").hide();
+            $("input[name*='eco_renal_alteracion']").removeProp("checked");
+            $("textarea[name*='describa_eco_renal']").val("");
+        }
+    });
+
+    $("#cintigrafia").change(function(){
+        var $input = $(this);
+        if($input.prop("checked"))
+        {
+            $("#sec_cintigrafia").show();
+        }
+        else
+        {
+            $("#sec_cintigrafia").hide();
+            $("input[name*='cintigrafia_alteracion']").removeProp("checked");
+            $("textarea[name*='describa_cintigrafia']").val("");
+        }
+    });
+
+    $("#uretrocistografia").change(function(){
+        var $input = $(this);
+        if($input.prop("checked"))
+        {
+            $("#sec_uretrocistografia").show();
+        }
+        else
+        {
+            $("#sec_uretrocistografia").hide();
+            $("input[name*='uretrocistografia_alteracion']").removeProp("checked");
+            $("textarea[name*='describa_uretrocistografia']").val("");
+        }
+    });
+
+    $("#presion_si").change(function(){
+        var $input = $(this);
+        if($input.prop("checked"))
+        {
+            $("#sec_presion_si").show();
+        }
+    });
+
+    $("#presion_no").change(function(){
+        var $input = $(this);
+        if($input.prop("checked"))
+        {
+            $("#sec_presion_si").hide();
+            $("input[name*='alteracion']").removeProp("checked");
+        }
+    });
+
+
 
 // Fin de función principal
 });
