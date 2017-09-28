@@ -578,10 +578,12 @@
                   </div>
                 </td>
                 <td>
+                  <!--
                   <label for="sepsis_tardia_tipo" class="control-label radio-inline col-lg-6" >
                     <input type="radio" name="sepsis_tardia_tipo" value="hemocultivo" id="sepsis_tardia_hemocultivo"> Hemocultivo
                     <input type="radio" name="sepsis_tardia_tipo" value="lcr" id="sepsis_tardia_lcr"> LCR positivo
                   </label>
+                -->
                 </td>
                 <td><button type="button" class="btn btn-danger btn-xs eliminar"><span class="glyphicon glyphicon-remove" aria-hidden="true"></span></button></td>
               </tr>

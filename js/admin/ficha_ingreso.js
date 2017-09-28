@@ -1064,6 +1064,7 @@ jQuery(document).ready(function(){
         var numFila = $("#tabla_sepsis tbody tr").length;
         var num = numFila-1;
         $("#tabla_sepsis tbody tr:eq(-1) td:eq(0)").html("Sepsis " + num);
+        $("#tabla_sepsis tbody tr:eq(-1) td:eq(4)").html('<label for="sepsis_tardia_tipo" class="control-label radio-inline" ><input type="radio" name="sepsis_tardia_tipo'+num+'" value="hemocultivo" id="sepsis_tardia_hemocultivo"> Hemocultivo </label> <label for="sepsis_tardia_tipo" class="control-label radio-inline" > <input type="radio" name="sepsis_tardia_tipo'+num+'" value="lcr" id="sepsis_tardia_lcr"> LCR positivo</label>');
         $("#tabla_sepsis tbody tr:eq(-1)").find(".sub-form").hide();
     });
 
