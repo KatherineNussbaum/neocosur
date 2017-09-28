@@ -97,7 +97,7 @@
         <div class="form-group col-lg-6">
           <label for="alveolar" class="col-lg-5 control-label">Rup. Alveolar</label>
           <label for="alveolar" class="control-label radio-inline col-lg-2">
-            <input type="radio" name="alveolar" value="si" id="alveolar_si"> Sí
+            <input type="radio" name="alveolar" value="si" id="alveolar_si" checked> Sí
           </label>
           <label for="alveolar" class="control-label radio-inline col-lg-2" >
             <input type="radio" name="alveolar" value="no" id="alveolar_no"> No
@@ -683,3 +683,4 @@
     </form>       
   </div>
 </div>
+

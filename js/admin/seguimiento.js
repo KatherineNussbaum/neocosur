@@ -901,5 +901,175 @@ jQuery(document).ready(function(){
 
 
 
+// Neurológica
+// --------------------------------------------------------------
+
+    $("#hic_si").change(function(){
+        if( $("#hic_si").prop("checked") )
+        {
+            $("#sec_hic_si").show();
+        }
+    });
+
+    $("#hic_no").change(function(){
+        if( $("#hic_no").prop("checked") )
+        {
+            $("#sec_hic_si").hide();
+            $("select[name*='hic_grado']").val("0");
+        }
+    });
+
+    $("#hic_s_i").change(function(){
+        if( $("#hic_s_i").prop("checked") )
+        {
+            $("#sec_hic_si").hide();
+            $("select[name*='hic_grado']").val("0");
+        }
+    });
+
+    $("#hidrocefalia_si").change(function(){
+        if( $("#hidrocefalia_si").prop("checked") )
+        {
+            $("#sec_hidrocefalia_si").show();
+        }
+    });
+
+    $("#hidrocefalia_no").change(function(){
+        if( $("#hidrocefalia_no").prop("checked") )
+        {
+            $("#sec_hidrocefalia_si").hide();
+            $("input[name*='valvula']").removeProp("checked");
+        }
+    });
+
+    $("#convulsiones_si").change(function(){
+        if( $("#convulsiones_si").prop("checked") )
+        {
+            $("#sec_convulsiones_si").show();
+        }
+    });
+
+    $("#convulsiones_no").change(function(){
+        if( $("#convulsiones_no").prop("checked") )
+        {
+            $("#sec_convulsiones_si").hide();
+            $("input[name*='tratamiento']").removeProp("checked");
+            $("input[name*='fecha_tratamiento']").val("");
+        }
+    });
+
+
+// Evaluación del Neurodesarrollo
+// --------------------------------------------------------------
+
+    $("#hic_40semanas_si").change(function(){
+        if( $("#hic_40semanas_si").prop("checked") )
+        {
+            $("#sec_hic_40semanas_si").show();
+        }
+    });
+
+    $("#hic_40semanas_no").change(function(){
+        if( $("#hic_40semanas_no").prop("checked") )
+        {
+            $("#sec_hic_40semanas_si").hide();
+            $("select[name*='hic_40semanas_grado']").val("");
+        }
+    });
+
+    $("#rop_40semanas_si").change(function(){
+        if( $("#rop_40semanas_si").prop("checked") )
+        {
+            $("#sec_rop_40semanas_si").show();
+        }
+    });
+
+    $("#rop_40semanas_no").change(function(){
+        if( $("#rop_40semanas_no").prop("checked") )
+        {
+            $("#sec_rop_40semanas_si").hide();
+            $("select[name*='rop_40semanas_grado']").val("");
+        }
+    });
+
+    $("#2anios_vision_no").change(function(){
+        if( $("#2anios_vision_no").prop("checked") )
+        {
+            $("#sec_2anios_vision_no").show();
+        }
+    });
+
+    $("#2anios_vision_si").change(function(){
+        if( $("#2anios_vision_si").prop("checked") )
+        {
+            $("#sec_2anios_vision_no").hide();
+            $("input[class*='vision_normal_no']").removeProp("checked");
+        }
+    });
+
+
+    $("#2anios_audiocion_no").change(function(){
+        if( $("#2anios_audiocion_no").prop("checked") )
+        {
+            $("#sec_2anios_audiocion_no").show();
+        }
+    });
+
+    $("#2anios_audiocion_si").change(function(){
+        if( $("#2anios_audiocion_si").prop("checked") )
+        {
+            $("#sec_2anios_audiocion_no").hide();
+            $("input[name*='2anios_audiocion_no']").removeProp("checked");
+        }
+    });
+
+    $("#2anios_paralisis_si").change(function(){
+        if( $("#2anios_paralisis_si").prop("checked") )
+        {
+            $("#sec_2anios_paralisis_si").show();
+        }
+    });
+
+    $("#2anios_paralisis_no").change(function(){
+        if( $("#2anios_paralisis_no").prop("checked") )
+        {
+            $("#sec_2anios_paralisis_si").hide();
+            $("input[name*='2anios_paralisis_si']").removeProp("checked");
+        }
+    });
+
+    $("#2anios_otros_si").change(function(){
+        if( $("#2anios_otros_si").prop("checked") )
+        {
+            $("#sec_2anios_otros_si").show();
+        }
+    });
+
+    $("#2anios_otros_no").change(function(){
+        if( $("#2anios_otros_no").prop("checked") )
+        {
+            $("#sec_2anios_otros_si").hide();
+            $("input[class*='2anios_otros_si']").removeProp("checked");
+        }
+    });
+
+    $("#2anios_psicomotor_examen_no").change(function(){
+        if( $("#2anios_psicomotor_examen_no").prop("checked") )
+        {
+            $("#sec_2anios_psicomotor_examen_no").show();
+        }
+    });
+
+    $("#2anios_psicomotor_examen_si").change(function(){
+        if( $("#2anios_psicomotor_examen_si").prop("checked") )
+        {
+            $("#sec_2anios_psicomotor_examen_no").hide();
+            $("input[class*='2anios_motora']").removeProp("checked");
+        }
+    });
+
+
+
+
 // Fin de función principal
 });

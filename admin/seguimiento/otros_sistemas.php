@@ -344,7 +344,122 @@
       </div>
 
       <div class="row" id="sec_neurologico">
+        <div class="col-lg-12 form-group">
+          <label class="control-label">Resumen Situación Neurológica a las 40 semanas</label>
+        </div>
+
+        <div class="row">
+          <div class="form-group col-lg-6">
+            <label class="control-label col-lg-5">HIC (Grado)</label>
+            <div class="col-lg-7">
+              <label class="control-label radio-inline col-lg-2">
+                <input type="radio" name="hic" value="si" id="hic_si"> Sí
+              </label>
+              <label for="" class="control-label radio-inline col-lg-2" >
+                <input type="radio" name="hic" value="no" id="hic_no"> No
+              </label>
+              <label for="" class="control-label radio-inline col-lg-2" >
+                <input type="radio" name="hic" value="s_i" id="hic_s_i" > S/I
+              </label>
+            </div>
+          </div>
+
+          <div class="form-group col-lg-6">
+            <div id="sec_hic_si" class="sub-form">
+              <label class="control-label col-lg-5">Grado</label>
+              <div class="col-lg-7"> 
+                <select name="hic_grado" class="form-control col-lg-8 input-sm">
+                  <option value="0"></option>
+                  <option value="1">Opción</option>
+                </select>
+              </div>
+            </div>          
+          </div>
+        </div>
         
+        <div class="row">
+          <div class="form-group col-lg-6">
+            <label class="control-label col-lg-5">Leucomalacia</label>
+            <div class="col-lg-7">
+              <label class="control-label radio-inline col-lg-2">
+                <input type="radio" name="leucomalacia" value="si"> Sí
+              </label>
+              <label for="" class="control-label radio-inline col-lg-2" >
+                <input type="radio" name="leucomalacia" value="no"> No
+              </label>
+            </div>
+          </div>
+
+          <div class="form-group col-lg-6">
+                    
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="form-group col-lg-6">
+            <label class="control-label col-lg-5">Hidrocefalia</label>
+            <div class="col-lg-7">
+              <label class="control-label radio-inline col-lg-2">
+                <input type="radio" name="hidrocefalia" value="si" id="hidrocefalia_si"> Sí
+              </label>
+              <label for="" class="control-label radio-inline col-lg-2" >
+                <input type="radio" name="hidrocefalia" value="no" id="hidrocefalia_no"> No
+              </label>
+            </div>
+          </div>
+
+          <div class="form-group col-lg-6">
+            <div id="sec_hidrocefalia_si" class="sub-form">
+              <label class="control-label col-lg-5">Válvula derivativa</label>
+              <div class="col-lg-7">
+                <label class="control-label radio-inline col-lg-2">
+                  <input type="radio" name="valvula" value="si"> Sí
+                </label>
+                <label for="" class="control-label radio-inline col-lg-2" >
+                  <input type="radio" name="valvula" value="no"> No
+                </label>
+              </div>
+            </div> 
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="form-group col-lg-6">
+            <label class="control-label col-lg-5">Convulsiones
+post-alta</label>
+            <div class="col-lg-7">
+              <label class="control-label radio-inline col-lg-2">
+                <input type="radio" name="convulsiones" value="si" id="convulsiones_si"> Sí
+              </label>
+              <label for="" class="control-label radio-inline col-lg-2" >
+                <input type="radio" name="convulsiones" value="no" id="convulsiones_no"> No
+              </label>
+            </div>
+          </div>
+
+          <div class="form-group col-lg-6">
+            <div id="sec_convulsiones_si" class="sub-form">
+              <label class="control-label col-lg-5">¿Requiere tratamiento?</label>
+              <div class="col-lg-7">
+                <label class="control-label radio-inline col-lg-2">
+                  <input type="radio" name="tratamiento" value="si"> Sí
+                </label>
+                <label for="" class="control-label radio-inline col-lg-2" >
+                  <input type="radio" name="tratamiento" value="no"> No
+                </label>
+              </div>
+              <div class="clearfix"></div>
+              <label class="control-label col-lg-5">Fecha de suspensión tratamiento anterior</label>
+              <div class="col-lg-7">
+                <input type="date" name="fecha_tratamiento" class="form-control input-sm col-lg-8">
+              </div>
+            </div> 
+          </div>
+        </div>
+
+
+
+
       </div>
 
     <div class=" col-lg-offset-10 col-lg-2">

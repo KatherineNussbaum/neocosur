@@ -352,7 +352,7 @@ jQuery(document).ready(function(){
             $("input[class*='detalle_alveolar']").removeProp("checked");
         }});
 
-
+    
 // Ductus
 // -------------------------------------------
     $( "#ductus_si" ).change(function() {
