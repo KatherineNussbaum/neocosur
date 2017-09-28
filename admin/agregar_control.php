@@ -43,7 +43,7 @@
             <a href="#otros" aria-controls="profile" role="tab" data-toggle="tab">Compromiso de Otros Sistemas</a>
           </li>
           <li role="presentation" class="active">
-            <a href="#evaluacion" aria-controls="profile" role="tab" data-toggle="tab">Evaluación del Neurodesarrollo</a>
+            <a href="#neurodesarrollo" aria-controls="profile" role="tab" data-toggle="tab">Evaluación del Neurodesarrollo</a>
           </li>
           <li role="presentation" class="active">
             <a href="#vacunas" aria-controls="profile" role="tab" data-toggle="tab">Vacunas</a>
@@ -115,6 +115,10 @@
 
           <div role="tabpanel" class="tab-pane" id="otros">
             <?php include 'seguimiento/otros_sistemas.php'; ?>
+          </div>
+
+          <div role="tabpanel" class="tab-pane" id="neurodesarrollo">
+            <?php include 'seguimiento/neurodesarrollo.php'; ?>
           </div>
 
         </div>
