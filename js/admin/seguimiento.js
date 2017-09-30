@@ -16,6 +16,13 @@ jQuery(document).ready(function(){
     $("#sec_renal").hide();
     $("#sec_neurologico").hide();
 
+    $("#sec_2anios").hide();
+    $("#sec_2anios_psicomotor").hide();
+    $("#sec_2anios_psicomotor_antes").hide();
+    $("#sec_2a7anios_psicomotor").hide();
+    $("#sec_2anios_neurodesarrollo").hide();
+
+
 // Secciones 
 // -------------------------------------------
     $("#evolucion_posterior").click(function()
@@ -124,6 +131,179 @@ jQuery(document).ready(function(){
         $("#sec_renal").fadeOut('fast');
     });
 
+    $("#40semanas").click(function()
+    {
+        $(this).removeClass("btn-default");
+        $(this).addClass("active btn-success");
+
+        $("#2anios").removeClass("active btn-success");
+        $("#2anios").addClass("btn-default");
+
+        $("#2anios_psicomotor").removeClass("active btn-success");
+        $("#2anios_psicomotor").addClass("btn-default");
+
+        $("#2anios_psicomotor_antes").removeClass("active btn-success");
+        $("#2anios_psicomotor_antes").addClass("btn-default");
+
+        $("#2a7anios_psicomotor").removeClass("active btn-success");
+        $("#2a7anios_psicomotor").addClass("btn-default");
+
+        $("#2anios_neurodesarrollo").removeClass("active btn-success");
+        $("#2anios_neurodesarrollo").addClass("btn-default");
+
+        $("#sec_40semanas").fadeIn('slow');
+        $("#sec_2anios").fadeOut('fast');
+        $("#sec_2anios_psicomotor").fadeOut('fast');
+        $("#sec_2anios_psicomotor_antes").fadeOut('fast');
+        $("#sec_2a7anios_psicomotor").fadeOut('fast');
+        $("#sec_2anios_neurodesarrollo").fadeOut('fast');
+
+    });
+
+    $("#2anios").click(function()
+    {
+        $(this).removeClass("btn-default");
+        $(this).addClass("active btn-success");
+
+        $("#40semanas").removeClass("active btn-success");
+        $("#40semanas").addClass("btn-default");
+
+        $("#2anios_psicomotor").removeClass("active btn-success");
+        $("#2anios_psicomotor").addClass("btn-default");
+
+        $("#2anios_psicomotor_antes").removeClass("active btn-success");
+        $("#2anios_psicomotor_antes").addClass("btn-default");
+
+        $("#2a7anios_psicomotor").removeClass("active btn-success");
+        $("#2a7anios_psicomotor").addClass("btn-default");
+
+        $("#2anios_neurodesarrollo").removeClass("active btn-success");
+        $("#2anios_neurodesarrollo").addClass("btn-default");
+
+        $("#sec_40semanas").fadeOut('fast');
+        $("#sec_2anios").fadeIn('slow');
+        $("#sec_2anios_psicomotor").fadeOut('fast');
+        $("#sec_2anios_psicomotor_antes").fadeOut('fast');
+        $("#sec_2a7anios_psicomotor").fadeOut('fast');
+        $("#sec_2anios_neurodesarrollo").fadeOut('fast');
+
+    });
+
+    $("#2anios_psicomotor").click(function()
+    {
+        $(this).removeClass("btn-default");
+        $(this).addClass("active btn-success");
+
+        $("#40semanas").removeClass("active btn-success");
+        $("#40semanas").addClass("btn-default");
+
+        $("#2anios").removeClass("active btn-success");
+        $("#2anios").addClass("btn-default");
+
+        $("#2anios_psicomotor_antes").removeClass("active btn-success");
+        $("#2anios_psicomotor_antes").addClass("btn-default");
+
+        $("#2a7anios_psicomotor").removeClass("active btn-success");
+        $("#2a7anios_psicomotor").addClass("btn-default");
+
+        $("#2anios_neurodesarrollo").removeClass("active btn-success");
+        $("#2anios_neurodesarrollo").addClass("btn-default");
+
+        $("#sec_40semanas").fadeOut('fast');
+        $("#sec_2anios").fadeOut('fast');
+        $("#sec_2anios_psicomotor").fadeIn('slow');
+        $("#sec_2anios_psicomotor_antes").fadeOut('fast');
+        $("#sec_2a7anios_psicomotor").fadeOut('fast');
+        $("#sec_2anios_neurodesarrollo").fadeOut('fast');
+
+    });
+
+    $("#2anios_psicomotor_antes").click(function()
+    {
+        $(this).removeClass("btn-default");
+        $(this).addClass("active btn-success");
+
+        $("#2anios").removeClass("active btn-success");
+        $("#2anios").addClass("btn-default");
+
+        $("#2anios_psicomotor").removeClass("active btn-success");
+        $("#2anios_psicomotor").addClass("btn-default");
+
+        $("#40semanas").removeClass("active btn-success");
+        $("#40semanas").addClass("btn-default");
+
+        $("#2a7anios_psicomotor").removeClass("active btn-success");
+        $("#2a7anios_psicomotor").addClass("btn-default");
+
+        $("#2anios_neurodesarrollo").removeClass("active btn-success");
+        $("#2anios_neurodesarrollo").addClass("btn-default");
+
+        $("#sec_2anios_psicomotor_antes").fadeIn('slow');
+        $("#sec_2anios").fadeOut('fast');
+        $("#sec_2anios_psicomotor").fadeOut('fast');
+        $("#sec_40semanas").fadeOut('fast');
+        $("#sec_2a7anios_psicomotor").fadeOut('fast');
+        $("#sec_2anios_neurodesarrollo").fadeOut('fast');
+
+    });
+
+    $("#2a7anios_psicomotor").click(function()
+    {
+        $(this).removeClass("btn-default");
+        $(this).addClass("active btn-success");
+
+        $("#2anios").removeClass("active btn-success");
+        $("#2anios").addClass("btn-default");
+
+        $("#2anios_psicomotor").removeClass("active btn-success");
+        $("#2anios_psicomotor").addClass("btn-default");
+
+        $("#2anios_psicomotor_antes").removeClass("active btn-success");
+        $("#2anios_psicomotor_antes").addClass("btn-default");
+
+        $("#40semanas").removeClass("active btn-success");
+        $("#40semanas").addClass("btn-default");
+
+        $("#2anios_neurodesarrollo").removeClass("active btn-success");
+        $("#2anios_neurodesarrollo").addClass("btn-default");
+
+        $("#sec_2a7anios_psicomotor").fadeIn('slow');
+        $("#sec_2anios").fadeOut('fast');
+        $("#sec_2anios_psicomotor").fadeOut('fast');
+        $("#sec_2anios_psicomotor_antes").fadeOut('fast');
+        $("#sec_40semanas").fadeOut('fast');
+        $("#sec_2anios_neurodesarrollo").fadeOut('fast');
+
+    });
+
+    $("#2anios_neurodesarrollo").click(function()
+    {
+        $(this).removeClass("btn-default");
+        $(this).addClass("active btn-success");
+
+        $("#2anios").removeClass("active btn-success");
+        $("#2anios").addClass("btn-default");
+
+        $("#2anios_psicomotor").removeClass("active btn-success");
+        $("#2anios_psicomotor").addClass("btn-default");
+
+        $("#2anios_psicomotor_antes").removeClass("active btn-success");
+        $("#2anios_psicomotor_antes").addClass("btn-default");
+
+        $("#2a7anios_psicomotor").removeClass("active btn-success");
+        $("#2a7anios_psicomotor").addClass("btn-default");
+
+        $("#40semanas").removeClass("active btn-success");
+        $("#40semanas").addClass("btn-default");
+
+        $("#sec_2anios_neurodesarrollo").fadeIn('slow');
+        $("#sec_2anios").fadeOut('fast');
+        $("#sec_2anios_psicomotor").fadeOut('fast');
+        $("#sec_2anios_psicomotor_antes").fadeOut('fast');
+        $("#sec_2a7anios_psicomotor").fadeOut('fast');
+        $("#sec_40semanas").fadeOut('fast');
+
+    });
 
 
 // Función Auditiva - Pesquisa antes del alta
@@ -1064,12 +1244,476 @@ jQuery(document).ready(function(){
         if( $("#2anios_psicomotor_examen_si").prop("checked") )
         {
             $("#sec_2anios_psicomotor_examen_no").hide();
+            $("#sec_2anios_auditiva_no").hide();
+            $("#sec_2anios_cirugia_si").hide();
+            $("#sec_2anios_lenguaje_si").hide();
+
             $("input[class*='2anios_motora']").removeProp("checked");
+            $("input[name*='auditiva']").removeProp("checked");
+            $("select[name*='2anios_hipoacusia']").val("");
+            $("input[name*='visual']").removeProp("checked");
+            $("input[name*='cirugia']").removeProp("checked");
+            $("textarea[name*='2anios_cirugia_si_descripcion']").val("");
+            $("input[name*='2anios_lenguaje']").removeProp("checked");
+            $("select[name*='2anios_lenguaje_si_tipo']").val("");
+            $("input[name*='2anios_cefalia']").removeProp("checked");
+            $("input[class*='2anios_otros']").removeProp("checked");
+            $("input[name*='2anios_neurorehabilitación']").removeProp("checked");
+        }
+    });
+
+    $("#2anios_auditiva_no").change(function(){
+        if( $("#2anios_auditiva_no").prop("checked") )
+        {
+            $("#sec_2anios_auditiva_no").show();
+        }
+    });
+
+    $("#2anios_auditiva_si").change(function(){
+        if( $("#2anios_auditiva_si").prop("checked") )
+        {
+            $("#sec_2anios_auditiva_no").hide();
+            $("select[name*='2anios_hipoacusia']").val("");
+        }
+    });
+
+    $("#2anios_cirugia_si").change(function(){
+        if( $("#2anios_cirugia_si").prop("checked") )
+        {
+            $("#sec_2anios_cirugia_si").show();
+        }
+    });
+
+    $("#2anios_cirugia_no").change(function(){
+        if( $("#2anios_cirugia_no").prop("checked") )
+        {
+            $("#sec_2anios_cirugia_si").hide();
+            $("textarea[name*='2anios_cirugia_si_descripcion']").val("");
+        }
+    });
+
+    $("#2anios_lenguaje_si").change(function(){
+        if( $("#2anios_lenguaje_si").prop("checked") )
+        {
+            $("#sec_2anios_lenguaje_si").show();
+        }
+    });
+
+    $("#2anios_lenguaje_no").change(function(){
+        if( $("#2anios_lenguaje_no").prop("checked") )
+        {
+            $("#sec_2anios_lenguaje_si").hide();
+            $("select[name*='2anios_lenguaje_si_tipo']").val("");
         }
     });
 
 
 
+    $("#0a24semanas_si").change(function(){
+        if( $("#0a24semanas_si").prop("checked") )
+        {
+            $("#sec_0a24semanas_si").show();
+        }
+    });
+
+    $("#0a24semanas_no").change(function(){
+        if( $("#0a24semanas_no").prop("checked") )
+        {
+            $("#sec_0a24semanas_si").hide();
+
+            $("#eedp").removeProp("checked");
+            $("#sec_eedp").hide();
+            $("#sec_eedp_normal_si").hide();
+            $("input[name*='fecha_eedp']").val("");      
+            $("input[name*='eedp_edad_anios']").val("");
+            $("input[name*='eedp_edad_meses']").val("");
+            $("input[name*='eedp_puntaje']").val("");
+            $("input[name*='eedp_normal']").removeProp("checked");
+            $("textarea[name*='eedp_observacion']").val("");
+
+            $("#eais").removeProp("checked");
+            $("#sec_eais").hide();
+            $("#sec_eais_normal_si").hide();
+            $("input[name*='fecha_eais']").val("");      
+            $("input[name*='eais_edad_anios']").val("");
+            $("input[name*='eais_edad_meses']").val("");
+            $("input[name*='eais_puntaje']").val("");
+            $("input[name*='eais_normal']").removeProp("checked");
+            $("textarea[name*='eais_observacion']").val("");
+
+            $("#cat").removeProp("checked");
+            $("#sec_cat").hide();
+            $("#sec_cat_normal_si").hide();
+            $("input[name*='fecha_cat']").val("");      
+            $("input[name*='cat_edad_anios']").val("");
+            $("input[name*='cat_edad_meses']").val("");
+            $("input[name*='cat_puntaje']").val("");
+            $("input[name*='cat_normal']").removeProp("checked");
+            $("textarea[name*='cat_observacion']").val("");
+
+            $("#asq").removeProp("checked");
+            $("#sec_asq").hide();
+            $("#sec_asq_normal_si").hide();
+            $("input[name*='fecha_asq']").val("");      
+            $("input[name*='asq_edad_anios']").val("");
+            $("input[name*='asq_edad_meses']").val("");
+            $("input[name*='asq_puntaje']").val("");
+            $("input[name*='asq_normal']").removeProp("checked");
+            $("textarea[name*='asq_observacion']").val("");
+
+        }
+    });
+
+    $("#eedp").change(function(){
+        if( $("#eedp").prop("checked") )
+        {
+            $("#sec_eedp").show();
+        }
+        else
+        {
+            $("#sec_eedp").hide();
+            $("#sec_eedp_normal_si").hide();
+            $("input[name*='fecha_eedp']").val("");      
+            $("input[name*='eedp_edad_anios']").val("");
+            $("input[name*='eedp_edad_meses']").val("");
+            $("input[name*='eedp_puntaje']").val("");
+            $("input[name*='eedp_normal']").removeProp("checked");
+            $("textarea[name*='eedp_observacion']").val("");
+        }
+    });
+
+    $("#eedp_normal_si").change(function(){
+        if( $("#eedp_normal_si").prop("checked") )
+        {
+            $("#sec_eedp_normal_si").show();
+        }
+    });
+
+    $("#eedp_normal_no").change(function(){
+        if( $("#eedp_normal_no").prop("checked") )
+        {
+            $("#sec_eedp_normal_si").hide();
+            $("textarea[name*='eddp_observacion']").val("");
+        }
+    });
+
+     $("#eais").change(function(){
+        if( $("#eais").prop("checked") )
+        {
+            $("#sec_eais").show();
+        }
+        else
+        {
+            $("#sec_eais").hide();
+            $("#sec_eais_normal_si").hide();
+            $("input[name*='fecha_eais']").val("");      
+            $("input[name*='eais_edad_anios']").val("");
+            $("input[name*='eais_edad_meses']").val("");
+            $("input[name*='eais_puntaje']").val("");
+            $("input[name*='eais_normal']").removeProp("checked");
+            $("textarea[name*='eais_observacion']").val("");
+        }
+    });
+
+    $("#eais_normal_si").change(function(){
+        if( $("#eais_normal_si").prop("checked") )
+        {
+            $("#sec_eais_normal_si").show();
+        }
+    });
+
+    $("#eais_normal_no").change(function(){
+        if( $("#eais_normal_no").prop("checked") )
+        {
+            $("#sec_eais_normal_si").hide();
+            $("textarea[name*='eais_observacion']").val("");
+        }
+    });
+
+    $("#cat").change(function(){
+        if( $("#cat").prop("checked") )
+        {
+            $("#sec_cat").show();
+        }
+        else
+        {
+            $("#sec_cat").hide();
+            $("#sec_cat_normal_si").hide();
+            $("input[name*='fecha_cat']").val("");      
+            $("input[name*='cat_edad_anios']").val("");
+            $("input[name*='cat_edad_meses']").val("");
+            $("input[name*='cat_puntaje']").val("");
+            $("input[name*='cat_normal']").removeProp("checked");
+            $("textarea[name*='cat_observacion']").val("");
+        }
+    });
+
+    $("#cat_normal_si").change(function(){
+        if( $("#cat_normal_si").prop("checked") )
+        {
+            $("#sec_cat_normal_si").show();
+        }
+    });
+
+    $("#cat_normal_no").change(function(){
+        if( $("#cat_normal_no").prop("checked") )
+        {
+            $("#sec_cat_normal_si").hide();
+            $("textarea[name*='cat_observacion']").val("");
+        }
+    });
+
+    $("#asq").change(function(){
+        if( $("#asq").prop("checked") )
+        {
+            $("#sec_asq").show();
+        }
+        else
+        {
+            $("#sec_asq").hide();
+            $("#sec_asq_normal_si").hide();
+            $("input[name*='fecha_asq']").val("");      
+            $("input[name*='asq_edad_anios']").val("");
+            $("input[name*='asq_edad_meses']").val("");
+            $("input[name*='asq_puntaje']").val("");
+            $("input[name*='asq_normal']").removeProp("checked");
+            $("textarea[name*='asq_observacion']").val("");
+        }
+    });
+
+    $("#asq_normal_si").change(function(){
+        if( $("#asq_normal_si").prop("checked") )
+        {
+            $("#sec_asq_normal_si").show();
+        }
+    });
+
+    $("#asq_normal_no").change(function(){
+        if( $("#asq_normal_no").prop("checked") )
+        {
+            $("#sec_asq_normal_si").hide();
+            $("textarea[name*='asq_observacion']").val("");
+        }
+    });
+
+    $("#2a7anios_tepsi_si").change(function(){
+        if( $("#2a7anios_tepsi_si").prop("checked") )
+        {
+            $("#sec_2a7anios_tepsi_si").show();
+        }
+    });
+
+    $("#2a7anios_tepsi_no").change(function(){
+        if( $("#2a7anios_tepsi_no").prop("checked") )
+        {
+            $("#sec_2a7anios_tepsi_si").hide();
+            $("input[name*='2a7anios_tepsi_normal']").removeProp("checked");
+            $("input[name*='2a7anios_tepsi_fecha']").val("");
+            $("input[name*='2a7anios_tepsi_edad_anios']").val("");
+            $("input[name*='2a7anios_tepsi_edad_meses']").val("");
+            $("input[name*='2a7anios_tepsi_puntaje']").val("");
+        }
+    });
+
+    $("#2a7anios_bayley_si").change(function(){
+        if( $("#2a7anios_bayley_si").prop("checked") )
+        {
+            $("#sec_2a7anios_bayley_si").show();
+        }
+    });
+
+    $("#2a7anios_bayley_no").change(function(){
+        if( $("#2a7anios_bayley_no").prop("checked") )
+        {
+            $("#sec_2a7anios_bayley_si").hide();
+            $("#sec_2a7anios_bayley_version_2").hide();
+            $("#sec_2a7anios_bayley_version_3").hide();
+
+            $("input[name*='2a7anios_bayley_version']").removeProp("checked");
+            $("input[name*='2a7anios_bayley_version_2_fecha']").val("");
+            $("input[name*='2a7anios_bayley_version_2_edad_anios']").val("");
+            $("input[name*='2a7anios_bayley_version_2_edad_meses']").val("");
+            $("input[name*='2a7anios_bayley_version_2_mental']").val("");
+            $("input[name*='2a7anios_bayley_version_2_motora']").val("");
+            $("input[name*='2a7anios_bayley_version_2_conducta']").val("");
+            $("input[name*='2a7anios_bayley_version_2_normal']").removeProp("checked");
+
+            $("input[name*='2a7anios_bayley_version_3_fecha']").val("");
+            $("input[name*='2a7anios_bayley_version_3_edad_anios']").val("");
+            $("input[name*='2a7anios_bayley_version_3_edad_meses']").val("");
+            $("input[name*='2a7anios_bayley_version_3_motora']").val("");
+            $("input[name*='2a7anios_bayley_version_3_cognitiva']").val("");
+            $("input[name*='2a7anios_bayley_version_3_lenguaje']").val("");
+            $("input[name*='2a7anios_bayley_version_3_socio']").val("");
+            $("input[name*='2a7anios_bayley_version_3_comportamiento']").val("");
+            $("input[name*='2a7anios_bayley_version_3_normal']").removeProp("checked");
+        }
+    });
+
+    $("#2a7anios_bayley_version_2").change(function(){
+        if( $("#2a7anios_bayley_version_2").prop("checked") )
+        {
+            $("#sec_2a7anios_bayley_version_2").show();
+            $("#sec_2a7anios_bayley_version_3").hide();
+
+            $("input[name*='2a7anios_bayley_version_3_fecha']").val("");
+            $("input[name*='2a7anios_bayley_version_3_edad_anios']").val("");
+            $("input[name*='2a7anios_bayley_version_3_edad_meses']").val("");
+            $("input[name*='2a7anios_bayley_version_3_motora']").val("");
+            $("input[name*='2a7anios_bayley_version_3_cognitiva']").val("");
+            $("input[name*='2a7anios_bayley_version_3_lenguaje']").val("");
+            $("input[name*='2a7anios_bayley_version_3_socio']").val("");
+            $("input[name*='2a7anios_bayley_version_3_comportamiento']").val("");
+            $("input[name*='2a7anios_bayley_version_3_normal']").removeProp("checked");
+        }
+    });
+
+    $("#2a7anios_bayley_version_3").change(function(){
+        if( $("#2a7anios_bayley_version_3").prop("checked") )
+        {
+            $("#sec_2a7anios_bayley_version_2").hide();
+            $("#sec_2a7anios_bayley_version_3").show();
+
+            $("input[name*='2a7anios_bayley_version_2_fecha']").val("");
+            $("input[name*='2a7anios_bayley_version_2_edad_anios']").val("");
+            $("input[name*='2a7anios_bayley_version_2_edad_meses']").val("");
+            $("input[name*='2a7anios_bayley_version_2_mental']").val("");
+            $("input[name*='2a7anios_bayley_version_2_motora']").val("");
+            $("input[name*='2a7anios_bayley_version_2_conducta']").val("");
+            $("input[name*='2a7anios_bayley_version_2_normal']").removeProp("checked");
+        }
+    });
+
+    $("#retraso_lenguaje_si").change(function(){
+        if( $("#retraso_lenguaje_si").prop("checked") )
+        {
+            $("#sec_retraso_lenguaje_si").show();
+        }
+    });
+
+    $("#retraso_lenguaje_no").change(function(){
+        if( $("#retraso_lenguaje_no").prop("checked") )
+        {
+            $("#sec_retraso_lenguaje_si").hide();
+            $("input[name*='retraso_lenguaje_tipo']").removeProp("checked");
+            $("input[name*='retraso_lenguaje_rehab']").removeProp("checked");
+        }
+    });
+
+    $("#retraso_expresivo_si").change(function(){
+        if( $("#retraso_expresivo_si").prop("checked") )
+        {
+            $("#sec_retraso_expresivo_si").show();
+        }
+    });
+
+    $("#retraso_expresivo_no").change(function(){
+        if( $("#retraso_expresivo_no").prop("checked") )
+        {
+            $("#sec_retraso_expresivo_si").hide();
+            $("input[name*='retraso_expresivo_rehab']").removeProp("checked");
+        }
+    });
+
+    $("#coeficiente_si").change(function(){
+        if( $("#coeficiente_si").prop("checked") )
+        {
+            $("#sec_coeficiente_si").show();
+        }
+    });
+
+    $("#coeficiente_no").change(function(){
+        if( $("#coeficiente_no").prop("checked") )
+        {
+            $("#sec_coeficiente_si").hide();
+
+            $("input[name*='coeficiente_fecha_1']").val("");
+            $("input[name*='coeficiente_edad_anios_1']").val("");
+            $("input[name*='coeficiente_edad_meses_1']").val("");
+            $("input[name*='coeficiente_verbal_1']").val("");
+            $("input[name*='coeficiente_manipulativa_1']").val("");
+            $("input[name*='coeficiente_total_1']").val("");
+
+        }
+    });
+
+
+    $("#coeficiente_no").change(function(){
+        if( $("#coeficiente_no").prop("checked") )
+        {
+            $("#sec_coeficiente_si").hide();
+
+            $("input[name*='coeficiente_fecha_1']").val("");
+            $("input[name*='coeficiente_edad_anios_1']").val("");
+            $("input[name*='coeficiente_edad_meses_1']").val("");
+            $("input[name*='coeficiente_verbal_1']").val("");
+            $("input[name*='coeficiente_manipulativa_1']").val("");
+            $("input[name*='coeficiente_total_1']").val("");
+
+            $("input[name*='coeficiente_fecha_2']").val("");
+            $("input[name*='coeficiente_edad_anios_2']").val("");
+            $("input[name*='coeficiente_edad_meses_2']").val("");
+            $("input[name*='coeficiente_verbal_2']").val("");
+            $("input[name*='coeficiente_manipulativa_2']").val("");
+            $("input[name*='coeficiente_procesamiento_2']").val("");
+            $("input[name*='coeficiente_general_2']").val("");
+
+        }
+    });
+
+    $("#motora_guresa_si").change(function(){
+        if( $("#motora_guresa_si").prop("checked") )
+        {
+            $("#sec_motora_guresa_si").show();
+        }
+    });
+
+    $("#motora_guresa_no").change(function(){
+        if( $("#motora_guresa_no").prop("checked") )
+        {
+            $("#sec_motora_guresa_si").hide();
+            $("select[name*='motora_guresa_nivel']").val("");
+        }
+    });
+
+    $("#paralisis_1").change(function(){
+        if( $("#paralisis_1").prop("checked") )
+        {
+            $("#sec_paralisis_1").show();
+        }
+    });
+
+    $("#paralisis_2").change(function(){
+        if( $("#paralisis_2").prop("checked") )
+        {
+            $("#sec_paralisis_1").hide();
+            $("input[name*='paralisis_1']").removeProp("checked");
+        }
+    });
+
+    $("#paralisis_3").change(function(){
+        if( $("#paralisis_3").prop("checked") )
+        {
+            $("#sec_paralisis_1").hide();
+            $("input[name*='paralisis_1']").removeProp("checked");
+        }
+    });
+
+    $("#paralisis_4").change(function(){
+        if( $("#paralisis_4").prop("checked") )
+        {
+            $("#sec_paralisis_1").hide();
+            $("input[name*='paralisis_1']").removeProp("checked");
+        }
+    });
+
+    $("#paralisis_5").change(function(){
+        if( $("#paralisis_5").prop("checked") )
+        {
+            $("#sec_paralisis_1").hide();
+            $("input[name*='paralisis_1']").removeProp("checked");
+        }
+    });
 
 // Fin de función principal
 });
