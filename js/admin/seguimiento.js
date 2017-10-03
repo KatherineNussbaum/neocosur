@@ -1715,5 +1715,91 @@ jQuery(document).ready(function(){
         }
     });
 
+
+
+// Vacunas
+// --------------------------------------------------------------
+
+    $("#opcionales_si").change(function(){
+        if( $("#opcionales_si").prop("checked") )
+        {
+            $("#sec_opcionales_si").show();
+        }
+    });
+
+    $("#opcionales_no").change(function(){
+        if( $("#opcionales_no").prop("checked") )
+        {
+            $("#sec_opcionales_si").hide();
+            $("#sec_vacunas_opcionales_otras").hide();
+            $("input[class*='vacunas_opcionales']").removeProp("checked");
+            $("textarea[name*='vacunas_opcionales_otras_cuales']").val("");
+        }
+    });
+
+
+    $("#vacunas_opcionales_otras").change(function(){
+        if( $("#vacunas_opcionales_otras").prop("checked") )
+        {
+            $("#sec_vacunas_opcionales_otras").show();
+        }
+        else
+        {
+            $("#sec_vacunas_opcionales_otras").hide();
+            $("textarea[name*='vacunas_opcionales_otras_cuales']").val("");
+        }
+    });
+
+
+
+// Perdida del Paciente
+// --------------------------------------------------------------
+
+    $("#fallece_si").change(function(){
+        if( $("#fallece_si").prop("checked") )
+        {
+            $("#sec_fallece_si").show();
+        }
+    });
+
+    $("#fallece_no").change(function(){
+        if( $("#fallece_no").prop("checked") )
+        {
+            $("#sec_fallece_si").hide();
+            $("select[name*='fallece_si_lugar']").val("");
+            $("input[name*='fecha_fallecimiento']").val("");
+            $("input[name*='edad_fallecimiento_anios']").val("");
+            $("input[name*='edad_fallecimiento_meses']").val("");
+            $("textarea[name*='fallecimiento_observaciones']").val("");
+        }
+    });
+
+
+    $("#perdida_si").change(function(){
+        if( $("#perdida_si").prop("checked") )
+        {
+            $("#sec_perdida_si").show();
+        }
+    });
+
+    $("#perdida_no").change(function(){
+        if( $("#perdida_no").prop("checked") )
+        {
+            $("#sec_perdida_si").hide();
+            $("select[name*='perdida_causa']").val("");
+        }
+    });
+
+
+
+
+
+
+
+
+
+
+
+
 // Fin de función principal
 });
