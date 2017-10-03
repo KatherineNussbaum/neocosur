@@ -49,33 +49,17 @@
             <a href="#vacunas" aria-controls="profile" role="tab" data-toggle="tab">Vacunas</a>
           </li>
           <li role="presentation" class="active">
-            <a href="#evaluacion" aria-controls="profile" role="tab" data-toggle="tab">Hospitalizaciones del Periodo</a>
+            <a href="#hospitalizaciones" aria-controls="profile" role="tab" data-toggle="tab">Hospitalizaciones del Periodo</a>
           </li>
           <li role="presentation" class="active">
-            <a href="#evaluacion" aria-controls="profile" role="tab" data-toggle="tab">Diagnóstico en esta Evaluación</a>
+            <a href="#diagnostico" aria-controls="profile" role="tab" data-toggle="tab">Diagnóstico en esta Evaluación</a>
           </li>
           <li role="presentation" class="active">
-            <a href="#evaluacion" aria-controls="profile" role="tab" data-toggle="tab">Pérdida del Paciente</a>
+            <a href="#perdida" aria-controls="profile" role="tab" data-toggle="tab">Pérdida del Paciente</a>
           </li>
           <li role="presentation" class="active">
-            <a href="#evaluacion" aria-controls="profile" role="tab" data-toggle="tab">Datos de Ficha</a>
+            <a href="#ficha" aria-controls="profile" role="tab" data-toggle="tab">Datos de Ficha</a>
           </li>
-
-
-
-          <li role="presentation"><a href="#prenatales" aria-controls="profile" role="tab" data-toggle="tab">Antecedentes Prenatales</a></li>
-
-          <li role="presentation"><a href="#parto" aria-controls="messages" role="tab" data-toggle="tab">Antecedentes del Parto</a></li>
-
-          <li role="presentation" class="dinamico_fallece"><a href="#neonatales" aria-controls="settings" role="tab" data-toggle="tab">Patologías Neonatales</a></li>
-
-          <li role="presentation" class="dinamico_fallece"><a href="#evolucion" aria-controls="settings" role="tab" data-toggle="tab">Evolución y Tratamiento</a></li>
-
-          <li role="presentation" class="dinamico_fallece"><a href="#antropometria" aria-controls="settings" role="tab" data-toggle="tab">Antropometría</a></li>
-
-          <li role="presentation"><a href="#alta" aria-controls="settings" role="tab" data-toggle="tab">Alimentación</a></li>
-
-          <li role="presentation"><a href="#estado" aria-controls="settings" role="tab" data-toggle="tab">Estado de Ficha</a></li>
         </ul>
       </div>
 
@@ -119,6 +103,26 @@
 
           <div role="tabpanel" class="tab-pane" id="neurodesarrollo">
             <?php include 'seguimiento/neurodesarrollo.php'; ?>
+          </div>
+
+          <div role="tabpanel" class="tab-pane" id="vacunas">
+            <?php include 'seguimiento/vacunas.php'; ?>
+          </div>
+
+          <div role="tabpanel" class="tab-pane" id="hospitalizaciones">
+            <?php include 'seguimiento/hospitalizaciones.php'; ?>
+          </div>
+
+          <div role="tabpanel" class="tab-pane" id="diagnostico">
+            <?php include 'seguimiento/diagnostico.php'; ?>
+          </div>
+
+          <div role="tabpanel" class="tab-pane" id="perdida">
+            <?php include 'seguimiento/perdida.php'; ?>
+          </div>
+
+          <div role="tabpanel" class="tab-pane" id="ficha">
+            <?php include 'seguimiento/ficha.php'; ?>
           </div>
 
         </div>
