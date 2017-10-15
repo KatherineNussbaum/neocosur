@@ -712,7 +712,7 @@ jQuery(document).ready(function(){
         }
     });
 
-     $("#evaluacion_posterior_no").change(function(){
+    $("#evaluacion_posterior_no").change(function(){
         var $input = $(this);
         if($input.prop("checked"))
         {
@@ -758,7 +758,7 @@ jQuery(document).ready(function(){
         }
     });
 
-     $("#cirugia_izquierdo_si").change(function(){
+    $("#cirugia_izquierdo_si").change(function(){
         var $input = $(this);
         if($input.prop("checked"))
         {
@@ -1397,7 +1397,7 @@ jQuery(document).ready(function(){
         }
     });
 
-     $("#eais").change(function(){
+    $("#eais").change(function(){
         if( $("#eais").prop("checked") )
         {
             $("#sec_eais").show();
