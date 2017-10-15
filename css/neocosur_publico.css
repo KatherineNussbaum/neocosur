@@ -135,3 +135,15 @@ h4 {
 .login {
 	
 }
+.noticia{
+	margin-bottom: 5px;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	border-top: solid;
+	border-width: 1px;
+	border-color: #e4e4e4;
+}
+.noticia .img {
+	text-align: center;
+}
+
