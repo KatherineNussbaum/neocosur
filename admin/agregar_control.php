@@ -124,7 +124,6 @@
           <div role="tabpanel" class="tab-pane" id="ficha">
             <?php include 'seguimiento/ficha.php'; ?>
           </div>
-
         </div>
       </div>
     </div>
@@ -138,7 +137,7 @@
 <script src="../js/jquery.js"></script>
 <script src="../js/jquery-ui.js"></script>
 <script src="../js/bootstrap.js"></script>
-<script src="../js/npm.js"></script>
+<!-- <script src="../js/npm.js" ></script> -->
 <script src="../js/admin/seguimiento.js"></script>
 <script src="../js/neocosur.js"></script>
 <script>
@@ -572,7 +571,7 @@ jQuery(document).ready(function(){
     $("textarea[name*='describa_uretrocistografia']").val("");
   };
 
-  if( $("#eco_renal")t.prop("checked") )
+  if( $("#eco_renal").prop("checked") )
   {
     $("#sec_eco_renal").show();
   }
