@@ -1791,10 +1791,59 @@ jQuery(document).ready(function(){
     });
 
 
+// Hospitalización
+// --------------------------------------------------------------
+
+    $(document).on("click",".diagnostico_hospitalizacion",function(){
+        var $input = $(this);
+        var parent = $(this).parents().get(1);
+        if($input.val()== "respiratorio")
+        {  
+            $(parent).find(".otro_diagnostico_hospitalizacion").hide();          
+            $(parent).find(".respiratorio_diagnostico_hospitalizacion").show();
+
+            $(parent).find("input[name*='hospitalizacion_otro']").val('');
+        }
+        else if($input.val()== "otro")
+        {
+            $(parent).find(".otro_diagnostico_hospitalizacion").show();
+            $(parent).find(".respiratorio_diagnostico_hospitalizacion").hide();
+
+            $(parent).find("input[type*='radio']").removeProp('checked');
+            $(parent).find("select").val('0');
+        }
+        else
+        {
+            $(parent).find(".otro_diagnostico_hospitalizacion").hide();
+            $(parent).find(".respiratorio_diagnostico_hospitalizacion").hide();
+
+            $(parent).find("input[name*='hospitalizacion_otro']").val('');
+            $(parent).find("input[type*='radio']").removeProp('checked');
+            $(parent).find("select").val('0');
+        }
+    });
+
+   
+
+// Métodos Varios
+// -------------------------------------------------------------- 
 
 
+    $("#agregar_tabla_hospitalizacion").on('click', function(){
+        var ultimaFila = $("#tabla_hospitalizacion tbody tr:eq(-1)");
 
+        $( ultimaFila ).clone().removeClass('fila_oculta').appendTo("#tabla_hospitalizacion tbody");
 
+        var numFila = $("#tabla_hospitalizacion tbody tr").length;
+        var num = numFila-1;
+        $("#tabla_hospitalizacion tbody tr:eq(-1) td:eq(0)").html(num);
+        $("#tabla_hospitalizacion tbody tr:eq(-1)").find(".sub-form").hide();
+    });
+
+    $(document).on("click",".eliminar",function(){
+        var parent = $(this).parents().get(1);
+        $(parent).remove();
+    });
 
 
 
