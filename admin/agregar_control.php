@@ -1162,6 +1162,23 @@ jQuery(document).ready(function(){
     $("select[name*='perdida_causa']").val("");
   };
 
+  if($(".diagnostico_hospitalizacion").val() == "respiratorio")
+  {
+    var $input = $(this);
+    var parent = $(this).parents().get(1);
+        
+    $(parent).find(".respiratorio_diagnostico_hospitalizacion").show();
+  };
+  
+  if($(".diagnostico_hospitalizacion").val() == "otro")
+  {
+    var $input = $(this);
+    var parent = $(this).parents().get(1);
+        
+    $(parent).find(".otro_diagnostico_hospitalizacion").show();
+  };
+
+
 });
 
 </script>
