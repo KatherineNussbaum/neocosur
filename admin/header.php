@@ -25,7 +25,7 @@
                   <li><a href="centros.php">Mantenedor de Centros</a></li>
                   <li><a href="usuarios.php">Mantenedor de Usuarios</a></li>
                   <li><a href="fichas.php">Mantenedor de Fichas</a></li>
-                  <li><a href="#">Datos en Excel</a></li>
+                  <li><a href="descarga.php">Datos en Excel</a></li>
                   <li><a href="#">Mantenedor de Parámetros</a></li>
                 </ul>
               </li>
